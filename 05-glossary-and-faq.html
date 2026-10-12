@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05 — Glossary and FAQ — EasyMate ERP Manual | Varendra University</title>
+  <meta name="description" content="Varendra University EasyMate ERP User Manual & Operational Reference: Student Lifecycle, Cross-Module Workflows, Roles & Technical Verification.">
+  <link rel="stylesheet" href="assets/manual.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e3a8a'><path d='M12 2L1 7l11 5 9-4.09V17h2V7L12 2z'/></svg>">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <a href="index.html" class="brand-wrapper">
+        <div class="brand-logo">VU</div>
+        <div class="brand-text">
+          <div class="brand-title">
+            EasyMate ERP
+            <span class="version-tag">v1.0</span>
+          </div>
+          <div class="brand-subtitle">Varendra University • Academic ERP Manual</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="header-actions">
+      <div class="search-trigger" role="button" tabindex="0" title="Search documentation (Ctrl+K)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <span>Search manual...</span>
+        <kbd>Ctrl+K</kbd>
+      </div>
+
+      <button class="header-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        Dark
+      </button>
+
+      <button class="header-btn print-btn-action" title="Print this manual or Export to PDF">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print / PDF
+      </button>
+    </div>
+  </header>
+
+  <!-- Docs Layout -->
+  <div class="docs-layout">
+
+    <!-- Left Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-search-box">
+        <input type="text" id="sidebar-filter-input" class="sidebar-search-input" placeholder="Quick filter menu...">
+      </div>
+      <nav class="sidebar-nav">
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Getting Started</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="index.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📌</span> Overview &amp; Scope</span>
+          <span class="nav-badge">Start Here</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Modules &amp; Specifications</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="01-functional-inventory.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📋</span> 01. Functional Inventory</span>
+          <span class="nav-badge">9 Modules</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="02-student-lifecycle.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">🔄</span> 02. Student Lifecycle</span>
+          <span class="nav-badge">8 Stages</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="03-role-based-guides.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">👥</span> 03. Role-Based Guides</span>
+          <span class="nav-badge">9 Roles</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="04-cross-module-workflows.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">⚡</span> 04. Cross-Module Workflows</span>
+          <span class="nav-badge">8 Workflows</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Reference &amp; Audit</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="05-glossary-and-faq.html" class="sidebar-nav-link active">
+          <span class="nav-label"><span class="nav-icon">📖</span> 05. Glossary &amp; FAQ</span>
+          <span class="nav-badge">Reference</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="06-screenshots-checklist.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📸</span> 06. Screenshots Checklist</span>
+          <span class="nav-badge">40 Captured</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="verification-report.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">🛡️</span> 07. Verification Report</span>
+          <span class="nav-badge">Code Audit</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Complete Editions</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="user-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📑</span> Complete User Manual</span>
+          <span class="nav-badge">Master</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">All-in-One Edition</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="complete-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📚</span> Complete 8-Chapter Manual</span>
+          <span class="nav-badge">Merged</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sidebar-legend">
+    <div class="sidebar-legend-title">Verification Legend</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#10b981;"></span> <strong>[VC]</strong> Code Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> <strong>[CNV]</strong> Code Found / Not UI</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#ea580c;"></span> <strong>[PI]</strong> Partially Implemented</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#7c3aed;"></span> <strong>[VUI]</strong> Running UI Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#0284c7;"></span> <strong>[RDC]</strong> Requires DB / Policy</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span> <strong>[NF]</strong> Not Found / Excluded</div>
+  </div>
+</nav>
+
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="docs-main">
+      <article class="docs-article">
+        
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">EasyMate ERP</a>
+          <span class="separator">/</span>
+          <a href="index.html">User Manual</a>
+          <span class="separator">/</span>
+          <span class="current">05. Glossary &amp; FAQ</span>
+        </nav>
+
+        <div class="doc-header-banner">
+          <div class="doc-meta-row">
+            <span class="doc-meta-pill">🏛️ Varendra University</span>
+            <span class="doc-meta-pill">📅 Published: October 2026</span>
+            <span class="doc-meta-pill">🛡️ Live Docker System Verified</span>
+            <span class="doc-meta-pill">⚡ Laravel Academic SIS</span>
+          </div>
+        </div>
+
+        <h1 id="05-glossary-and-faq">05 — Glossary and FAQ<a href="#05-glossary-and-faq" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h1>
+<h2 id="easymate-erp-academic-terminology-grading-rules-formulas-operational-faq">EasyMate ERP — Academic Terminology, Grading Rules, Formulas &amp; Operational FAQ<a href="#easymate-erp-academic-terminology-grading-rules-formulas-operational-faq" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="callout callout-success">
+  <div class="callout-title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    Technical Verification Baseline
+  </div>
+  <p>This document provides a reference for university terminology, grading and assessment models, financial billing algorithms, and operational frequently asked questions across all user roles in EasyMate ERP.<br />
+<strong>Verification Status:</strong> Business logic, algorithmic formulas, and operational workflows are verified in the codebase. Active database configurations and official academic ordinance policies are explicitly noted where runtime verification applies.</p>
+</div>
+<hr />
+<h2 id="1-academic-erp-glossary">1. Academic &amp; ERP Glossary<a href="#1-academic-erp-glossary" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="general-academic-architecture">General &amp; Academic Architecture<a href="#general-academic-architecture" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Term</th>
+<th>System Entity</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Exam Session</strong></td>
+<td><code>exam_session</code></td>
+<td>The primary operational term/semester period in the ERP (e.g., <code>Spring-2026</code>, <code>Fall-2026</code>, <code>Summer-2026</code>). Governs registration, scheduling, billing, and result publication.</td>
+</tr>
+<tr>
+<td><strong>Intake Session</strong></td>
+<td><code>session</code> (Student)</td>
+<td>The academic session in which a student originally enrolled at Varendra University (e.g., <code>Spring-2024</code>). Binds the student to a specific curriculum syllabus.</td>
+</tr>
+<tr>
+<td><strong>Program Version</strong></td>
+<td><code>ProgramVersion</code></td>
+<td>Configuration entity linked to an academic program defining <code>semesters_per_year</code> (2 for Bi-semester, 3 for Tri-semester), <code>total_years</code>, and <code>payment_installments</code>.</td>
+</tr>
+<tr>
+<td><strong>Syllabus</strong></td>
+<td><code>Syllabus</code></td>
+<td>The approved set of course requirements, credit hours, and semester structures bound to an intake cohort.</td>
+</tr>
+<tr>
+<td><strong>Batch Number</strong></td>
+<td><code>batch</code></td>
+<td>Calculated cohort identifier derived from the student's intake session and program (e.g., 28th Batch).</td>
+</tr>
+<tr>
+<td><strong>Regular Course</strong></td>
+<td><code>type = 'regular'</code></td>
+<td>A course taken by a student as prescribed for their current semester in the syllabus.</td>
+</tr>
+<tr>
+<td><strong>Retake Course</strong></td>
+<td><code>type = 'retake'</code></td>
+<td>Re-enrolling in a previously attempted course in which the student failed ($GP = 0.00$ or Absent/Expelled). Billed at 50% tuition rate per credit.</td>
+</tr>
+<tr>
+<td><strong>Improvement Course</strong></td>
+<td><code>type = 'improvement'</code></td>
+<td>Re-enrolling in a passed theory course where the earned grade was $GP \le 2.75$ ($B-$ or lower) to raise the grade point. Billed at 25% tuition rate per credit. Sessional/lab courses cannot be improved.</td>
+</tr>
+<tr>
+<td><strong>Backlog Course</strong></td>
+<td>—</td>
+<td>Any incomplete course from a preceding semester that must be cleared before degree completion.</td>
+</tr>
+<tr>
+<td><strong>Course Exemption</strong></td>
+<td><code>exempted_courses</code></td>
+<td>Course credits transferred from another university or accredited institution. The course credit counts toward graduation requirements, but no grade point is factored into CGPA.</td>
+</tr>
+<tr>
+<td><strong>Collegiate</strong></td>
+<td><code>collegiate</code></td>
+<td>Student whose lecture attendance is $\ge 75\%$ (Undergraduate/Master) or $\ge 60\%$ (other programs). Eligible for final examinations without penalty.</td>
+</tr>
+<tr>
+<td><strong>Non-Collegiate</strong></td>
+<td><code>non-collegiate</code></td>
+<td>Student whose attendance falls between $50\%$–$74\%$ (or $40\%$–$59\%$). Allowed to sit for final exams only after paying a prescribed non-collegiate penalty fee.</td>
+</tr>
+<tr>
+<td><strong>Dis-Collegiate</strong></td>
+<td><code>dis-collegiate</code></td>
+<td>Student whose attendance falls below $50\%$ (or $&lt; 40\%$). Barred from the semester final examination; must retake the course.</td>
+</tr>
+<tr>
+<td><strong>Semester Drop</strong></td>
+<td><code>dropped</code></td>
+<td>Formal academic withdrawal from an active semester prior to final exams (<code>final != 'p'</code>). Subject to a semester drop / readmission fee.</td>
+</tr>
+<tr>
+<td><strong>Readmission</strong></td>
+<td><code>Readmission</code></td>
+<td>Registration of a student who was not promoted or dropped a semester back into the same semester level in a subsequent session.</td>
+</tr>
+<tr>
+<td><strong>Completed Student</strong></td>
+<td><code>completed = 1</code></td>
+<td>A student who has satisfied all required syllabus credit hours, passed all mandatory courses, achieved cumulative $CGPA \ge 2.00$ (subject to policy confirmation), and received degree clearance.</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h3 id="accounts-financial-terminology">Accounts &amp; Financial Terminology<a href="#accounts-financial-terminology" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Term</th>
+<th>System Entity</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Account Head</strong></td>
+<td><code>FeeSetting</code></td>
+<td>A categorized fee item (e.g., Head 1: Tuition Fee, Head 2: Semester Fee, Head 3: Development Fee, Head 4: Exam Fee, Head 5: Lab Fee, Head 8: Non-Collegiate Fee, Head 11: Improvement Fee, Head 12: Retake Fee, Head 13: Drop Fee).</td>
+</tr>
+<tr>
+<td><strong>Invoice (Type 1)</strong></td>
+<td><code>invoice_type_id = 1</code></td>
+<td>Form Sale / Application Fee invoice generated when an applicant applies for admission.</td>
+</tr>
+<tr>
+<td><strong>Invoice (Type 2)</strong></td>
+<td><code>invoice_type_id = 2</code></td>
+<td>Semester Registration Invoice comprising tuition, lab, exam, and semester fees for registered courses.</td>
+</tr>
+<tr>
+<td><strong>Invoice (Type 3)</strong></td>
+<td><code>invoice_type_id = 3</code></td>
+<td>Miscellaneous Document Invoice generated for transcripts, certificates, ID card replacement, or testimonials.</td>
+</tr>
+<tr>
+<td><strong>Installment</strong></td>
+<td><code>Installment</code></td>
+<td>Sub-divided payment portion of a semester invoice (e.g., 1st, 2nd, 3rd installment) with separate due dates.</td>
+</tr>
+<tr>
+<td><strong>Ledger (Debit - D)</strong></td>
+<td><code>Ledger</code> (<code>type = 'D'</code>)</td>
+<td>An accounting entry representing an amount owed by the student to the university (e.g., invoice generation).</td>
+</tr>
+<tr>
+<td><strong>Ledger (Credit - C)</strong></td>
+<td><code>Ledger</code> (<code>type = 'C'</code>)</td>
+<td>An accounting entry representing cash or bank payments received from the student.</td>
+</tr>
+<tr>
+<td><strong>Ledger Balance</strong></td>
+<td><code>ledgerBalance()</code></td>
+<td>Net outstanding balance ($\sum D - \sum C$). If debits exceed credits, the student has outstanding dues.</td>
+</tr>
+<tr>
+<td><strong>Financial Clearance</strong></td>
+<td><code>accountClearUpto()</code></td>
+<td>Validation that all debit entries up to a designated exam session have matching credit entries. Required for exam admit card and registration.</td>
+</tr>
+<tr>
+<td><strong>Tuition Waiver</strong></td>
+<td><code>Waiver</code></td>
+<td>Scholarship discount applied strictly against regular tuition fees (not fixed administrative or lab fees).</td>
+</tr>
+<tr>
+<td><strong>Payment Posting</strong></td>
+<td><code>invoices.posting</code></td>
+<td>The formal verification and entry of a student bank receipt or cash payment by an Accounts Officer.</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h3 id="examination-grading-terminology">Examination &amp; Grading Terminology<a href="#examination-grading-terminology" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Term</th>
+<th>System Entity</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Assessment Rule</strong></td>
+<td><code>AssessmentRule</code></td>
+<td>Percentage breakdown of assessment components for a course (e.g., Theory: Attendance 10%, CT 20%, Midterm 30%, Final 40%).</td>
+</tr>
+<tr>
+<td><strong>Examiner</strong></td>
+<td><code>examiner</code></td>
+<td>The appointed faculty member authorized to grade student assessments for a specific course and section.</td>
+</tr>
+<tr>
+<td><strong>Submission</strong></td>
+<td><code>Submission</code></td>
+<td>The action by which an examiner locks marks entry and submits grades to the Controller of Examinations.</td>
+</tr>
+<tr>
+<td><strong>Approval</strong></td>
+<td><code>Approval</code></td>
+<td>Formal verification of submitted marks by the Controller of Examinations, triggering creation of <code>CourseResult</code> records.</td>
+</tr>
+<tr>
+<td><strong>Course Result</strong></td>
+<td><code>CourseResult</code></td>
+<td>The permanent grade record for a student in a course, storing total marks, Grade Point (GP), and Letter Grade (LG).</td>
+</tr>
+<tr>
+<td><strong>Semester Result</strong></td>
+<td><code>SemesterResult</code></td>
+<td>Consolidated semester performance record storing SGPA, total marks, registered credits, earned credits, and batch rank.</td>
+</tr>
+<tr>
+<td><strong>Result Publication</strong></td>
+<td><code>Result</code> (<code>published = 1</code>)</td>
+<td>Action by the Examination Controller releasing semester results to students on the portal.</td>
+</tr>
+<tr>
+<td><strong>Best Attempt Rule</strong></td>
+<td><code>app/Student.php</code></td>
+<td>University policy where the highest Grade Point earned across multiple attempts (regular, retake, improvement) is selected for CGPA calculation.</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="2-grading-system-specification-database-seed-baseline-formula-reference">2. Grading System Specification (Database Seed Baseline &amp; Formula Reference)<a href="#2-grading-system-specification-database-seed-baseline-formula-reference" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="technical-implementation-in-code">Technical Implementation in Code<a href="#technical-implementation-in-code" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p>In EasyMate ERP, grade resolution is dynamic:
+1. <code>Grade::calculate($total, $obtained, $status)</code> calculates percentage:
+   $$\text{percentage} = \frac{\text{obtained} \times 100}{\text{total}}$$
+2. It queries all rows from the <code>grades</code> table (<code>Grade::all()</code>) and matches:
+   $$\text{low} \le \text{percentage} &lt; \text{high}$$
+3. If the candidate was absent or expelled in the semester final exam, the method returns <code>F</code> ($GP = 0.00$).</p>
+<div class="callout callout-info">
+  <div class="callout-title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+    Operational Note
+  </div>
+  <p><strong>Grading Scale Authority &amp; Policy Disclaimer <span class="badge badge-rdc" title="Requires database or policy confirmation"><span class="badge-dot"></span>RDC</span>:</strong><br />
+The table below documents the <strong>default database seed configuration</strong> defined in <code>database/seeds/GradesTableSeeder.php</code>. Because EasyMate queries this table dynamically at runtime, this table should not be described as unconditionally authoritative across all programs without verifying the active rows in the database <code>grades</code> table and confirming the applicable university academic regulations (such as Varendra University's approved <em>11th Academic Ordinance</em>).</p>
+</div>
+<h3 id="seeded-grade-table-baseline-databaseseedsgradestableseederphp">Seeded Grade Table Baseline (<code>database/seeds/GradesTableSeeder.php</code>)<a href="#seeded-grade-table-baseline-databaseseedsgradestableseederphp" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Percentage Range (low to high)</th>
+<th>Letter Grade (LG)</th>
+<th>Grade Point (GP)</th>
+<th>Qualitative Assessment</th>
+<th>Academic Implications in Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>80.00% to 101.00%</strong></td>
+<td><strong>A+</strong></td>
+<td><strong>4.00</strong></td>
+<td>Outstanding</td>
+<td>Distinction; eligible for maximum merit scholarship</td>
+</tr>
+<tr>
+<td><strong>75.00% to 80.00%</strong></td>
+<td><strong>A</strong></td>
+<td><strong>3.75</strong></td>
+<td>Excellent</td>
+<td>Honors standing</td>
+</tr>
+<tr>
+<td><strong>70.00% to 75.00%</strong></td>
+<td><strong>A-</strong></td>
+<td><strong>3.50</strong></td>
+<td>Very Good</td>
+<td>Strong academic standing</td>
+</tr>
+<tr>
+<td><strong>65.00% to 70.00%</strong></td>
+<td><strong>B+</strong></td>
+<td><strong>3.25</strong></td>
+<td>Good</td>
+<td>Above average performance</td>
+</tr>
+<tr>
+<td><strong>60.00% to 65.00%</strong></td>
+<td><strong>B</strong></td>
+<td><strong>3.00</strong></td>
+<td>Satisfactory</td>
+<td>Standard competency</td>
+</tr>
+<tr>
+<td><strong>55.00% to 60.00%</strong></td>
+<td><strong>B-</strong></td>
+<td><strong>2.75</strong></td>
+<td>Above Average</td>
+<td><strong>Ceiling for Course Improvement:</strong> Grades above $B-$ cannot be repeated for improvement</td>
+</tr>
+<tr>
+<td><strong>50.00% to 55.00%</strong></td>
+<td><strong>C+</strong></td>
+<td><strong>2.50</strong></td>
+<td>Average</td>
+<td>Eligible for course improvement</td>
+</tr>
+<tr>
+<td><strong>45.00% to 50.00%</strong></td>
+<td><strong>C</strong></td>
+<td><strong>2.25</strong></td>
+<td>Below Average</td>
+<td>Eligible for course improvement</td>
+</tr>
+<tr>
+<td><strong>40.00% to 45.00%</strong></td>
+<td><strong>D</strong></td>
+<td><strong>2.00</strong></td>
+<td>Pass</td>
+<td>Minimum passing grade; eligible for improvement</td>
+</tr>
+<tr>
+<td><strong>0.00% to 40.00%</strong></td>
+<td><strong>F</strong></td>
+<td><strong>0.00</strong></td>
+<td>Fail</td>
+<td>Failed course; mandatory retake; no credit earned</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="assessment-attendance-flags">Assessment Attendance Flags<a href="#assessment-attendance-flags" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Meaning</th>
+<th>Impact on Grading in Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>p</code></td>
+<td><strong>Present</strong></td>
+<td>Student appeared; entered assessment score is counted.</td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td><strong>Absent</strong></td>
+<td>Student was absent; counted as 0 marks.</td>
+</tr>
+<tr>
+<td><code>e</code></td>
+<td><strong>Expelled</strong></td>
+<td>Disciplinary expulsion; counted as 0 marks and flagged for disciplinary review.</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="3-mathematical-models-erp-calculation-formulas">3. Mathematical Models &amp; ERP Calculation Formulas<a href="#3-mathematical-models-erp-calculation-formulas" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="31-semester-grade-point-average-sgpa">3.1 Semester Grade Point Average (SGPA)<a href="#31-semester-grade-point-average-sgpa" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p>$$\text{SGPA} = \frac{\sum_{i=1}^{n} (\text{Credit}<em i="1">i \times \text{GP}_i)}{\sum</em>$$}^{n} \text{Credit}_i</p>
+<ul>
+<li>$\text{Credit}_i$: Credit hours of the $i$-th registered regular course in the semester.</li>
+<li>$\text{GP}_i$: Grade Point earned in the $i$-th course.</li>
+<li>Calculated across all regular courses registered in that exam session. Rounded to two decimal places.</li>
+</ul>
+<hr />
+<h3 id="32-cumulative-grade-point-average-cgpa">3.2 Cumulative Grade Point Average (CGPA)<a href="#32-cumulative-grade-point-average-cgpa" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<h4 id="current-cgpa-active-students">Current CGPA (Active Students)<a href="#current-cgpa-active-students" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<p>$$\text{CGPA}<em j="1">{\text{current}} = \frac{\sum</em>}^{m} (\text{Credit<em j="1">j \times \text{Best_GP}_j)}{\sum</em>}^{m} \text{Credit<em _text_attempt="\text{attempt">j}$$
+- Calculated across all distinct completed courses where the student earned $GP &gt; 0$.
+- Under the <strong>Best Attempt Rule</strong>, if a course was attempted multiple times (regular + retake/improvement):
+  $$\text{Best_GP}_j = \max(\text{GP}</em>, \dots)$$} 1}, \text{GP}_{\text{attempt } 2</p>
+<h4 id="final-graduating-cgpa">Final Graduating CGPA<a href="#final-graduating-cgpa" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<p>$$\text{CGPA}_{\text{final}} = \frac{\sum (\text{Credit} \times \text{Best_GP})}{\text{Syllabus Required Credits} - \text{Exempted Credits}}$$
+- Evaluated against total curriculum credit requirements.</p>
+<hr />
+<h3 id="33-tuition-billing-invoice-calculation">3.3 Tuition Billing &amp; Invoice Calculation<a href="#33-tuition-billing-invoice-calculation" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p>$$\text{Total Invoice Amount} = \text{Net Tuition} + \text{Retake Fee} + \text{Improvement Fee} + \sum \text{Fixed Head Amounts} + \text{Penalties}$$</p>
+<p>Where:
+1. <strong>Regular Tuition Fee:</strong>
+   $$\text{Gross Tuition} = \text{Program Rate per Credit} \times \text{Regular Credits}$$
+2. <strong>Tuition Waiver Discount:</strong>
+   $$\text{Net Tuition} = \text{Gross Tuition} \times \left(1 - \frac{\text{Waiver \%}}{100}\right)$$
+   <em>(Note: Waivers apply exclusively to regular tuition fees; fixed administrative, lab, and exam fees are never discounted).</em>
+3. <strong>Retake Fee:</strong>
+   $$\text{Retake Fee} = \text{Program Rate per Credit} \times 0.50 \times \text{Retake Credits}$$
+4. <strong>Improvement Fee:</strong>
+   $$\text{Improvement Fee} = \text{Program Rate per Credit} \times 0.25 \times \text{Improvement Credits}$$
+5. <strong>Non-Collegiate Penalty:</strong> Assessed under Account Head 8 if prior attendance fell in the 50%–74% bracket.
+6. <strong>Semester Drop / Readmission Fine:</strong> Account Head 13 (BDT 1,000) applied if returning after an unapproved semester drop.</p>
+<hr />
+<h3 id="34-student-financial-clearance-check">3.4 Student Financial Clearance Check<a href="#34-student-financial-clearance-check" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p>$$\text{Financial Standing} = \sum_{k \le S} \text{Ledger Debits}<em S="S" _le="\le" k="k">k - \sum</em>_k$$} \text{Ledger Credits</p>
+<ul>
+<li>If $\text{Financial Standing} \le 0$: Student is <strong>Financially Clear</strong> up to Session $S$.</li>
+<li>If $\text{Financial Standing} &gt; 0$: Student has outstanding dues and is barred from registration and exam admit cards.</li>
+</ul>
+<hr />
+<h2 id="4-frequently-asked-questions-faq">4. Frequently Asked Questions (FAQ)<a href="#4-frequently-asked-questions-faq" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="41-for-applicants-prospective-students">4.1 For Applicants &amp; Prospective Students<a href="#41-for-applicants-prospective-students" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p><strong>Q: I registered on the admission portal, but my name or date of birth is incorrect. Can I change it?</strong><br />
+<strong>A:</strong> If your data was auto-populated from the Bangladesh Education Board (SSC/HSC) via Teletalk API, it is locked to maintain identity verification with official gazettes. If an official board correction was made, present your revised certificate to the Admission Office for administrative review.</p>
+<p><strong>Q: Why does my profile show 80% completion instead of 100%?</strong><br />
+<strong>A:</strong> You must complete all 5 sections (<code>/front/applicant/profile/edit/{type}</code>): Personal (<code>pi</code>), Contact (<code>ci</code>), Education (<code>eb</code>), Guardian (<code>lg</code>), and Attachments (<code>at</code>). Ensure both your passport photograph and signature image are uploaded in the Attachments tab.</p>
+<p><strong>Q: I paid the application fee through the bank, but my admit card button is not active. What should I do?</strong><br />
+<strong>A:</strong> Bank counter payments require manual posting by the Accounts Office. Once posted, or if paid via an integrated digital gateway, the Admit Card download button activates automatically under <strong>My Applications</strong>.</p>
+<hr />
+<h3 id="42-for-students">4.2 For Students<a href="#42-for-students" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p><strong>Q: Where can I view my semester results on the Student Portal?</strong><br />
+<strong>A:</strong> Results are displayed inside your <strong>Profile</strong> under the <strong>Results tab (<code>/front/student/profile?type=r</code>)</strong>. There is no standalone <code>/front/student/result</code> route. The Results tab displays course-by-course Letter Grades (LG), Grade Points (GP), calculated SGPA, and batch ranking once officially published.</p>
+<p><strong>Q: Why cannot I see my class routine on the Student Portal?</strong><br />
+<strong>A:</strong> Routines are generated dynamically based on your registered courses and assigned section. If you have not completed semester registration, or if your registration is on hold for financial clearance, your routine will appear blank.</p>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_03_student_routine.png</span>
+  </div>
+  <a href="screenshots/02_03_student_routine.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_03_student_routine.png" alt="Figure 2.3: Student Weekly Class Routine" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.3: Student Weekly Class Routine:</strong> Personal weekly course routine grid: course codes, faculty instructors, and room allocations.</figcaption>
+</figure>
+
+<p><strong>Q: Can I pay my 2nd installment before my 1st installment?</strong><br />
+<strong>A:</strong> No. EasyMate ERP strictly enforces sequential payment posting in code (<code>InvoicesController@posting_store</code>). Installment 1 must be cleared before the system allows payment posting for Installment 2.</p>
+<p><strong>Q: Can I apply for an Improvement exam in a lab course?</strong><br />
+<strong>A:</strong> No. Under university policy verified in code (<code>prepareCourses</code>), only <strong>Theory</strong> courses where your earned grade was <strong>$B-$ ($GP \le 2.75$) or lower</strong> qualify for improvement. Sessional and lab courses cannot be improved.</p>
+<p><strong>Q: I retook a failed course and received an A. Will the previous F grade lower my CGPA?</strong><br />
+<strong>A:</strong> No. EasyMate ERP uses the <strong>Best Attempt Rule</strong> (<code>app/Student.php</code>). When calculating your Cumulative CGPA, the system automatically selects your highest grade ($A$, $GP = 3.75$) and excludes the earlier failed grade point from the cumulative calculation.</p>
+<hr />
+<h3 id="43-for-teachers-faculty-members">4.3 For Teachers / Faculty Members<a href="#43-for-teachers-faculty-members" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p><strong>Q: I logged in, but I cannot find my assigned course in the marks entry list.</strong><br />
+<strong>A:</strong> Marks entry access requires that your user account is mapped as an active <strong>Examiner</strong> for that course and section in <strong>Class Schedule → Course Offer</strong> (<code>courseoffers.index</code>). Contact your Department Head or Schedule Admin to verify examiner assignment.</p>
+<p><strong>Q: I submitted marks for my course, but I discovered an error. Can I edit them?</strong><br />
+<strong>A:</strong> Once you click <strong>Submit</strong>, your marks entry is frozen (<code>Submission</code> record created). To make corrections prior to Controller approval, request the <strong>System Administrator</strong> to execute an administrative <strong>Undo</strong> in <strong>Exam → Marks → Undo</strong> (<code>marks.undo</code>).</p>
+<p><strong>Q: What is the difference between marking Absent (<code>a</code>) versus 0 marks?</strong><br />
+<strong>A:</strong> Marking <code>a</code> (Absent) documents that the candidate was physically absent from the examination hall, generating accurate attendance gazettes and distinguishing absenteeism from academic failure.</p>
+<hr />
+<h3 id="44-for-department-heads">4.4 For Department Heads<a href="#44-for-department-heads" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p><strong>Q: A student missed the auto-registration deadline due to medical leave. How can we register them?</strong><br />
+<strong>A:</strong> When auto-registration is complete, the student record remains flagged <code>manual = 1</code>. Academic Office staff can perform a <strong>Manual Registration</strong> under <strong>Academic → Registrations → Registrations → Create</strong> (<code>registrations.create</code>), selecting the approved courses and sections.</p>
+<p><strong>Q: How do I verify whether all faculty members in my department have submitted their semester marks?</strong><br />
+<strong>A:</strong> In <strong>Exam → Marks</strong>, filter by your department's program and session. Rows lacking a submission badge indicate pending submissions.</p>
+<hr />
+<h3 id="45-for-admission-officers">4.5 For Admission Officers<a href="#45-for-admission-officers" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p><strong>Q: The Education Board API timed out during applicant registration. How is the applicant handled?</strong><br />
+<strong>A:</strong> When the Teletalk API and fallback scraper both time out, the system registers the applicant with flag <code>board_data_manual_pending_verification = 1</code>. The applicant can log in, but the Admission Officer must manually inspect physical certificates in <code>applicants.show</code> before approving enrollment transfer.</p>
+<p><strong>Q: When should an applicant be transferred to a student record?</strong><br />
+<strong>A:</strong> Only after the applicant has: (1) cleared application fees, (2) met all eligibility rules, and (3) submitted admission fees. Transferring creates a permanent <code>Student</code> record (<code>applicants.transfer</code>).</p>
+<hr />
+<h3 id="46-for-academic-office-registrar-staff">4.6 For Academic Office / Registrar Staff<a href="#46-for-academic-office-registrar-staff" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p><strong>Q: Why did auto-registration fail for a student with "Payment is not clear"?</strong><br />
+<strong>A:</strong> EasyMate ERP checks financial clearance via <code>accountClearUpto()</code>. If the student has unpaid tuition or fee balances from any prior semester, auto-registration terminates. The student must settle outstanding dues with Accounts before registration can proceed.</p>
+<p><strong>Q: A student wants a Final Transcript, but the system only allows a Partial Transcript. Why?</strong><br />
+<strong>A:</strong> Final Transcripts (<code>transcripts.download.final</code>) are restricted to graduates whose status is flagged as <strong>Completed</strong> (<code>completed = 1</code>). Verify that all syllabus credit hours are satisfied, no incomplete retakes remain, and that the Academic Office has formally updated their status to completed.</p>
+<hr />
+<h3 id="47-for-accounts-officers">4.7 For Accounts Officers<a href="#47-for-accounts-officers" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p><strong>Q: A student qualifies for both a Merit Scholarship (25%) and a Sibling Discount (20%). Does the system combine them into 45%?</strong><br />
+<strong>A:</strong> No. EasyMate ERP enforces the policy that waivers do not stack. The <code>WaiverCalculator</code> compares auto-waivers against manual waivers and awards whichever percentage is <strong>higher</strong> (in this scenario, 25%).</p>
+<p><strong>Q: How do we record a bank payment made via a bank deposit slip?</strong><br />
+<strong>A:</strong> Navigate to <strong>Accounts → Invoices → Posting</strong> (<code>invoices.posting</code>). Enter invoice number, bank branch, payment date, and transaction reference. Sequential installment rules apply.</p>
+<hr />
+<h3 id="48-for-examination-controllers">4.8 For Examination Controllers<a href="#48-for-examination-controllers" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p><strong>Q: Why does the system display "Result is not ready to be published!"?</strong><br />
+<strong>A:</strong> EasyMate ERP enforces that <strong>100% of all courses and sections</strong> in that program and semester have completed both teacher submission and Controller approval (<code>Submission::checkApproval</code>). If even one section lacks approval, publishing is halted.</p>
+<p><strong>Q: How does the system determine batch ranking?</strong><br />
+<strong>A:</strong> Ranking is calculated among regular intake cohort students, ordered first by <strong>SGPA descending</strong>, and ties broken by <strong>Total Marks obtained descending</strong>.</p>
+<hr />
+<h3 id="49-for-system-administrators">4.9 For System Administrators<a href="#49-for-system-administrators" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p><strong>Q: How do we initiate a new academic semester in EasyMate ERP?</strong><br />
+<strong>A:</strong> Configure Setting ID 1 (<code>Current Exam Session</code>) in <strong>Administration → Settings</strong>. Update Registration Start/End dates (Settings 2 &amp; 3), installment payment deadlines (Settings 4, 5, 14), and admission windows.</p>
+<p><strong>Q: Can we reverse an erroneous result publication?</strong><br />
+<strong>A:</strong> Yes, but only with System Administrator authorization. In <strong>Exam → Marks → Undo</strong> (<code>marks.undo</code>), select the session, program, semester, and course. Executing Undo removes approval and submission records, sets <code>Result.published = 0</code>, and reopens marks entry for the instructor.</p>
+
+        <div class="chapter-nav-footer">
+  <a href="04-cross-module-workflows.html" class="chapter-nav-card prev">
+    <span class="chapter-nav-direction">← Previous Chapter</span>
+    <span class="chapter-nav-title">04 — Cross-Module Workflows</span>
+  </a>
+  <a href="06-screenshots-checklist.html" class="chapter-nav-card next">
+    <span class="chapter-nav-direction">Next Chapter →</span>
+    <span class="chapter-nav-title">06 — Screenshots Checklist</span>
+  </a>
+</div>
+
+
+      </article>
+    </main>
+
+    <!-- Right TOC Sidebar -->
+    <aside class="docs-toc">
+      <div class="toc-title">
+        <span>On This Page</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+      </div>
+      <ul class="toc-list">
+  <li class="toc-item level-2"><a href="#easymate-erp-academic-terminology-grading-rules-formulas-operational-faq" class="toc-link" title="EasyMate ERP — Academic Terminology, Grading Rules, Formulas &amp;amp; Operational FAQ">EasyMate ERP — Academic Terminology, Grading Rules, Formulas &amp;amp; Operational FAQ</a></li>
+  <li class="toc-item level-2"><a href="#1-academic-erp-glossary" class="toc-link" title="1. Academic &amp;amp; ERP Glossary">1. Academic &amp;amp; ERP Glossary</a></li>
+  <li class="toc-item level-3"><a href="#general-academic-architecture" class="toc-link" title="General &amp;amp; Academic Architecture">General &amp;amp; Academic Architecture</a></li>
+  <li class="toc-item level-3"><a href="#accounts-financial-terminology" class="toc-link" title="Accounts &amp;amp; Financial Terminology">Accounts &amp;amp; Financial Terminology</a></li>
+  <li class="toc-item level-3"><a href="#examination-grading-terminology" class="toc-link" title="Examination &amp;amp; Grading Terminology">Examination &amp;amp; Grading Terminology</a></li>
+  <li class="toc-item level-2"><a href="#2-grading-system-specification-database-seed-baseline-formula-reference" class="toc-link" title="2. Grading System Specification (Database Seed Baseline &amp;amp; Formula Reference)">2. Grading System Specification (Database Seed Baseline &amp;amp; Formula Reference)</a></li>
+  <li class="toc-item level-3"><a href="#technical-implementation-in-code" class="toc-link" title="Technical Implementation in Code">Technical Implementation in Code</a></li>
+  <li class="toc-item level-3"><a href="#seeded-grade-table-baseline-databaseseedsgradestableseederphp" class="toc-link" title="Seeded Grade Table Baseline (database/seeds/GradesTableSeeder.php)">Seeded Grade Table Baseline (database/seeds/GradesTableSeeder.php)</a></li>
+  <li class="toc-item level-3"><a href="#assessment-attendance-flags" class="toc-link" title="Assessment Attendance Flags">Assessment Attendance Flags</a></li>
+  <li class="toc-item level-2"><a href="#3-mathematical-models-erp-calculation-formulas" class="toc-link" title="3. Mathematical Models &amp;amp; ERP Calculation Formulas">3. Mathematical Models &amp;amp; ERP Calculation Formulas</a></li>
+  <li class="toc-item level-3"><a href="#31-semester-grade-point-average-sgpa" class="toc-link" title="3.1 Semester Grade Point Average (SGPA)">3.1 Semester Grade Point Average (SGPA)</a></li>
+  <li class="toc-item level-3"><a href="#32-cumulative-grade-point-average-cgpa" class="toc-link" title="3.2 Cumulative Grade Point Average (CGPA)">3.2 Cumulative Grade Point Average (CGPA)</a></li>
+  <li class="toc-item level-3"><a href="#33-tuition-billing-invoice-calculation" class="toc-link" title="3.3 Tuition Billing &amp;amp; Invoice Calculation">3.3 Tuition Billing &amp;amp; Invoice Calculation</a></li>
+  <li class="toc-item level-3"><a href="#34-student-financial-clearance-check" class="toc-link" title="3.4 Student Financial Clearance Check">3.4 Student Financial Clearance Check</a></li>
+  <li class="toc-item level-2"><a href="#4-frequently-asked-questions-faq" class="toc-link" title="4. Frequently Asked Questions (FAQ)">4. Frequently Asked Questions (FAQ)</a></li>
+  <li class="toc-item level-3"><a href="#41-for-applicants-prospective-students" class="toc-link" title="4.1 For Applicants &amp;amp; Prospective Students">4.1 For Applicants &amp;amp; Prospective Students</a></li>
+  <li class="toc-item level-3"><a href="#42-for-students" class="toc-link" title="4.2 For Students">4.2 For Students</a></li>
+  <li class="toc-item level-3"><a href="#43-for-teachers-faculty-members" class="toc-link" title="4.3 For Teachers / Faculty Members">4.3 For Teachers / Faculty Members</a></li>
+  <li class="toc-item level-3"><a href="#44-for-department-heads" class="toc-link" title="4.4 For Department Heads">4.4 For Department Heads</a></li>
+  <li class="toc-item level-3"><a href="#45-for-admission-officers" class="toc-link" title="4.5 For Admission Officers">4.5 For Admission Officers</a></li>
+  <li class="toc-item level-3"><a href="#46-for-academic-office-registrar-staff" class="toc-link" title="4.6 For Academic Office / Registrar Staff">4.6 For Academic Office / Registrar Staff</a></li>
+  <li class="toc-item level-3"><a href="#47-for-accounts-officers" class="toc-link" title="4.7 For Accounts Officers">4.7 For Accounts Officers</a></li>
+  <li class="toc-item level-3"><a href="#48-for-examination-controllers" class="toc-link" title="4.8 For Examination Controllers">4.8 For Examination Controllers</a></li>
+  <li class="toc-item level-3"><a href="#49-for-system-administrators" class="toc-link" title="4.9 For System Administrators">4.9 For System Administrators</a></li>
+</ul>
+
+
+      <div class="toc-actions">
+        <a href="#top" class="toc-action-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          Back to top
+        </a>
+        <a href="#" class="toc-action-link print-btn-action">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print this section
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Global Search Modal -->
+  <div class="search-modal-backdrop" id="search-modal-backdrop">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-modal-input" id="search-modal-input" placeholder="Search modules, roles, workflows, rules, FAQs..." autocomplete="off">
+        <button id="search-modal-close" style="background:none;border:none;cursor:pointer;color:var(--text-muted);padding:4px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="search-modal-results" id="search-modal-results"></div>
+      <div class="search-modal-footer">
+        <div>Navigate with <kbd>↑</kbd> <kbd>↓</kbd> and select with <kbd>Enter</kbd></div>
+        <div>Close with <kbd>Esc</kbd></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/search-index.js"></script>
+  <script src="assets/manual.js"></script>
+</body>
+</html>

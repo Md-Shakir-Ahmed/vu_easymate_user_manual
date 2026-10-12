@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02 — Student Lifecycle — EasyMate ERP Manual | Varendra University</title>
+  <meta name="description" content="Varendra University EasyMate ERP User Manual & Operational Reference: Student Lifecycle, Cross-Module Workflows, Roles & Technical Verification.">
+  <link rel="stylesheet" href="assets/manual.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e3a8a'><path d='M12 2L1 7l11 5 9-4.09V17h2V7L12 2z'/></svg>">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <a href="index.html" class="brand-wrapper">
+        <div class="brand-logo">VU</div>
+        <div class="brand-text">
+          <div class="brand-title">
+            EasyMate ERP
+            <span class="version-tag">v1.0</span>
+          </div>
+          <div class="brand-subtitle">Varendra University • Academic ERP Manual</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="header-actions">
+      <div class="search-trigger" role="button" tabindex="0" title="Search documentation (Ctrl+K)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <span>Search manual...</span>
+        <kbd>Ctrl+K</kbd>
+      </div>
+
+      <button class="header-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        Dark
+      </button>
+
+      <button class="header-btn print-btn-action" title="Print this manual or Export to PDF">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print / PDF
+      </button>
+    </div>
+  </header>
+
+  <!-- Docs Layout -->
+  <div class="docs-layout">
+
+    <!-- Left Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-search-box">
+        <input type="text" id="sidebar-filter-input" class="sidebar-search-input" placeholder="Quick filter menu...">
+      </div>
+      <nav class="sidebar-nav">
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Getting Started</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="index.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📌</span> Overview &amp; Scope</span>
+          <span class="nav-badge">Start Here</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Modules &amp; Specifications</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="01-functional-inventory.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📋</span> 01. Functional Inventory</span>
+          <span class="nav-badge">9 Modules</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="02-student-lifecycle.html" class="sidebar-nav-link active">
+          <span class="nav-label"><span class="nav-icon">🔄</span> 02. Student Lifecycle</span>
+          <span class="nav-badge">8 Stages</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="03-role-based-guides.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">👥</span> 03. Role-Based Guides</span>
+          <span class="nav-badge">9 Roles</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="04-cross-module-workflows.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">⚡</span> 04. Cross-Module Workflows</span>
+          <span class="nav-badge">8 Workflows</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Reference &amp; Audit</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="05-glossary-and-faq.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📖</span> 05. Glossary &amp; FAQ</span>
+          <span class="nav-badge">Reference</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="06-screenshots-checklist.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📸</span> 06. Screenshots Checklist</span>
+          <span class="nav-badge">40 Captured</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="verification-report.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">🛡️</span> 07. Verification Report</span>
+          <span class="nav-badge">Code Audit</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Complete Editions</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="user-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📑</span> Complete User Manual</span>
+          <span class="nav-badge">Master</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">All-in-One Edition</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="complete-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📚</span> Complete 8-Chapter Manual</span>
+          <span class="nav-badge">Merged</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sidebar-legend">
+    <div class="sidebar-legend-title">Verification Legend</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#10b981;"></span> <strong>[VC]</strong> Code Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> <strong>[CNV]</strong> Code Found / Not UI</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#ea580c;"></span> <strong>[PI]</strong> Partially Implemented</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#7c3aed;"></span> <strong>[VUI]</strong> Running UI Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#0284c7;"></span> <strong>[RDC]</strong> Requires DB / Policy</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span> <strong>[NF]</strong> Not Found / Excluded</div>
+  </div>
+</nav>
+
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="docs-main">
+      <article class="docs-article">
+        
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">EasyMate ERP</a>
+          <span class="separator">/</span>
+          <a href="index.html">User Manual</a>
+          <span class="separator">/</span>
+          <span class="current">02. Student Lifecycle</span>
+        </nav>
+
+        <div class="doc-header-banner">
+          <div class="doc-meta-row">
+            <span class="doc-meta-pill">🏛️ Varendra University</span>
+            <span class="doc-meta-pill">📅 Published: October 2026</span>
+            <span class="doc-meta-pill">🛡️ Live Docker System Verified</span>
+            <span class="doc-meta-pill">⚡ Laravel Academic SIS</span>
+          </div>
+        </div>
+
+        <h1 id="02-student-lifecycle">02 — Student Lifecycle (শিক্ষার্থীর পূর্ণাঙ্গ জীবনচক্র)<a href="#02-student-lifecycle" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h1>
+<h2 id="easymate-erp">EasyMate ERP — ভর্তি আবেদন থেকে সমাবর্তন পর্যন্ত ধাপভিত্তিক নির্দেশিকা<a href="#easymate-erp" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="callout callout-info">
+  <div class="callout-title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+    Operational Note
+  </div>
+  <p><strong>নন-টেকনিক্যাল গাইড:</strong> বরেন্দ্র বিশ্ববিদ্যালয়ে একজন শিক্ষার্থী ভর্তি আবেদন করা থেকে শুরু করে ক্লাস, পরীক্ষা, ফলাফল এবং সার্টিফিকেট পাওয়া পর্যন্ত প্রতিটি ধাপ খুব সহজ বাংলায় এবং স্ক্রিনশট সহ নিচে বর্ণনা করা হলো।</p>
+</div>
+<hr />
+<h2 id="student-lifecycle-overview">পূর্ণাঙ্গ জীবনচক্রের চিত্ররূপ (Student Lifecycle Overview)<a href="#student-lifecycle-overview" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="code-wrapper diagram-wrapper">
+  <div class="code-header">
+    <span class="code-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> ASCII Workflow & Architecture Diagram</span>
+    <button class="code-copy-btn" title="Copy to clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      Copy
+    </button>
+  </div>
+  <pre><code>┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│     ধাপ ১       │────▶│     ধাপ ২       │────▶│     ধাপ ৩       │────▶│     ধাপ ৪       │
+│  অনলাইন ভর্তি   │     │  বোর্ড যাচাই ও  │     │ সিলেবাস ও কোর্স │     │  সেমিস্টার কোর্স │
+│     আবেদন       │     │ ভর্তি পরীক্ষা   │     │    কনফিগারেশন   │     │   রেজিস্ট্রেশন  │
+└─────────────────┘     └─────────────────┘     └─────────────────┘     └─────────────────┘
+         │
+         ▼
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│     ধাপ ৫       │────▶│     ধাপ ৬       │────▶│     ধাপ ৭       │────▶│     ধাপ ৮       │
+│ টিউশন ফি ও কিস্তি│     │ ক্লাস রুটিন ও   │     │ পরীক্ষা, মার্কস │     │ গ্র্যাজুয়েশন ও  │
+│  পরিশোধ নিষ্পত্তি│     │ নিয়মিত ক্লাস    │     │ এন্ট্রি ও রেজাল্ট │     │ সার্টিফিকেট অর্জন│
+└─────────────────┘     └─────────────────┘     └─────────────────┘     └─────────────────┘
+</code></pre>
+</div>
+<hr />
+<h2 id="stage-1-applying-for-admission">ধাপ ১: অনলাইনে ভর্তির আবেদন (Stage 1: Applying for Admission)<a href="#stage-1-applying-for-admission" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_1">কে সম্পাদন করবেন?<a href="#_1" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>ভর্তিচ্ছু শিক্ষার্থী (Applicant):</strong> ঘরে বসে বা যে কোনো স্থান থেকে অনলাইনে আবেদন করবেন।</li>
+<li><strong>সিস্টেম (EasyMate API):</strong> শিক্ষা বোর্ডের সার্ভার থেকে স্বয়ংক্রিয়ভাবে প্রার্থীর ফলাফল যাচাই করবে।</li>
+</ul>
+<h3 id="_2">কীভাবে কাজ করবেন?<a href="#_2" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<h4 id="_3">১.১ আবেদন পোর্টালে প্রবেশ<a href="#_3" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ul>
+<li>ব্রাউজারে <code>http://localhost:8083/front/applicant/home</code> ঠিকানায় যান।</li>
+<li>হোম পেজে চলমান সেমিস্টার (যেমন: <code>Summer-2026</code>), প্রোগ্রামসমূহ এবং টিউশন ফি এর বিবরণ দেখা যাবে।</li>
+</ul>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/01_01_applicant_portal_home.png</span>
+  </div>
+  <a href="screenshots/01_01_applicant_portal_home.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/01_01_applicant_portal_home.png" alt="Public Applicant Portal Home" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.1:</strong> পাবলিক অ্যাপ্লিকেন্ট পোর্টাল — নতুন আবেদনকারী এখান থেকে সাইন-আপ ও লগইন করতে পারেন।</figcaption>
+</figure>
+
+<h4 id="-registration">১.২ আবেদনকারী হিসেবে সাইন-আপ (Registration)<a href="#-registration" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li><strong>New Applicant (Sign Up)</strong> অপশনে যান।</li>
+<li>প্রার্থীর এসএসসি ও এইচএসসি পরীক্ষার বোর্ড, রোল, রেজিস্ট্রেশন নম্বর, পাসের সন, মোবাইল নম্বর এবং পাসওয়ার্ড ইনপুট দিন।</li>
+<li><strong>Register</strong> বাটনে ক্লিক করুন।</li>
+<li>সিস্টেম সাথে সাথে শিক্ষা বোর্ডের ডাটাবেজ থেকে প্রার্থীর নাম, পিতা ও মাতার নাম, জন্মতারিখ এবং জিপিএ স্বয়ংক্রিয়ভাবে নিয়ে আসবে।</li>
+</ol>
+<h4 id="complete-profile">১.৩ প্রোফাইল সম্পন্ন করা (Complete Profile)<a href="#complete-profile" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<p>প্রোফাইলকে ৫টি ভাগে পূরণ করতে হয়:
+1. <strong>Personal Information (ব্যক্তিগত তথ্য):</strong> ধর্ম, রক্তেল গ্রুপ, জাতীয়তা ইত্যাদি।
+2. <strong>Contact Information (যোগাযোগের ঠিকানা):</strong> বর্তমান ও স্থায়ী ঠিকানা।
+3. <strong>Educational Background (শিক্ষাগত যোগ্যতা):</strong> স্কুল/কলেজের নাম।
+4. <strong>Local Guardian (স্থানীয় অভিভাবক):</strong> অভিভাবকের নাম, পেশা ও ফোন নম্বর।
+5. <strong>Attachments (কাগজপত্র ও ছবি):</strong> পাসপোর্ট সাইজের ছবি এবং স্বাক্ষর আপলোড।</p>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/01_03_applicant_profile.png</span>
+  </div>
+  <a href="screenshots/01_03_applicant_profile.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/01_03_applicant_profile.png" alt="Applicant Profile & Education Details" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.2:</strong> অ্যাপ্লিকেন্ট প্রোফাইল ইন্টারফেস — শিক্ষা বোর্ডের ভেরিফাইড ডাটা ও প্রোফাইল প্রগ্রেস বার।</figcaption>
+</figure>
+
+<h4 id="_4">১.৪ প্রোগ্রামে আবেদন ও ফি জমা<a href="#_4" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ul>
+<li><strong>My Applications → Create</strong> অপশনে গিয়ে কাঙ্ক্ষিত ডিগ্রি প্রোগ্রাম সিলেক্ট করে আবেদন সম্পন্ন করুন এবং আবেদন ফি পরিশোধ করুন।</li>
+<li>ভর্তি পরীক্ষার তারিখ ঘোষিত হলে <strong>Admit Card</strong> ডাউনলোড করে প্রিন্ট নিন।</li>
+</ul>
+<hr />
+<h2 id="stage-2-admission-enrollment">ধাপ ২: ভর্তি যাচাই ও শিক্ষার্থী হিসেবে অন্তর্ভুক্তি (Stage 2: Admission &amp; Enrollment)<a href="#stage-2-admission-enrollment" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_5">কে সম্পাদন করবেন?<a href="#_5" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>ভর্তি শাখা (Admission Officer):</strong> আবেদনপত্র ও কাগজপত্র যাচাই এবং মেধা তালিকা প্রস্তুতকরণ।</li>
+<li><strong>রেজিস্ট্রার শাখা:</strong> চূড়ান্তভাবে নির্বাচিত প্রার্থীকে স্থায়ী রোল নম্বর প্রদান।</li>
+</ul>
+<h3 id="_6">কীভাবে কাজ করবেন?<a href="#_6" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<h4 id="_7">২.১ ভর্তি পরীক্ষার শিডিউল কনফিগারেশন<a href="#_7" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ul>
+<li>ভর্তি অফিসার <strong>Admission → Admission Test Configs</strong> থেকে পরীক্ষার তারিখ, সময় ও ভেন্যু নির্ধারণ করেন।</li>
+</ul>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/04_01_admissiontestconfigs.png</span>
+  </div>
+  <a href="screenshots/04_01_admissiontestconfigs.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/04_01_admissiontestconfigs.png" alt="Admission Test Configurations" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.3:</strong> ভর্তি পরীক্ষার কনফিগারেশন স্ক্রিন — পরীক্ষা ও প্রবেশপত্র ডাউনলোডের সময়সীমা এখান থেকেই নির্ধারিত হয়।</figcaption>
+</figure>
+
+<h4 id="merit-list">২.২ আবেদনপত্র অডিট ও মেধা তালিকা (Merit List)<a href="#merit-list" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li><strong>Admission → Applicants</strong> মেনুতে গিয়ে আবেদনকারীদের ফি পেমেন্ট ও বোর্ড ভেরিফিকেশন স্ট্যাটাস যাচাই করা হয়।</li>
+<li>ভর্তি পরীক্ষার নম্বর ও এসএসসি/এইচএসসি জিপিএ সমন্বয় করে স্বয়ংক্রিয়ভাবে মেধা তালিকা (Merit List) তৈরি করা হয়।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/04_03_applicants.png</span>
+  </div>
+  <a href="screenshots/04_03_applicants.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/04_03_applicants.png" alt="Applicants Master Datatable" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.4:</strong> আবেদনকারীদের মাস্টার তালিকা — প্রার্থী ফি দিয়েছে কি না এবং যোগ্যতা যাচাইয়ের সেন্ট্রাল টেবিল।</figcaption>
+</figure>
+
+<h4 id="transfer-to-student">২.৩ স্থায়ী শিক্ষার্থী হিসেবে রূপান্তর (Transfer to Student)<a href="#transfer-to-student" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ul>
+<li>প্রার্থী ভর্তি ফি জমা দিলে <strong>Admission → Transfer</strong> এর মাধ্যমে তাকে <code>Applicant</code> থেকে স্থায়ী <code>Student</code> হিসেবে সিস্টেমে অন্তর্ভুক্ত করা হয়।</li>
+<li>তাকে বিশ্ববিদ্যালয়ের অফিশিয়াল <strong>Roll Number</strong> (যেমন: <code>193011001</code>) এবং ব্যাচ নম্বর বরাদ্দ দেওয়া হয়।</li>
+</ul>
+<hr />
+<h2 id="stage-3-program-syllabus-setup">ধাপ ৩: বিভাগ, সিলেবাস ও কোর্স সেটআপ (Stage 3: Program &amp; Syllabus Setup)<a href="#stage-3-program-syllabus-setup" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_8">কে সম্পাদন করবেন?<a href="#_8" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>সিস্টেম অ্যাডমিন:</strong> অনুষদ, বিভাগ ও প্রোগ্রাম তৈরি।</li>
+<li><strong>অ্যাকাডেমিক শাখা:</strong> প্রোগ্রামের সিলেবাস, কোর্সের ক্রেডিট ও মূল্যায়ন পদ্ধতি যুক্ত করা।</li>
+</ul>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/03_04_programs.png</span>
+  </div>
+  <a href="screenshots/03_04_programs.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/03_04_programs.png" alt="Academic Programs Directory" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.5:</strong> ডিগ্রি প্রোগ্রাম ক্যাটালগ — আন্ডারগ্র্যাজুয়েট ও মাস্টার্স প্রোগ্রামের তালিকা ও সেমিস্টার সংখ্যা।</figcaption>
+</figure>
+
+<h4 id="_9">৩.১ কোর্স ও সিলেবাস ম্যাপিং<a href="#_9" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ul>
+<li><strong>Academic → Courses:</strong> প্রতিটি কোর্সের কোড, ক্রেডিট (যেমন: ৩.০০ ক্রেডিট) এবং থিওরি নাকি ল্যাব তা নির্ধারণ করা হয়।</li>
+<li><strong>Academic → Syllabuses:</strong> কোন সেমিস্টারে কোন কোন কোর্স পড়ানো হবে তা সেমিস্টার ১ থেকে ৮ পর্যন্ত সাজিয়ে দেওয়া হয়।</li>
+</ul>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/05_05_syllabuses.png</span>
+  </div>
+  <a href="screenshots/05_05_syllabuses.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/05_05_syllabuses.png" alt="Program Syllabuses Master" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.6:</strong> সিলেবাস মাস্টার স্ক্রিন — ব্যাচ ও সেশন অনুযায়ী কারিকুলাম ও মোট ক্রেডিট নির্ধারণ।</figcaption>
+</figure>
+
+<hr />
+<h2 id="stage-4-semester-course-registration">ধাপ ৪: সেমিস্টার কোর্স রেজিস্ট্রেশন (Stage 4: Semester Course Registration)<a href="#stage-4-semester-course-registration" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_10">কে সম্পাদন করবেন?<a href="#_10" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>অ্যাকাডেমিক শাখা:</strong> ব্যাচভিত্তিক স্বয়ংক্রিয় কোর্স রেজিস্ট্রেশন (Auto-Registration)।</li>
+<li><strong>শিক্ষার্থী:</strong> রিটেক বা ইমপ্রুভমেন্ট কোর্সের জন্য নিজের পোর্টাল থেকে আবেদন।</li>
+</ul>
+<h3 id="_11">কীভাবে কাজ করবেন?<a href="#_11" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>অটো-রেজিস্ট্রেশন ইঞ্জিন:</strong> নতুন সেমিস্টার শুরুর আগে সিস্টেম সকল নিয়মিত ছাত্র-ছাত্রীকে স্বয়ংক্রিয়ভাবে পরবর্তী সেমিস্টারে প্রমোট করে তাদের সিলেবাস অনুযায়ী কোর্স এনরোল করে দেয়।</li>
+<li><strong>৫০% ক্রেডিট পাসের শর্ত:</strong> পূর্ববর্তী সেমিস্টারের অন্তত ৫০% ক্রেডিট পাস না করলে ছাত্র প্রমোট হয় না, সে আগের সেমিস্টারেই থেকে যায় (Readmission)।</li>
+<li><strong>ম্যানুয়াল রেজিস্ট্রেশন:</strong> কোনো শিক্ষার্থী ছুটি থেকে ফিরলে বা বিশেষ কারণে পিছিয়ে থাকলে <strong>Academic → Registrations → Create</strong> থেকে ম্যানুয়ালি কোর্স সিলেক্ট করে দেওয়া যায়।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/05_08_registrations.png</span>
+  </div>
+  <a href="screenshots/05_08_registrations.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/05_08_registrations.png" alt="Semester Registrations Datatable" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.7:</strong> সেমিস্টার রেজিস্ট্রেশন ডাটাটেবিল — সেশন ভিত্তিক সকল শিক্ষার্থীর কোর্স এনরোলমেন্ট ও সেকশন বিভাজন।</figcaption>
+</figure>
+
+<hr />
+<h2 id="stage-5-fee-invoicing-payment">ধাপ ৫: টিউশন ফি নির্ধারণ, ইনভয়েস ও পেমেন্ট (Stage 5: Fee Invoicing &amp; Payment)<a href="#stage-5-fee-invoicing-payment" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_12">কে সম্পাদন করবেন?<a href="#_12" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>হিসাব শাখা (Accounts Officer):</strong> ফি ইনভয়েস তৈরি, স্কলারশিপ/ওয়েভার সমন্বয় এবং ব্যাংক পেমেন্ট পোস্টিং।</li>
+<li><strong>শিক্ষার্থী:</strong> ব্যাংকে কিস্তির টাকা জমা দেওয়া।</li>
+</ul>
+<h3 id="_13">ফি হিসাব করার সহজ নিয়ম<a href="#_13" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>নিয়মিত টিউশন ফি:</strong> প্রতি ক্রেডিটের ফি × মোট ক্রেডিট সংখ্যা (যেমন: ৩ ক্রেডিট × ২,৫০০ টাকা = ৭,৫০০ টাকা)।</li>
+<li><strong>রিটেক কোর্স ফি:</strong> নিয়মিত ফির ৫০%।</li>
+<li><strong>ইমপ্রুভমেন্ট কোর্স ফি:</strong> নিয়মিত ফির ২৫%।</li>
+<li><strong>স্কলারশিপ/ওয়েভার:</strong> জিপিএ বা কোটা অনুযায়ী টিউশন ফি থেকে ডিসকাউন্ট বাদ দিয়ে নেট প্রদেয় টাকা নির্ধারিত হয়।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/06_03_invoices.png</span>
+  </div>
+  <a href="screenshots/06_03_invoices.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/06_03_invoices.png" alt="Invoices Master Datatable" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.8:</strong> ইনভয়েস মাস্টার স্ক্রিন — কিস্তি অনুযায়ী মোট টাকা ও পেমেন্ট স্ট্যাটাস।</figcaption>
+</figure>
+
+<h4 id="sequential-installments">কিস্তি অনুযায়ী ফি জমা (Sequential Installments)<a href="#sequential-installments" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ul>
+<li>সিস্টেম প্রতিটি সেমিস্টার ফি-কে ২টি বা ৩টি কিস্তিতে ভাগ করে দেয়।</li>
+<li>⚠️ <strong>জরুরি নিয়ম:</strong> ১ম কিস্তির টাকা ব্যাংকে জমা না দেওয়া পর্যন্ত ২য় কিস্তির টাকা সফটওয়্যারে পোস্টিং নেওয়া সম্ভব নয়।</li>
+</ul>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_04_student_invoices.png</span>
+  </div>
+  <a href="screenshots/02_04_student_invoices.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_04_student_invoices.png" alt="Student Invoices & Payment Breakdown" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.9:</strong> স্টুডেন্ট পোর্টালে পেমেন্ট বিবরণ — শিক্ষার্থী নিজেই দেখতে পারে কত টাকা পরিশোধিত এবং কত টাকা বকেয়া।</figcaption>
+</figure>
+
+<hr />
+<h2 id="stage-6-classes-teaching">ধাপ ৬: ক্লাস রুটিন ও পাঠদান (Stage 6: Classes &amp; Teaching)<a href="#stage-6-classes-teaching" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_14">কে সম্পাদন করবেন?<a href="#_14" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>ডিপার্টমেন্ট শিডিউলার:</strong> রুম, শিক্ষক ও সময়সূচি মিলিয়ে রুটিন তৈরি।</li>
+<li><strong>শিক্ষক ও শিক্ষার্থী:</strong> যার যার পোর্টালে সাপ্তাহিক ক্লাস রুটিন দেখা।</li>
+</ul>
+<h4 id="_15">রুটিন তৈরির নিয়ম ও কনফ্লিক্ট চেকার<a href="#_15" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ul>
+<li><strong>Class Schedule → Schedules</strong> থেকে রবি-বৃহস্পতিবারের সময়সূচিতে শিক্ষক ও রুম বসানো হয়।</li>
+<li>যদি একই সময়ে কোনো শিক্ষককে দুটি ক্লাসে বা একই রুমে দুটি কোর্স দেওয়া হয়, সিস্টেম সাথে সাথে কনফ্লিক্ট অ্যালার্ট দিয়ে আটকে দেয়।</li>
+<li>রুটিন ফাইনাল হলে <strong>Publish</strong> করার সাথে সাথে শিক্ষক ও শিক্ষার্থীর পোর্টালে তা চলে যায়।</li>
+</ul>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_03_student_routine.png</span>
+  </div>
+  <a href="screenshots/02_03_student_routine.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_03_student_routine.png" alt="Student Weekly Class Routine" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.10:</strong> স্টুডেন্ট পোর্টালে সাপ্তাহিক রুটিন — দিন অনুযায়ী কোর্সের কোড, শিক্ষকের নাম ও রুম নম্বর।</figcaption>
+</figure>
+
+<hr />
+<h2 id="stage-7-examination-results">ধাপ ৭: পরীক্ষা, মূল্যায়ন ও ফলাফল প্রকাশ (Stage 7: Examination &amp; Results)<a href="#stage-7-examination-results" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_16">কে সম্পাদন করবেন?<a href="#_16" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>কোর্স শিক্ষক:</strong> ক্লাসের উপস্থিতি, ক্লাস টেস্ট, মিডটার্ম ও ফাইনাল পরীক্ষার নম্বর এন্ট্রি ও লক করা।</li>
+<li><strong>পরীক্ষা নিয়ন্ত্রক:</strong> নম্বর অনুমোদন (Approve) ও সেমিস্টার রেজাল্ট প্রকাশ (Publish)।</li>
+</ul>
+<h4 id="_17">৭.১ নম্বর এন্ট্রি ও অনুমোদন<a href="#_17" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>শিক্ষক <strong>Exam → Marks</strong> এ গিয়ে কোর্স সিলেক্ট করে নম্বর ইনপুট দেন এবং <strong>Submit</strong> বাটন চেপে লক করেন।</li>
+<li>পরীক্ষা নিয়ন্ত্রক <strong>Exam → Marks → Approve</strong> এ গিয়ে নম্বরগুলো ভেরিফাই করে অনুমোদন দেন।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/07_03_marks.png</span>
+  </div>
+  <a href="screenshots/07_03_marks.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/07_03_marks.png" alt="Marks Entry Sheet" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.11:</strong> মার্কস এন্ট্রি স্ক্রিন — শিক্ষক কর্তৃক মূল্যায়ন নম্বর ইনপুট ও স্বয়ংক্রিয় গ্রেড হিসাব।</figcaption>
+</figure>
+
+<h4 id="_18">৭.২ রেজাল্ট প্রকাশ ও রেজাল্ট কার্ড<a href="#_18" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>সেমিস্টারের ১০০% কোর্সের নম্বর অনুমোদন হলে পরীক্ষা নিয়ন্ত্রক <strong>Exam → Results</strong> থেকে ফলাফল প্রকাশ করেন।</li>
+<li>সাথে সাথে সকল ছাত্র-ছাত্রী তাদের নিজস্ব পোর্টালে সেমিস্টারের গ্রেড ও <strong>SGPA</strong> দেখতে পায়।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_06_student_result_card.png</span>
+  </div>
+  <a href="screenshots/02_06_student_result_card.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_06_student_result_card.png" alt="Semester Result Card & Session SGPA" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.12:</strong> স্টুডেন্ট রেজাল্ট কার্ড — প্রতিটি কোর্সের লেটার গ্রেড, গ্রেড পয়েন্ট এবং সেশন-ভিত্তিক SGPA।</figcaption>
+</figure>
+
+<hr />
+<h2 id="stage-8-graduation-documents">ধাপ ৮: গ্র্যাজুয়েশন, ক্লিয়ারেন্স ও সনদপত্র প্রদান (Stage 8: Graduation &amp; Documents)<a href="#stage-8-graduation-documents" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_19">কে সম্পাদন করবেন?<a href="#_19" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>শিক্ষার্থী:</strong> প্রয়োজনীয় সনদের জন্য অনলাইনে আবেদন।</li>
+<li><strong>হিসাব ও লাইব্রেরি শাখা:</strong> বকেয়া ফি ও বই ফেরত ক্লিয়ারেন্স প্রদান।</li>
+<li><strong>রেজিস্ট্রার শাখা:</strong> ট্রান্সক্রিপ্ট ও সার্টিফিকেট প্রিন্ট এবং প্রদান।</li>
+</ul>
+<h4 id="_20">৮.১ সনদের জন্য আবেদন ও ক্লিয়ারেন্স<a href="#_20" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>শিক্ষার্থী তার পোর্টাল থেকে <strong>Apply for Documents</strong> এ গিয়ে ট্রান্সক্রিপ্ট বা সার্টিফিকেটের জন্য আবেদন করে।</li>
+<li>ইনভয়েসের ফি পরিশোধ হলে হিসাব শাখা এবং লাইব্রেরি শাখা থেকে সিস্টেমে অনলাইন ক্লিয়ারেন্স প্রদান করা হয়।</li>
+<li>ক্লিয়ারেন্স সম্পন্ন হলে রেজিস্ট্রার শাখা থেকে অফিশিয়াল ট্রান্সক্রিপ্ট ও সার্টিফিকেট প্রিন্ট করে শিক্ষার্থীকে প্রদান করা হয়।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_07_student_document_application.png</span>
+  </div>
+  <a href="screenshots/02_07_student_document_application.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_07_student_document_application.png" alt="Figure 2.7: Student Document Applications" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.7: Student Document Applications:</strong> Self-service document applications: Transcripts, Provisional Certificates, and status tracker.</figcaption>
+</figure>
+
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/05_14_transcripts.png</span>
+  </div>
+  <a href="screenshots/05_14_transcripts.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/05_14_transcripts.png" alt="Academic Transcripts Generator" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.13:</strong> অফিশিয়াল ট্রান্সক্রিপ্ট জেনারেটর — শিক্ষার্থীর রোল দিয়ে সরাসরি অফিশিয়াল সিকিউরিটি ট্রান্সক্রিপ্ট প্রস্তুত করার উইন্ডো।</figcaption>
+</figure>
+
+<hr />
+<div class="callout callout-info">
+  <div class="callout-title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+    Operational Note
+  </div>
+  <p><strong>সারসংক্ষেপ:</strong> এইভাবে একজন ছাত্রের প্রাথমিক আবেদন থেকে শুরু করে বিশ্ববিদ্যালয়ের সমাবর্তন ও সনদপত্র প্রাপ্তি পর্যন্ত প্রতিটি ধাপ EasyMate ERP সিস্টেমে স্বচ্ছতা ও দ্রুততার সাথে পরিচালিত হয়।</p>
+</div>
+
+        <div class="chapter-nav-footer">
+  <a href="01-functional-inventory.html" class="chapter-nav-card prev">
+    <span class="chapter-nav-direction">← Previous Chapter</span>
+    <span class="chapter-nav-title">01 — Functional Inventory</span>
+  </a>
+  <a href="03-role-based-guides.html" class="chapter-nav-card next">
+    <span class="chapter-nav-direction">Next Chapter →</span>
+    <span class="chapter-nav-title">03 — Role-Based Guides</span>
+  </a>
+</div>
+
+
+      </article>
+    </main>
+
+    <!-- Right TOC Sidebar -->
+    <aside class="docs-toc">
+      <div class="toc-title">
+        <span>On This Page</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+      </div>
+      <ul class="toc-list">
+  <li class="toc-item level-2"><a href="#easymate-erp" class="toc-link" title="EasyMate ERP — ভর্তি আবেদন থেকে সমাবর্তন পর্যন্ত ধাপভিত্তিক নির্দেশিকা">EasyMate ERP — ভর্তি আবেদন থেকে সমাবর্তন পর্যন্ত ধাপভিত্তিক নির্দেশিকা</a></li>
+  <li class="toc-item level-2"><a href="#student-lifecycle-overview" class="toc-link" title="পূর্ণাঙ্গ জীবনচক্রের চিত্ররূপ (Student Lifecycle Overview)">পূর্ণাঙ্গ জীবনচক্রের চিত্ররূপ (Student Lifecycle Overview)</a></li>
+  <li class="toc-item level-2"><a href="#stage-1-applying-for-admission" class="toc-link" title="ধাপ ১: অনলাইনে ভর্তির আবেদন (Stage 1: Applying for Admission)">ধাপ ১: অনলাইনে ভর্তির আবেদন (Stage 1: Applying for Admission)</a></li>
+  <li class="toc-item level-3"><a href="#_1" class="toc-link" title="কে সম্পাদন করবেন?">কে সম্পাদন করবেন?</a></li>
+  <li class="toc-item level-3"><a href="#_2" class="toc-link" title="কীভাবে কাজ করবেন?">কীভাবে কাজ করবেন?</a></li>
+  <li class="toc-item level-2"><a href="#stage-2-admission-enrollment" class="toc-link" title="ধাপ ২: ভর্তি যাচাই ও শিক্ষার্থী হিসেবে অন্তর্ভুক্তি (Stage 2: Admission &amp;amp; Enrollment)">ধাপ ২: ভর্তি যাচাই ও শিক্ষার্থী হিসেবে অন্তর্ভুক্তি (Stage 2: Admission &amp;amp; Enrollment)</a></li>
+  <li class="toc-item level-3"><a href="#_5" class="toc-link" title="কে সম্পাদন করবেন?">কে সম্পাদন করবেন?</a></li>
+  <li class="toc-item level-3"><a href="#_6" class="toc-link" title="কীভাবে কাজ করবেন?">কীভাবে কাজ করবেন?</a></li>
+  <li class="toc-item level-2"><a href="#stage-3-program-syllabus-setup" class="toc-link" title="ধাপ ৩: বিভাগ, সিলেবাস ও কোর্স সেটআপ (Stage 3: Program &amp;amp; Syllabus Setup)">ধাপ ৩: বিভাগ, সিলেবাস ও কোর্স সেটআপ (Stage 3: Program &amp;amp; Syllabus Setup)</a></li>
+  <li class="toc-item level-3"><a href="#_8" class="toc-link" title="কে সম্পাদন করবেন?">কে সম্পাদন করবেন?</a></li>
+  <li class="toc-item level-2"><a href="#stage-4-semester-course-registration" class="toc-link" title="ধাপ ৪: সেমিস্টার কোর্স রেজিস্ট্রেশন (Stage 4: Semester Course Registration)">ধাপ ৪: সেমিস্টার কোর্স রেজিস্ট্রেশন (Stage 4: Semester Course Registration)</a></li>
+  <li class="toc-item level-3"><a href="#_10" class="toc-link" title="কে সম্পাদন করবেন?">কে সম্পাদন করবেন?</a></li>
+  <li class="toc-item level-3"><a href="#_11" class="toc-link" title="কীভাবে কাজ করবেন?">কীভাবে কাজ করবেন?</a></li>
+  <li class="toc-item level-2"><a href="#stage-5-fee-invoicing-payment" class="toc-link" title="ধাপ ৫: টিউশন ফি নির্ধারণ, ইনভয়েস ও পেমেন্ট (Stage 5: Fee Invoicing &amp;amp; Payment)">ধাপ ৫: টিউশন ফি নির্ধারণ, ইনভয়েস ও পেমেন্ট (Stage 5: Fee Invoicing &amp;amp; Payment)</a></li>
+  <li class="toc-item level-3"><a href="#_12" class="toc-link" title="কে সম্পাদন করবেন?">কে সম্পাদন করবেন?</a></li>
+  <li class="toc-item level-3"><a href="#_13" class="toc-link" title="ফি হিসাব করার সহজ নিয়ম">ফি হিসাব করার সহজ নিয়ম</a></li>
+  <li class="toc-item level-2"><a href="#stage-6-classes-teaching" class="toc-link" title="ধাপ ৬: ক্লাস রুটিন ও পাঠদান (Stage 6: Classes &amp;amp; Teaching)">ধাপ ৬: ক্লাস রুটিন ও পাঠদান (Stage 6: Classes &amp;amp; Teaching)</a></li>
+  <li class="toc-item level-3"><a href="#_14" class="toc-link" title="কে সম্পাদন করবেন?">কে সম্পাদন করবেন?</a></li>
+  <li class="toc-item level-2"><a href="#stage-7-examination-results" class="toc-link" title="ধাপ ৭: পরীক্ষা, মূল্যায়ন ও ফলাফল প্রকাশ (Stage 7: Examination &amp;amp; Results)">ধাপ ৭: পরীক্ষা, মূল্যায়ন ও ফলাফল প্রকাশ (Stage 7: Examination &amp;amp; Results)</a></li>
+  <li class="toc-item level-3"><a href="#_16" class="toc-link" title="কে সম্পাদন করবেন?">কে সম্পাদন করবেন?</a></li>
+  <li class="toc-item level-2"><a href="#stage-8-graduation-documents" class="toc-link" title="ধাপ ৮: গ্র্যাজুয়েশন, ক্লিয়ারেন্স ও সনদপত্র প্রদান (Stage 8: Graduation &amp;amp; Documents)">ধাপ ৮: গ্র্যাজুয়েশন, ক্লিয়ারেন্স ও সনদপত্র প্রদান (Stage 8: Graduation &amp;amp; Documents)</a></li>
+  <li class="toc-item level-3"><a href="#_19" class="toc-link" title="কে সম্পাদন করবেন?">কে সম্পাদন করবেন?</a></li>
+</ul>
+
+
+      <div class="toc-actions">
+        <a href="#top" class="toc-action-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          Back to top
+        </a>
+        <a href="#" class="toc-action-link print-btn-action">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print this section
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Global Search Modal -->
+  <div class="search-modal-backdrop" id="search-modal-backdrop">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-modal-input" id="search-modal-input" placeholder="Search modules, roles, workflows, rules, FAQs..." autocomplete="off">
+        <button id="search-modal-close" style="background:none;border:none;cursor:pointer;color:var(--text-muted);padding:4px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="search-modal-results" id="search-modal-results"></div>
+      <div class="search-modal-footer">
+        <div>Navigate with <kbd>↑</kbd> <kbd>↓</kbd> and select with <kbd>Enter</kbd></div>
+        <div>Close with <kbd>Esc</kbd></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/search-index.js"></script>
+  <script src="assets/manual.js"></script>
+</body>
+</html>

@@ -1,0 +1,2228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01 — Functional Inventory — EasyMate ERP Manual | Varendra University</title>
+  <meta name="description" content="Varendra University EasyMate ERP User Manual & Operational Reference: Student Lifecycle, Cross-Module Workflows, Roles & Technical Verification.">
+  <link rel="stylesheet" href="assets/manual.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e3a8a'><path d='M12 2L1 7l11 5 9-4.09V17h2V7L12 2z'/></svg>">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <a href="index.html" class="brand-wrapper">
+        <div class="brand-logo">VU</div>
+        <div class="brand-text">
+          <div class="brand-title">
+            EasyMate ERP
+            <span class="version-tag">v1.0</span>
+          </div>
+          <div class="brand-subtitle">Varendra University • Academic ERP Manual</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="header-actions">
+      <div class="search-trigger" role="button" tabindex="0" title="Search documentation (Ctrl+K)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <span>Search manual...</span>
+        <kbd>Ctrl+K</kbd>
+      </div>
+
+      <button class="header-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        Dark
+      </button>
+
+      <button class="header-btn print-btn-action" title="Print this manual or Export to PDF">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print / PDF
+      </button>
+    </div>
+  </header>
+
+  <!-- Docs Layout -->
+  <div class="docs-layout">
+
+    <!-- Left Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-search-box">
+        <input type="text" id="sidebar-filter-input" class="sidebar-search-input" placeholder="Quick filter menu...">
+      </div>
+      <nav class="sidebar-nav">
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Getting Started</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="index.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📌</span> Overview &amp; Scope</span>
+          <span class="nav-badge">Start Here</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Modules &amp; Specifications</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="01-functional-inventory.html" class="sidebar-nav-link active">
+          <span class="nav-label"><span class="nav-icon">📋</span> 01. Functional Inventory</span>
+          <span class="nav-badge">9 Modules</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="02-student-lifecycle.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">🔄</span> 02. Student Lifecycle</span>
+          <span class="nav-badge">8 Stages</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="03-role-based-guides.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">👥</span> 03. Role-Based Guides</span>
+          <span class="nav-badge">9 Roles</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="04-cross-module-workflows.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">⚡</span> 04. Cross-Module Workflows</span>
+          <span class="nav-badge">8 Workflows</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Reference &amp; Audit</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="05-glossary-and-faq.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📖</span> 05. Glossary &amp; FAQ</span>
+          <span class="nav-badge">Reference</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="06-screenshots-checklist.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📸</span> 06. Screenshots Checklist</span>
+          <span class="nav-badge">40 Captured</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="verification-report.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">🛡️</span> 07. Verification Report</span>
+          <span class="nav-badge">Code Audit</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Complete Editions</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="user-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📑</span> Complete User Manual</span>
+          <span class="nav-badge">Master</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">All-in-One Edition</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="complete-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📚</span> Complete 8-Chapter Manual</span>
+          <span class="nav-badge">Merged</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sidebar-legend">
+    <div class="sidebar-legend-title">Verification Legend</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#10b981;"></span> <strong>[VC]</strong> Code Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> <strong>[CNV]</strong> Code Found / Not UI</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#ea580c;"></span> <strong>[PI]</strong> Partially Implemented</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#7c3aed;"></span> <strong>[VUI]</strong> Running UI Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#0284c7;"></span> <strong>[RDC]</strong> Requires DB / Policy</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span> <strong>[NF]</strong> Not Found / Excluded</div>
+  </div>
+</nav>
+
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="docs-main">
+      <article class="docs-article">
+        
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">EasyMate ERP</a>
+          <span class="separator">/</span>
+          <a href="index.html">User Manual</a>
+          <span class="separator">/</span>
+          <span class="current">01. Functional Inventory</span>
+        </nav>
+
+        <div class="doc-header-banner">
+          <div class="doc-meta-row">
+            <span class="doc-meta-pill">🏛️ Varendra University</span>
+            <span class="doc-meta-pill">📅 Published: October 2026</span>
+            <span class="doc-meta-pill">🛡️ Live Docker System Verified</span>
+            <span class="doc-meta-pill">⚡ Laravel Academic SIS</span>
+          </div>
+        </div>
+
+        <h1 id="01-functional-inventory">01 — Functional Inventory<a href="#01-functional-inventory" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h1>
+<h2 id="easymate-erp-verified-modules-and-capabilities">EasyMate ERP — Verified Modules and Capabilities<a href="#easymate-erp-verified-modules-and-capabilities" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="callout callout-info">
+  <div class="callout-title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+    Operational Note
+  </div>
+  <p>This inventory was compiled by analyzing the actual codebase: routes, controllers, models, policies, database migrations, database seeders, and blade views. Each feature is classified according to the six audit verification categories.</p>
+</div>
+<hr />
+<h2 id="status-legend">Status Legend<a href="#status-legend" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Verification Classification</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span></td>
+<td><strong>Verified in source code</strong></td>
+<td>Feature logic, route, controller, model, and view confirmed in codebase</td>
+</tr>
+<tr>
+<td><span class="badge badge-vui" title="Verified in running UI"><span class="badge-dot"></span>VUI</span></td>
+<td><strong>Verified in the running UI</strong></td>
+<td>Visually confirmed and interactively tested in a running UI <em>(0 currently verified)</em></td>
+</tr>
+<tr>
+<td><span class="badge badge-pi" title="Partially implemented"><span class="badge-dot"></span>PI</span></td>
+<td><strong>Partially implemented</strong></td>
+<td>Feature exists in code but has stubs, partial logic, or incomplete views</td>
+</tr>
+<tr>
+<td><span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td><strong>Found in code but not UI-verified</strong></td>
+<td>Code exists, but layout, rendering, and interaction not verified in runtime</td>
+</tr>
+<tr>
+<td><span class="badge badge-rdc" title="Requires database or policy confirmation"><span class="badge-dot"></span>RDC</span></td>
+<td><strong>Requires database or policy confirmation</strong></td>
+<td>Logic depends on live database records (e.g., active <code>grades</code> table) or university policy</td>
+</tr>
+<tr>
+<td><span class="badge badge-nf" title="Not found in codebase"><span class="badge-dot"></span>NF</span></td>
+<td><strong>Not found</strong></td>
+<td>Not present in the codebase (e.g., HRM routes, standalone student result route)</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Note: All features marked as </em><em>Verified in source code <span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span></em><em> are also </em><em>Found in code but not UI-verified <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></em><em> because no live browser session was executed during this audit.</em></p>
+<hr />
+<h2 id="module-1-administration">Module 1: Administration<a href="#module-1-administration" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p><strong>Navigation:</strong> Main Navigation → Administration<br />
+<strong>Route file:</strong> <code>web_routes_administrator.php</code><br />
+<strong>Namespace:</strong> <code>Administrator</code></p>
+<h3 id="11-faculties">1.1 Faculties<a href="#11-faculties" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List faculties</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Administration → Faculties</td>
+<td>Users with <code>view faculties</code> permission</td>
+<td>Server-side datatable</td>
+</tr>
+<tr>
+<td>Create faculty</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Faculties → Create</td>
+<td>Users with <code>create faculties</code> permission</td>
+<td>Modal/form</td>
+</tr>
+<tr>
+<td>Edit faculty</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Faculties → Edit</td>
+<td>Users with <code>edit faculties</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Delete faculty</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Faculties list</td>
+<td>Users with <code>delete faculties</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>View faculty details</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Faculties → Details</td>
+<td>Users with <code>view faculties</code> permission</td>
+<td>Shows associated departments</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/03_02_faculties.png</span>
+  </div>
+  <a href="screenshots/03_02_faculties.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/03_02_faculties.png" alt="Figure 3.2: Faculties Directory" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.2: Faculties Directory:</strong> Master catalog of academic faculties and associated dean administrative records.</figcaption>
+</figure>
+
+<h3 id="12-departments">1.2 Departments<a href="#12-departments" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List departments</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Administration → Departments</td>
+<td>Users with <code>view departments</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Create department</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Departments → Create</td>
+<td>Users with <code>create departments</code> permission</td>
+<td>Linked to a faculty</td>
+</tr>
+<tr>
+<td>Edit department</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Departments → Edit</td>
+<td>Users with <code>edit departments</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Delete department</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Departments list</td>
+<td>Users with <code>delete departments</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>View department details</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Departments → Details</td>
+<td>Users with <code>view departments</code> permission</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/03_03_departments.png</span>
+  </div>
+  <a href="screenshots/03_03_departments.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/03_03_departments.png" alt="Figure 3.3: Academic Departments Directory" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.3: Academic Departments Directory:</strong> Department management: faculty associations, department head mappings, and academic programs.</figcaption>
+</figure>
+
+<h3 id="13-programs">1.3 Programs<a href="#13-programs" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List programs</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Administration → Programs</td>
+<td>Users with <code>view programs</code> permission</td>
+<td>Filtered by user's assigned departments</td>
+</tr>
+<tr>
+<td>Create program</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Programs → Create</td>
+<td>Users with <code>create programs</code> permission</td>
+<td>Links to department and program level</td>
+</tr>
+<tr>
+<td>Edit program</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Programs → Edit</td>
+<td>Users with <code>edit programs</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>View program details</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Programs → Details</td>
+<td>Users with <code>view programs</code> permission</td>
+<td>Shows versions, groups, syllabi</td>
+</tr>
+<tr>
+<td>Create program version</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Programs → Versions → Create (<code>/programs/versions/create/{program_id}</code>)</td>
+<td>Users with <code>create programs</code> permission</td>
+<td>Sets <code>semesters_per_year</code>, <code>payment_installments</code>, <code>total_years</code></td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/03_04_programs.png</span>
+  </div>
+  <a href="screenshots/03_04_programs.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/03_04_programs.png" alt="Figure 3.4: Academic Programs Directory" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.4: Academic Programs Directory:</strong> Undergraduate and graduate degree programs catalog and program version configurations.</figcaption>
+</figure>
+
+<h3 id="14-waiver-categories">1.4 Waiver Categories<a href="#14-waiver-categories" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List waiver categories</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Administration → Waiver Categories</td>
+<td>Users with <code>view waiver categories</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Create waiver category</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Waiver Categories → Create</td>
+<td>Users with <code>create waiver categories</code> permission</td>
+<td>Name, discount percentage</td>
+</tr>
+<tr>
+<td>Edit waiver category</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Waiver Categories → Edit</td>
+<td>Users with <code>edit waiver categories</code> permission</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/03_06_waiver_categories.png</span>
+  </div>
+  <a href="screenshots/03_06_waiver_categories.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/03_06_waiver_categories.png" alt="Figure 3.6: Waiver &amp; Scholarship Categories" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.6: Waiver &amp; Scholarship Categories:</strong> University scholarship categories, discount percentage bands, and eligibility settings.</figcaption>
+</figure>
+
+<h3 id="15-users">1.5 Users<a href="#15-users" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List users</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Administration → Users</td>
+<td>Users with <code>view users</code> permission</td>
+<td>Server-side datatable</td>
+</tr>
+<tr>
+<td>Create user</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Users → Create</td>
+<td>Users with <code>create users</code> permission</td>
+<td>Name, email, department, roles, faculties</td>
+</tr>
+<tr>
+<td>Edit user</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Users → Edit</td>
+<td>Users with <code>edit users</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>View user details</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Users → Details</td>
+<td>Users with <code>view users</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Change own password</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Top Nav / Users → Change Password</td>
+<td>Authenticated users</td>
+<td></td>
+</tr>
+<tr>
+<td>Reset user password</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Users list action (<code>users.reset-password</code>)</td>
+<td>Users with <code>edit users</code> permission</td>
+<td>Generates password, sets <code>password_reset_required = 1</code></td>
+</tr>
+<tr>
+<td>Notifications</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Users → Notifications</td>
+<td>Authenticated users</td>
+<td>View system notifications</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="16-roles-and-permissions">1.6 Roles and Permissions<a href="#16-roles-and-permissions" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List roles</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Administration → Roles</td>
+<td>Users with <code>view roles</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Create role</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Roles → Create</td>
+<td>Users with <code>create roles</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Edit role (assign permissions)</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Roles → Edit</td>
+<td>Users with <code>edit roles</code> permission</td>
+<td>Assign permissions to role</td>
+</tr>
+<tr>
+<td>View role details</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Roles → Details</td>
+<td>Users with <code>view roles</code> permission</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Verified Role IDs in source code:</strong>
+- Role ID 1 = Admin (<code>isAdmin()</code>) <span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span>
+- Role ID 7 = Head (<code>isHead()</code>) <span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span>
+- Role ID 11 = Controller (<code>isController()</code>) <span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span>
+- "Teacher" role name (checked in <code>examinerOptions()</code>) <span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span>
+- <em>Other roles (Accounts, Admission, Academic Staff) are permission-based; specific role IDs depend on active database seeding <span class="badge badge-rdc" title="Requires database or policy confirmation"><span class="badge-dot"></span>RDC</span>.</em></p>
+<h3 id="17-settings">1.7 Settings<a href="#17-settings" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List settings</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Administration → Settings</td>
+<td>Users with <code>view settings</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Create setting</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Settings → Create</td>
+<td>Users with <code>create settings</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Edit setting</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Settings → Edit</td>
+<td>Users with <code>edit settings</code> permission</td>
+<td>Global and program-specific values</td>
+</tr>
+<tr>
+<td>Delete program-specific value</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Settings → Details (<code>settings.program.destroy</code>)</td>
+<td>Users with <code>edit settings</code> permission</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Verified Setting IDs from codebase:</strong>
+- 1: Current exam session
+- 2: Registration start date
+- 3: Registration end date
+- 4: First installment last date
+- 5: Second installment last date
+- 6: First installment last date (new students)
+- 7: Poor application start date
+- 8: Poor application end date
+- 9: Admission start date
+- 10: Admission last date
+- 11: Teacher assessment start date
+- 12: Teacher assessment end date
+- 14: Third installment last date</p>
+<h3 id="18-activity-logs">1.8 Activity Logs<a href="#18-activity-logs" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View activity logs</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Administration → Logs</td>
+<td>Users with <code>view logs</code> permission</td>
+<td>Spatie Activitylog datatable</td>
+</tr>
+<tr>
+<td>View log details</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Logs → Details</td>
+<td>Users with <code>view logs</code> permission</td>
+<td>Shows dirty attributes / before-after</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="19-ms-teams-users">1.9 MS Teams Users<a href="#19-ms-teams-users" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List MS Teams users</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Administration → MS Teams Users</td>
+<td>Users with <code>view mscusers</code> permission</td>
+<td>Linked to student Wi-Fi/Teams access</td>
+</tr>
+<tr>
+<td>Create/Edit MS Teams user</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>MS Teams Users → Create/Edit</td>
+<td>Users with <code>create/edit mscusers</code> permission</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="110-smart-cards-photo-capture">1.10 Smart Cards &amp; Photo Capture<a href="#110-smart-cards-photo-capture" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List smart cards</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Administration → Smart Cards (<code>smartcards.index</code>)</td>
+<td>Users with <code>view smartcards</code> permission</td>
+<td>ID card RFID tracking</td>
+</tr>
+<tr>
+<td>Photo capture interface</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Administration → Photo Capture (<code>photocapture.index</code>)</td>
+<td>Users with <code>capturephoto</code> permission</td>
+<td>Webcam/upload to MinIO cloud storage</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="111-batch-operations">1.11 Batch Operations<a href="#111-batch-operations" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applicant admit card SMS</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Administration → Batch Operations → Applicant Admit Card SMS</td>
+<td>Users with <code>batchop</code> permission</td>
+<td>Bulk SMS dispatch</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="module-2-admission">Module 2: Admission<a href="#module-2-admission" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p><strong>Navigation:</strong> Main Navigation → Admission<br />
+<strong>Route file:</strong> <code>web_routes_admission.php</code><br />
+<strong>Namespace:</strong> <code>Admission</code></p>
+<h3 id="21-admission-test-configuration">2.1 Admission Test Configuration<a href="#21-admission-test-configuration" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List test configs</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Admission → Admission Test Configs (<code>admissiontestconfigs.index</code>)</td>
+<td>Users with <code>view admission test configs</code> permission</td>
+<td>Per-program, per-session</td>
+</tr>
+<tr>
+<td>Create test config</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Test Configs → Create</td>
+<td>Users with <code>create admission test configs</code> permission</td>
+<td>Venue, date, time, admit dates, <code>form_online</code> flag</td>
+</tr>
+<tr>
+<td>Edit test config</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Test Configs → Edit</td>
+<td>Users with <code>edit admission test configs</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Copy test config</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Test Configs → Copy (<code>admissiontestconfigs.copy</code>)</td>
+<td>Users with <code>create admission test configs</code> permission</td>
+<td>Duplicate to new session</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/04_01_admissiontestconfigs.png</span>
+  </div>
+  <a href="screenshots/04_01_admissiontestconfigs.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/04_01_admissiontestconfigs.png" alt="Figure 4.1: Admission Test Configurations" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 4.1: Admission Test Configurations:</strong> Entrance exam configuration: session, dates, test venue, and admit card download schedules.</figcaption>
+</figure>
+
+<h3 id="22-applicants-administrative-oversight">2.2 Applicants (Administrative Oversight)<a href="#22-applicants-administrative-oversight" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List applicants</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Admission → Applicants (<code>applicants.index</code>)</td>
+<td>Users with <code>view applicants</code> permission</td>
+<td>Server-side datatable</td>
+</tr>
+<tr>
+<td>View applicant details</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Applicants → Details (<code>applicants.show</code>)</td>
+<td>Users with <code>view applicants</code> permission</td>
+<td>Profile, education, applications, payments</td>
+</tr>
+<tr>
+<td>Edit applicant</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Applicants → Edit</td>
+<td>Users with <code>edit applicants</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Download applicants</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Applicants → Download</td>
+<td>Users with <code>view applicants</code> permission</td>
+<td>Excel export</td>
+</tr>
+<tr>
+<td>Change program</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Applicants → Change Program (<code>applicants.changeprogram</code>)</td>
+<td>Users with <code>change program applicants</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Transfer applicant</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Applicants → Transfer (<code>applicants.transfer</code>)</td>
+<td>Users with <code>create students</code> permission</td>
+<td>Converts applicant to <code>Student</code> record</td>
+</tr>
+<tr>
+<td>Check eligibility</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Applicant Details → Check Eligibility</td>
+<td>Users with <code>edit applicants</code> permission</td>
+<td>Runs <code>EligibilityChecker</code> library</td>
+</tr>
+<tr>
+<td>Update eligibility</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Applicant Details → Update Eligibility</td>
+<td>Users with <code>edit applicants</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Manual eligibility</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Applicant Details → Manual Eligibility</td>
+<td>Users with <code>edit applicants</code> permission</td>
+<td>Manual override</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/04_03_applicants.png</span>
+  </div>
+  <a href="screenshots/04_03_applicants.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/04_03_applicants.png" alt="Figure 4.3: Applicants Master Directory" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 4.3: Applicants Master Directory:</strong> Master applicant datatable with board verification flags, fee payment badges, and test statuses.</figcaption>
+</figure>
+
+<h3 id="23-admission-merit-lists">2.3 Admission Merit Lists<a href="#23-admission-merit-lists" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List merit lists</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Admission → Merit Lists (<code>admissionmeritlists.index</code>)</td>
+<td>Users with <code>view admission merit lists</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Create merit list</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Merit Lists → Create</td>
+<td>Users with <code>create admission merit lists</code> permission</td>
+<td>Ranks applicants based on test and board GPAs</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="24-applicant-portal-public-facing">2.4 Applicant Portal (Public-Facing)<a href="#24-applicant-portal-public-facing" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Home / landing page</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td><code>/</code> or <code>/front/applicant/home</code></td>
+<td>Public</td>
+<td>Lists active admission programs</td>
+</tr>
+<tr>
+<td>View tuition fees</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Home → Tuition Fees (<code>front.applicant.home.tutionfees</code>)</td>
+<td>Public</td>
+<td>Fee schedule breakdown</td>
+</tr>
+<tr>
+<td>Register as applicant</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Home → Register (<code>front.applicant.home.register</code>)</td>
+<td>Public</td>
+<td>Board data auto-fetched via Teletalk API</td>
+</tr>
+<tr>
+<td>Login / Logout</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td><code>/front/applicant/home/login</code>, <code>/logout</code></td>
+<td>Registered applicants</td>
+<td>Mobile number + password</td>
+</tr>
+<tr>
+<td>Reset password</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Home → Reset Password</td>
+<td>Public</td>
+<td>Password sent via SMS to registered mobile</td>
+</tr>
+<tr>
+<td>Profile sections</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Applicant Profile (<code>/front/applicant/profile/edit/{type}</code>)</td>
+<td>Logged-in applicants</td>
+<td>5 sections: <code>pi</code>, <code>ci</code>, <code>eb</code>, <code>lg</code>, <code>at</code></td>
+</tr>
+<tr>
+<td>Add exam result</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Profile → Add Exam Result</td>
+<td>Logged-in applicants</td>
+<td>Honours/Masters degree results</td>
+</tr>
+<tr>
+<td>Confirm SSC/HSC</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Profile → Confirm SSC/HSC</td>
+<td>Logged-in applicants</td>
+<td>Verify board data against physical papers</td>
+</tr>
+<tr>
+<td>Submit application</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Applications → Create (<code>front.applicant.applications.create</code>)</td>
+<td>Logged-in applicants</td>
+<td>Select program, pay fee</td>
+</tr>
+<tr>
+<td>Download admit card</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Applications → Admit Card (<code>front.applicant.applications.admit</code>)</td>
+<td>Logged-in applicants</td>
+<td>PDF download when test config is complete</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/01_03_applicant_profile.png</span>
+  </div>
+  <a href="screenshots/01_03_applicant_profile.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/01_03_applicant_profile.png" alt="Figure 1.3: Applicant Profile &amp; Education Details" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 1.3: Applicant Profile &amp; Education Details:</strong> Applicant personal details, contact address, SSC/HSC board verification data, and guardian info.</figcaption>
+</figure>
+
+<hr />
+<h2 id="module-3-academic">Module 3: Academic<a href="#module-3-academic" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p><strong>Navigation:</strong> Main Navigation → Academic<br />
+<strong>Route file:</strong> <code>web_routes_academic.php</code><br />
+<strong>Namespace:</strong> <code>Academic</code></p>
+<h3 id="31-syllabuses">3.1 Syllabuses<a href="#31-syllabuses" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List syllabuses</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Syllabuses (<code>syllabuses.index</code>)</td>
+<td>Users with <code>view syllabuses</code> permission</td>
+<td>Filtered by authorized programs</td>
+</tr>
+<tr>
+<td>Create syllabus</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Syllabuses → Create</td>
+<td>Users with <code>create syllabuses</code> permission</td>
+<td>Binds program, intake session, total credits</td>
+</tr>
+<tr>
+<td>Edit syllabus</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Syllabuses → Edit</td>
+<td>Users with <code>edit syllabuses</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>View syllabus details</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Syllabuses → Details</td>
+<td>Users with <code>view syllabuses</code> permission</td>
+<td>Lists courses per semester</td>
+</tr>
+<tr>
+<td>Add courses to syllabus</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Syllabuses → Add Courses (<code>syllabuses.addcourses</code>)</td>
+<td>Users with <code>edit syllabuses</code> permission</td>
+<td>Map courses to semesters and elective groups</td>
+</tr>
+<tr>
+<td>Copy syllabus</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Syllabuses → Copy (<code>syllabuses.copy</code>)</td>
+<td>Users with <code>create syllabuses</code> permission</td>
+<td>Duplicates entire syllabus structure</td>
+</tr>
+<tr>
+<td>Activate/Deactivate semester</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Syllabus Details</td>
+<td>Users with <code>activate syllabuses</code> permission</td>
+<td>Locks/unlocks semester for course offering</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="32-courses">3.2 Courses<a href="#32-courses" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List courses</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Courses (<code>courses.index</code>)</td>
+<td>Users with <code>view courses</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Create course</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Courses → Create</td>
+<td>Users with <code>create courses</code> permission</td>
+<td>Code, title, credits, marks, <code>theory</code> flag (1 or 0)</td>
+</tr>
+<tr>
+<td>Edit course</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Courses → Edit</td>
+<td>Users with <code>edit courses</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Update sort order</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Course Details (<code>courses.updatesort</code>)</td>
+<td>Users with <code>edit courses</code> permission</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="33-students">3.3 Students<a href="#33-students" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List students</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Students (<code>students.index</code>)</td>
+<td>Users with <code>view students</code> permission</td>
+<td>Server-side datatable</td>
+</tr>
+<tr>
+<td>Create student</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Students → Create</td>
+<td>Users with <code>create students</code> permission</td>
+<td>Direct manual student creation</td>
+</tr>
+<tr>
+<td>Edit student</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Students → Edit</td>
+<td>Users with <code>edit students</code> permission</td>
+<td>Assign roll number, session, semester</td>
+</tr>
+<tr>
+<td>View student details</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Students → Details</td>
+<td>Users with <code>view students</code> permission</td>
+<td>Profile, registrations, results, ledger, comments</td>
+</tr>
+<tr>
+<td>Student ID card</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → ID Cards (<code>students.card</code>)</td>
+<td>Users with <code>card</code> permission</td>
+<td>Batch print ID cards</td>
+</tr>
+<tr>
+<td>Login profile</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Student Details → Login Profile</td>
+<td>Users with <code>edit students</code> permission</td>
+<td>Creates/manages Student Portal credentials</td>
+</tr>
+<tr>
+<td>Student comments &amp; files</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Student Details → Comments / Attachments</td>
+<td>Users with <code>view students</code> permission</td>
+<td>Audit notes and file uploads</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="34-registrations">3.4 Registrations<a href="#34-registrations" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List registrations</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Registrations → Registrations (<code>registrations.index</code>)</td>
+<td>Users with <code>view registrations</code> permission</td>
+<td>Server-side datatable</td>
+</tr>
+<tr>
+<td>Create registration</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Registrations → Create</td>
+<td>Users with <code>create registrations</code> permission</td>
+<td>Manual student course enrollment</td>
+</tr>
+<tr>
+<td>Reg. Sections assignment</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Registrations → Reg. Sections (<code>registrations.section</code>)</td>
+<td>Users with <code>change section</code> permission</td>
+<td>Assign section A/B/C to students</td>
+</tr>
+<tr>
+<td>Redo registration</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Registration Details (<code>registrations.redo</code>)</td>
+<td>Users with <code>reregister registrations</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Semester drop</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Registration Details (<code>registrations.semesterdrop</code>)</td>
+<td>Users with <code>semester drop</code> permission</td>
+<td>Mark semester as dropped</td>
+</tr>
+<tr>
+<td>Force promotion</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Registration Details (<code>registrations.forcepromote</code>)</td>
+<td>Users with <code>force promotion</code> permission</td>
+<td>Override progression eligibility</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/05_08_registrations.png</span>
+  </div>
+  <a href="screenshots/05_08_registrations.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/05_08_registrations.png" alt="Figure 5.8: Semester Registrations Datatable" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 5.8: Semester Registrations Datatable:</strong> Course registrations management: semester enrollments, retake designations, and section allocations.</figcaption>
+</figure>
+
+<h3 id="35-auto-registrations">3.5 Auto Registrations<a href="#35-auto-registrations" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List auto reg. logs</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Registrations → Auto Registration (<code>autoregistrations.index</code>)</td>
+<td>Users with <code>create auto registrations</code> permission</td>
+<td>Batch run logs</td>
+</tr>
+<tr>
+<td>Run auto registration</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Auto Registration → Create (<code>autoregistrations.create</code>)</td>
+<td>Users with <code>create auto registrations</code> permission</td>
+<td>Batch enrolls cohort; enforces 50% earned credit rule</td>
+</tr>
+<tr>
+<td>Retry failed student</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Auto Registration Log → Retry (<code>autoregistrations.retry</code>)</td>
+<td>Users with <code>retry auto registrations</code> permission</td>
+<td>Re-evaluates individual student</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="36-assessments-assessment-rules">3.6 Assessments &amp; Assessment Rules<a href="#36-assessments-assessment-rules" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List assessments</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Assessments → Assessment List (<code>assessments.index</code>)</td>
+<td>Users with <code>view assessments</code> permission</td>
+<td>Attendance, CT, Mid, Final</td>
+</tr>
+<tr>
+<td>Assessment rules</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Assessments → Assessment Rules (<code>assessmentrules.index</code>)</td>
+<td>Users with <code>manage assessment rules</code> permission</td>
+<td>Weight percentages by course type</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="37-transcripts-certificates">3.7 Transcripts &amp; Certificates<a href="#37-transcripts-certificates" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transcripts index</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Transcripts (<code>transcripts.index</code>)</td>
+<td>Users with <code>view transcripts</code> permission</td>
+<td></td>
+</tr>
+<tr>
+<td>Partial transcript</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Transcripts → Download Partial (<code>transcripts.download.partial</code>)</td>
+<td>Users with <code>download transcripts</code> permission</td>
+<td>For continuing students</td>
+</tr>
+<tr>
+<td>Final transcript</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Transcripts → Download Final (<code>transcripts.download.final</code>)</td>
+<td>Users with <code>download transcripts</code> permission</td>
+<td>For completed graduates</td>
+</tr>
+<tr>
+<td>Provisional certificates</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Certificates (<code>certificates.index</code>)</td>
+<td>Users with <code>certificates</code> permission</td>
+<td>Provisional degree certificates</td>
+</tr>
+<tr>
+<td>Other certificates</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Other Certificates (<code>othercertificates.index</code>)</td>
+<td>Users with <code>testimonials</code> permission</td>
+<td>Testimonials, Migration, MOI, Appeared certificates</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="38-student-status-applications">3.8 Student Status &amp; Applications<a href="#38-student-status-applications" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deactivated students</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Deactivated Students (<code>disabledstudents.index</code>)</td>
+<td>Users with <code>view disabledstudents</code> permission</td>
+<td>Temporary leaves / withdrawal</td>
+</tr>
+<tr>
+<td>Suspended students</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Suspended Students (<code>suspendedstudents.index</code>)</td>
+<td>Authorized users</td>
+<td>Disciplinary suspensions</td>
+</tr>
+<tr>
+<td>Expelled students</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Expelled Students (<code>expelledstudents.index</code>)</td>
+<td>Users with <code>view expelledstudents</code> permission</td>
+<td>Disciplinary expulsions</td>
+</tr>
+<tr>
+<td>Student migrations</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Migration (<code>studentmigrations.index</code>)</td>
+<td>Users with <code>view studentmigrations</code> permission</td>
+<td>Program/department changes</td>
+</tr>
+<tr>
+<td>Exempted courses</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Exempted Course (<code>exemptedcourses.index</code>)</td>
+<td>Users with <code>view exemptedcourses</code> permission</td>
+<td>External credit transfers</td>
+</tr>
+<tr>
+<td>Document applications</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Academic → Student Applications → Document Applications (<code>documentapplications.index</code>)</td>
+<td>Users with <code>view documentapplications</code> permission</td>
+<td>Multi-department clearance workflow</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="module-4-accounts">Module 4: Accounts<a href="#module-4-accounts" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p><strong>Navigation:</strong> Main Navigation → Accounts<br />
+<strong>Route file:</strong> <code>web_routes_accounts.php</code><br />
+<strong>Namespace:</strong> <code>Accounts</code></p>
+<h3 id="41-fee-settings">4.1 Fee Settings<a href="#41-fee-settings" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List fee settings</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Accounts → Fee Settings (<code>feesettings.index</code>)</td>
+<td>Users with <code>view fee settings</code> permission</td>
+<td>Matrix by Account Head, Program, Session</td>
+</tr>
+<tr>
+<td>Create fee setting</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Fee Settings → Create</td>
+<td>Users with <code>create fee settings</code> permission</td>
+<td>Tuition per credit; fixed semester fees</td>
+</tr>
+<tr>
+<td>Copy fee settings</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Fee Settings → Copy (<code>feesettings.copy</code>)</td>
+<td>Users with <code>create fee settings</code> permission</td>
+<td>Duplicate schedule to new session</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/06_01_feesettings.png</span>
+  </div>
+  <a href="screenshots/06_01_feesettings.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/06_01_feesettings.png" alt="Figure 6.1: Academic Fee Settings Master" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 6.1: Academic Fee Settings Master:</strong> Program fee schedule matrix: per-credit tuition rate, lab fees, and fixed semester charges.</figcaption>
+</figure>
+
+<h3 id="42-invoices">4.2 Invoices<a href="#42-invoices" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List invoices</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Accounts → Invoices (<code>invoices.index</code>)</td>
+<td>Users with <code>view invoices</code> permission</td>
+<td>Server-side datatable</td>
+</tr>
+<tr>
+<td>View invoice details</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Invoices → Details (<code>invoices.details</code>)</td>
+<td>Users with <code>view invoices</code> permission</td>
+<td>Line items, installments, payments</td>
+</tr>
+<tr>
+<td>Payment posting</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Invoices → Posting (<code>invoices.posting</code>)</td>
+<td>Users with <code>approve invoices</code> permission</td>
+<td>Post cash or bank payment; enforces installment sequence</td>
+</tr>
+<tr>
+<td>Late fee calculation</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Invoices → Late Fee (<code>invoices.latefee</code>)</td>
+<td>Users with <code>edit invoices</code> permission</td>
+<td>Computes late fee excluding holidays</td>
+</tr>
+<tr>
+<td>Reverse invoice</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Invoice Details (<code>invoices.reverse</code>)</td>
+<td>Users with <code>reverse invoices</code> permission</td>
+<td>Reverses paid invoice</td>
+</tr>
+<tr>
+<td>Miscellaneous invoices</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Invoices → Miscellaneous (<code>invoices.miscellaneous</code>)</td>
+<td>Users with <code>miscellaneous invoices</code> permission</td>
+<td>Non-tuition fees</td>
+</tr>
+<tr>
+<td>Printable Bank Slip</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td><code>/printinvoices/index/{id}</code> (<code>printinvoices.index</code>)</td>
+<td>Public with invoice ID</td>
+<td>3-part bank voucher</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="43-ledgers-waivers">4.3 Ledgers &amp; Waivers<a href="#43-ledgers-waivers" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Student ledgers</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Accounts → Ledgers (<code>ledgers.index</code>)</td>
+<td>Users with <code>view ledgers</code> permission</td>
+<td>Debit (D) and Credit (C) double-entry ledger</td>
+</tr>
+<tr>
+<td>Waivers management</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Accounts → Waivers (<code>waivers.index</code>)</td>
+<td>Users with <code>view waivers</code> permission</td>
+<td>Applies scholarship discount strictly to tuition</td>
+</tr>
+<tr>
+<td>Poor-Merit. Approvals</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Accounts → Poor-Merit. Approvals (<code>waivers.poorapproval</code>)</td>
+<td>Users with <code>poor merit approve</code> permission</td>
+<td>Multi-step financial aid committee evaluation</td>
+</tr>
+<tr>
+<td>Waiver expiries</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Accounts → Waiver Expiries (<code>waiverexpiries.index</code>)</td>
+<td>Users with <code>view waiverexpiries</code> permission</td>
+<td>Tracks sibling waiver eligibility</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="module-5-examination">Module 5: Examination<a href="#module-5-examination" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p><strong>Navigation:</strong> Main Navigation → Exam<br />
+<strong>Route file:</strong> <code>web_routes_exam.php</code><br />
+<strong>Namespace:</strong> <code>Exam</code></p>
+<h3 id="51-examiners-marks-entry">5.1 Examiners &amp; Marks Entry<a href="#51-examiners-marks-entry" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List examiners</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Exam → Examiners (<code>examiners.index</code>)</td>
+<td>Users with <code>view examiners</code> permission</td>
+<td>Course instructor mapping</td>
+</tr>
+<tr>
+<td>Marks entry sheet</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Exam → Marks (<code>marks.index</code>)</td>
+<td>Assigned examiner OR <code>create marks</code></td>
+<td>Attendance, CT, Mid, Final; statuses: <code>p</code>,<code>a</code>,<code>e</code></td>
+</tr>
+<tr>
+<td>Retake/Improvement marks</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Exam → Retake/Improvement Marks (<code>marks.retests</code>)</td>
+<td>Users with <code>view retest marks</code> permission</td>
+<td>Marks for retake/improvement candidates</td>
+</tr>
+<tr>
+<td>Submit marks (Lock)</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Marks → Submit (<code>marks.submit</code>)</td>
+<td>Assigned examiner</td>
+<td>Creates <code>Submission</code> record; freezes instructor editing</td>
+</tr>
+<tr>
+<td>Approve marks</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Marks → Approve (<code>marks.approve</code>)</td>
+<td>Users with <code>approve marks</code> permission</td>
+<td>Creates <code>Approval</code> and <code>CourseResult</code> records</td>
+</tr>
+<tr>
+<td>Administrative undo</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Marks → Undo (<code>marks.undo</code>)</td>
+<td>Admin only (<code>isAdmin()</code>)</td>
+<td>Reverses approval/submission; unpublishes result</td>
+</tr>
+<tr>
+<td>Mark edit log</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Exam → Mark Edit Log (<code>marks.editlogs</code>)</td>
+<td>Users with <code>edit published marks</code> permission</td>
+<td>Post-publication correction audit trail</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/07_02_examiners.png</span>
+  </div>
+  <a href="screenshots/07_02_examiners.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/07_02_examiners.png" alt="Figure 7.2: Course Examiner Assignments" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 7.2: Course Examiner Assignments:</strong> Course evaluation instructor mapping: continuous and final exam examiner appointments per section.</figcaption>
+</figure>
+
+<h3 id="52-results-publications">5.2 Results &amp; Publications<a href="#52-results-publications" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List results</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Exam → Results (<code>results.index</code>)</td>
+<td>Users with <code>view results</code> permission</td>
+<td>Published semester results</td>
+</tr>
+<tr>
+<td>Create/Publish result</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Results → Create (<code>results.create</code>)</td>
+<td>Users with <code>create results</code> permission</td>
+<td>Requires 100% course approval; calculates SGPA &amp; rank</td>
+</tr>
+<tr>
+<td>Tabulation sheet PDF</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Results → PDF (<code>results.pdf</code>)</td>
+<td>Users with <code>view results</code> permission</td>
+<td>Official gazette tabulation</td>
+</tr>
+<tr>
+<td>Attendance sheets</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Exam → Attendance Sheet (<code>attendance-sheets.index</code>)</td>
+<td>Users with <code>view registrations</code> permission</td>
+<td>Exam hall attendance roll</td>
+</tr>
+<tr>
+<td>Admit cards</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Exam → Admit Card (<code>admit.index</code>)</td>
+<td>Authorized exam staff</td>
+<td>Bulk exam admit card printing</td>
+</tr>
+<tr>
+<td>Feedback configuration</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Exam → Feedback Config. (<code>feedback.index</code>)</td>
+<td>Users with <code>view feedback</code> permission</td>
+<td>Evaluation questionnaires and reports</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="module-6-class-schedule">Module 6: Class Schedule<a href="#module-6-class-schedule" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p><strong>Navigation:</strong> Main Navigation → Class Schedule<br />
+<strong>Route file:</strong> <code>web_routes_schedule.php</code><br />
+<strong>Namespace:</strong> <code>Schedule</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Campus rooms</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Class Schedule → Rooms (<code>rooms.index</code>)</td>
+<td>Users with <code>manage</code> schedule</td>
+<td>Rooms, buildings, seating capacities</td>
+</tr>
+<tr>
+<td>Time slots</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Class Schedule → Slots (<code>slots.index</code>)</td>
+<td>Users with <code>manage</code> schedule</td>
+<td>Lecture time periods (Sun–Thu)</td>
+</tr>
+<tr>
+<td>Course offerings</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Class Schedule → Course Offer (<code>courseoffers.index</code>)</td>
+<td>Users with <code>view</code> preferences</td>
+<td>Section configurations and teacher mappings</td>
+</tr>
+<tr>
+<td>Schedule merges</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Class Schedule → Schedule Merges (<code>courseoffers.schedule-merges</code>)</td>
+<td>Users with <code>manage</code> schedule</td>
+<td>Merging sections for joint scheduling</td>
+</tr>
+<tr>
+<td>Schedule builder</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Class Schedule → Schedule Create (<code>schedules.create</code>)</td>
+<td>Users with <code>manage</code> schedule</td>
+<td>Grid placement of courses, rooms, teachers</td>
+</tr>
+<tr>
+<td>Conflicts detection</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Class Schedule → Conflicts (<code>schedule.conflicts</code>)</td>
+<td>Users with <code>manage</code> schedule</td>
+<td>Flags teacher or room double-bookings</td>
+</tr>
+<tr>
+<td>Schedule viewer</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Class Schedule → Schedule Show (<code>schedules.index</code>)</td>
+<td>Users with <code>view</code> schedule</td>
+<td>Draft routine viewer</td>
+</tr>
+<tr>
+<td>Live schedule sync</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Class Schedule → Live Schedule (<code>schedules-live.index</code>)</td>
+<td>Users with <code>viewLive</code> schedule</td>
+<td>Syncs draft to live portal; generates PDF</td>
+</tr>
+<tr>
+<td>Book rooms</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Class Schedule → Book Rooms (<code>room_booking.index</code>)</td>
+<td>Users with <code>viewAny</code> room booking</td>
+<td>Ad-hoc room reservations</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="module-7-reports">Module 7: Reports<a href="#module-7-reports" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p><strong>Navigation:</strong> Main Navigation → Reports<br />
+<strong>Route file:</strong> <code>web_routes_report.php</code><br />
+<strong>Namespace:</strong> <code>Report</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location</th>
+<th>Authorized Roles</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Registration report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Registration → Registration Report (<code>report.registration.index</code>)</td>
+<td>Users with report permissions</td>
+<td>By program and session</td>
+</tr>
+<tr>
+<td>Dropout report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Registration → Dropout Report (<code>report.registration.dropout</code>)</td>
+<td>Authorized report users</td>
+<td>Students missing registrations</td>
+</tr>
+<tr>
+<td>Individual reg. report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Registration → Individual Reg. Report (<code>report.registration.individual</code>)</td>
+<td>Authorized report users</td>
+<td></td>
+</tr>
+<tr>
+<td>Non-collegiate report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Registration → Non Collegiate Report (<code>report.registration.noncollegiate</code>)</td>
+<td>Authorized report users</td>
+<td>Attendance-based penalty lists</td>
+</tr>
+<tr>
+<td>Section-wise report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Registration → Section Wise Students (<code>report.registration.sections</code>)</td>
+<td>Authorized report users</td>
+<td>Student rosters per section</td>
+</tr>
+<tr>
+<td>Accounts report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Accounts Report (<code>report.accounts.index</code>)</td>
+<td>Authorized report users</td>
+<td>Receivables, received, pending, bank-wise</td>
+</tr>
+<tr>
+<td>Student reports</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Student Report (<code>report.student.index</code>)</td>
+<td>Authorized report users</td>
+<td>Enrollment, completed, studying, cancelled, batch</td>
+</tr>
+<tr>
+<td>Admission report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Admission Report (<code>report.admission.index</code>)</td>
+<td>Authorized report users</td>
+<td>Forms sold, multi-program, historical funnels</td>
+</tr>
+<tr>
+<td>Result withheld report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Exam/Results → Result Withheld Report (<code>report.withheld.index</code>)</td>
+<td>Authorized report users</td>
+<td>Withheld student results</td>
+</tr>
+<tr>
+<td>Program final notification</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Exam/Results → Program Final Notification (<code>report.result.programfinal</code>)</td>
+<td>Authorized report users</td>
+<td>Official graduating cohort lists</td>
+</tr>
+<tr>
+<td>CGPA report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Exam/Results → CGPA Report (<code>report.result.cgpa</code>)</td>
+<td>Authorized report users</td>
+<td>Cohort CGPA distributions</td>
+</tr>
+<tr>
+<td>Waiver report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Waiver Report (<code>report.waiver.index</code>)</td>
+<td>Authorized report users</td>
+<td>Financial aid summaries</td>
+</tr>
+<tr>
+<td>Teacher assessment report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Teacher Assessment Report (<code>report.ta.index</code>)</td>
+<td>Authorized report users</td>
+<td>Aggregate and individual teacher ratings</td>
+</tr>
+<tr>
+<td>Examiner report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Examiner Report (<code>report.examiner.index</code>)</td>
+<td>Authorized report users</td>
+<td>Workload by examiner</td>
+</tr>
+<tr>
+<td>UGC report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → UGC (<code>report.ugc.index</code>)</td>
+<td>Admin users</td>
+<td>University Grants Commission annual statistics</td>
+</tr>
+<tr>
+<td>Syllabus report</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Reports → Syllabus Report (<code>report.syllabus.index</code>)</td>
+<td>Admin users</td>
+<td>Curriculum structures and offerings</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="module-8-student-portal">Module 8: Student Portal<a href="#module-8-student-portal" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p><strong>Navigation:</strong> <code>/front/student/</code><br />
+<strong>Route file:</strong> <code>web_routes_front.php</code><br />
+<strong>Namespace:</strong> <code>Front\Student</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>UI Location / URL Path</th>
+<th>Authorized Users</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Student login</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td><code>/front/student/login</code> (<code>front.student.auth.login</code>)</td>
+<td>Enrolled students</td>
+<td>Roll Number + Password</td>
+</tr>
+<tr>
+<td>Student logout</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td><code>/front/student/logout</code> (<code>front.student.auth.logout</code>)</td>
+<td>Logged-in students</td>
+<td></td>
+</tr>
+<tr>
+<td>Forgot / Change password</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td><code>/front/student/forgotpassword</code>, <code>/changepassword</code></td>
+<td>Enrolled students</td>
+<td>SMS OTP password reset</td>
+</tr>
+<tr>
+<td>Profile (Information)</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Main Nav → Profile (<code>/front/student/profile?type=i</code>)</td>
+<td>Logged-in students</td>
+<td>Personal, academic, advisor info</td>
+</tr>
+<tr>
+<td>Profile (Registrations)</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Profile → Registrations tab (<code>?type=rg</code>)</td>
+<td>Logged-in students</td>
+<td>Historical semester registrations</td>
+</tr>
+<tr>
+<td>Profile (Results)</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Profile → Results tab (<code>?type=r</code>)</td>
+<td>Logged-in students</td>
+<td>Published grades, LG, GP, SGPA (No standalone route)</td>
+</tr>
+<tr>
+<td>Profile (Payments)</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Profile → Payments tab (<code>?type=p</code>)</td>
+<td>Logged-in students</td>
+<td>Invoices list and bank slip download</td>
+</tr>
+<tr>
+<td>Profile (Admit Card)</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Profile → Admit Card tab (<code>?type=a</code>)</td>
+<td>Logged-in students</td>
+<td>Download Mid-Term and Final Admit Cards</td>
+</tr>
+<tr>
+<td>Class routine</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Main Nav → Class Routine (<code>/front/student/routine</code>)</td>
+<td>Logged-in students</td>
+<td>Personalized routine grid and PDF download</td>
+</tr>
+<tr>
+<td>Retake/Improvement</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Main Nav → Retake/Imporvement (<code>/front/student/profile/registration</code>)</td>
+<td>Logged-in students</td>
+<td>Self-registration during open window</td>
+</tr>
+<tr>
+<td>Teacher assessment</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Main Nav → Teacher Assessment (<code>/front/student/teacherassessments</code>)</td>
+<td>Logged-in students</td>
+<td>Rate course instructors during TA window</td>
+</tr>
+<tr>
+<td>Apply for Waiver</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Main Nav → Apply for Poor-Merit. Waiver (<code>poorapplications.create</code>)</td>
+<td>Logged-in students</td>
+<td>Financial aid application</td>
+</tr>
+<tr>
+<td>Apply for Documents</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Main Nav → Apply for Documents (<code>documentapplications.index</code>)</td>
+<td>Logged-in students</td>
+<td>Request transcripts and certificates</td>
+</tr>
+<tr>
+<td>Give Course Feedback</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Main Nav → Give Course Feedback (<code>feedback.create</code>)</td>
+<td>Logged-in students</td>
+<td>Course curriculum evaluation</td>
+</tr>
+<tr>
+<td>Academic Ordinance</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Main Nav → Academic Ordinance (<code>11th Academic Ordinance.pdf</code>)</td>
+<td>Logged-in students</td>
+<td>Direct link to official university ordinance PDF</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_07_student_document_application.png</span>
+  </div>
+  <a href="screenshots/02_07_student_document_application.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_07_student_document_application.png" alt="Figure 2.7: Student Document Applications" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.7: Student Document Applications:</strong> Self-service document applications: Transcripts, Provisional Certificates, and status tracker.</figcaption>
+</figure>
+
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_03_student_routine.png</span>
+  </div>
+  <a href="screenshots/02_03_student_routine.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_03_student_routine.png" alt="Figure 2.3: Student Weekly Class Routine" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.3: Student Weekly Class Routine:</strong> Personal weekly course routine grid: course codes, faculty instructors, and room allocations.</figcaption>
+</figure>
+
+<hr />
+<h2 id="module-9-api-integrations">Module 9: API &amp; Integrations<a href="#module-9-api-integrations" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p><strong>Route file:</strong> <code>api.php</code><br />
+<strong>Namespace:</strong> <code>Api</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Invoice status &amp; posting API</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Bank and online payment gateway callbacks</td>
+</tr>
+<tr>
+<td>VU internal payment API</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Internal digital payment integration</td>
+</tr>
+<tr>
+<td>Student info API</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>External data exchange</td>
+</tr>
+<tr>
+<td>Certificate verification API</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Token-based certificate authentication</td>
+</tr>
+<tr>
+<td>Kiosk API</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>On-campus self-service kiosk (profile, results, payments)</td>
+</tr>
+<tr>
+<td>Thesis management API</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>Integrates course registrations with thesis portal</td>
+</tr>
+<tr>
+<td>Smart card API</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>RFID card encoding and issuance</td>
+</tr>
+<tr>
+<td>Board data API / Scraper</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td>SSC/HSC verification via Teletalk gateway</td>
+</tr>
+<tr>
+<td>Public student verification</td>
+<td><span class="badge badge-vc" title="Verified in source code"><span class="badge-dot"></span>VC</span> <span class="badge badge-cnv" title="Found in code but not UI-verified"><span class="badge-dot"></span>CNV</span></td>
+<td><code>/front/services/studentverify/certificate/{token}</code></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="outstanding-questions-verification-dependencies">Outstanding Questions &amp; Verification Dependencies<a href="#outstanding-questions-verification-dependencies" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<ol>
+<li><strong>Active Database Role Identifiers <span class="badge badge-rdc" title="Requires database or policy confirmation"><span class="badge-dot"></span>RDC</span>:</strong> Beyond Admin (ID 1), Head (ID 7), Controller (ID 11), and Teacher (name <code>"Teacher"</code>), staff role IDs (Accounts Officer, Admission Officer, Academic Office Staff) depend on dynamic database records.</li>
+<li><strong>Grading Scale Authority &amp; Database Records <span class="badge badge-rdc" title="Requires database or policy confirmation"><span class="badge-dot"></span>RDC</span>:</strong> <code>Grade::calculate()</code> dynamically queries all rows from the <code>grades</code> table. While <code>GradesTableSeeder.php</code> seeds a standard 10-tier scale (A+ 4.00 down to F 0.00), exact active grade boundaries, minimum passing marks, and honors criteria must be verified against the live <code>grades</code> database table and Varendra University's <em>11th Academic Ordinance</em>.</li>
+<li><strong>Payment Gateway Provider Settings <span class="badge badge-rdc" title="Requires database or policy confirmation"><span class="badge-dot"></span>RDC</span>:</strong> API endpoints for payment posting are verified in code, but live merchant gateway credentials (bKash, Nagad, bank SSL) are environment-specific (<code>.env</code>).</li>
+<li><strong>SMS &amp; Email Notification Delivery <span class="badge badge-rdc" title="Requires database or policy confirmation"><span class="badge-dot"></span>RDC</span>:</strong> Notification classes (<code>TuitionFeePaid</code>, <code>AdminPasswordReset</code>) exist in code; physical SMS delivery depends on external SMS gateway credentials.</li>
+</ol>
+
+        <div class="chapter-nav-footer">
+  <a href="index.html" class="chapter-nav-card prev">
+    <span class="chapter-nav-direction">← Previous Chapter</span>
+    <span class="chapter-nav-title">System Overview &amp; Scope</span>
+  </a>
+  <a href="02-student-lifecycle.html" class="chapter-nav-card next">
+    <span class="chapter-nav-direction">Next Chapter →</span>
+    <span class="chapter-nav-title">02 — Student Lifecycle</span>
+  </a>
+</div>
+
+
+      </article>
+    </main>
+
+    <!-- Right TOC Sidebar -->
+    <aside class="docs-toc">
+      <div class="toc-title">
+        <span>On This Page</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+      </div>
+      <ul class="toc-list">
+  <li class="toc-item level-2"><a href="#easymate-erp-verified-modules-and-capabilities" class="toc-link" title="EasyMate ERP — Verified Modules and Capabilities">EasyMate ERP — Verified Modules and Capabilities</a></li>
+  <li class="toc-item level-2"><a href="#status-legend" class="toc-link" title="Status Legend">Status Legend</a></li>
+  <li class="toc-item level-2"><a href="#module-1-administration" class="toc-link" title="Module 1: Administration">Module 1: Administration</a></li>
+  <li class="toc-item level-3"><a href="#11-faculties" class="toc-link" title="1.1 Faculties">1.1 Faculties</a></li>
+  <li class="toc-item level-3"><a href="#12-departments" class="toc-link" title="1.2 Departments">1.2 Departments</a></li>
+  <li class="toc-item level-3"><a href="#13-programs" class="toc-link" title="1.3 Programs">1.3 Programs</a></li>
+  <li class="toc-item level-3"><a href="#14-waiver-categories" class="toc-link" title="1.4 Waiver Categories">1.4 Waiver Categories</a></li>
+  <li class="toc-item level-3"><a href="#15-users" class="toc-link" title="1.5 Users">1.5 Users</a></li>
+  <li class="toc-item level-3"><a href="#16-roles-and-permissions" class="toc-link" title="1.6 Roles and Permissions">1.6 Roles and Permissions</a></li>
+  <li class="toc-item level-3"><a href="#17-settings" class="toc-link" title="1.7 Settings">1.7 Settings</a></li>
+  <li class="toc-item level-3"><a href="#18-activity-logs" class="toc-link" title="1.8 Activity Logs">1.8 Activity Logs</a></li>
+  <li class="toc-item level-3"><a href="#19-ms-teams-users" class="toc-link" title="1.9 MS Teams Users">1.9 MS Teams Users</a></li>
+  <li class="toc-item level-3"><a href="#110-smart-cards-photo-capture" class="toc-link" title="1.10 Smart Cards &amp;amp; Photo Capture">1.10 Smart Cards &amp;amp; Photo Capture</a></li>
+  <li class="toc-item level-3"><a href="#111-batch-operations" class="toc-link" title="1.11 Batch Operations">1.11 Batch Operations</a></li>
+  <li class="toc-item level-2"><a href="#module-2-admission" class="toc-link" title="Module 2: Admission">Module 2: Admission</a></li>
+  <li class="toc-item level-3"><a href="#21-admission-test-configuration" class="toc-link" title="2.1 Admission Test Configuration">2.1 Admission Test Configuration</a></li>
+  <li class="toc-item level-3"><a href="#22-applicants-administrative-oversight" class="toc-link" title="2.2 Applicants (Administrative Oversight)">2.2 Applicants (Administrative Oversight)</a></li>
+  <li class="toc-item level-3"><a href="#23-admission-merit-lists" class="toc-link" title="2.3 Admission Merit Lists">2.3 Admission Merit Lists</a></li>
+  <li class="toc-item level-3"><a href="#24-applicant-portal-public-facing" class="toc-link" title="2.4 Applicant Portal (Public-Facing)">2.4 Applicant Portal (Public-Facing)</a></li>
+  <li class="toc-item level-2"><a href="#module-3-academic" class="toc-link" title="Module 3: Academic">Module 3: Academic</a></li>
+  <li class="toc-item level-3"><a href="#31-syllabuses" class="toc-link" title="3.1 Syllabuses">3.1 Syllabuses</a></li>
+  <li class="toc-item level-3"><a href="#32-courses" class="toc-link" title="3.2 Courses">3.2 Courses</a></li>
+  <li class="toc-item level-3"><a href="#33-students" class="toc-link" title="3.3 Students">3.3 Students</a></li>
+  <li class="toc-item level-3"><a href="#34-registrations" class="toc-link" title="3.4 Registrations">3.4 Registrations</a></li>
+  <li class="toc-item level-3"><a href="#35-auto-registrations" class="toc-link" title="3.5 Auto Registrations">3.5 Auto Registrations</a></li>
+  <li class="toc-item level-3"><a href="#36-assessments-assessment-rules" class="toc-link" title="3.6 Assessments &amp;amp; Assessment Rules">3.6 Assessments &amp;amp; Assessment Rules</a></li>
+  <li class="toc-item level-3"><a href="#37-transcripts-certificates" class="toc-link" title="3.7 Transcripts &amp;amp; Certificates">3.7 Transcripts &amp;amp; Certificates</a></li>
+  <li class="toc-item level-3"><a href="#38-student-status-applications" class="toc-link" title="3.8 Student Status &amp;amp; Applications">3.8 Student Status &amp;amp; Applications</a></li>
+  <li class="toc-item level-2"><a href="#module-4-accounts" class="toc-link" title="Module 4: Accounts">Module 4: Accounts</a></li>
+  <li class="toc-item level-3"><a href="#41-fee-settings" class="toc-link" title="4.1 Fee Settings">4.1 Fee Settings</a></li>
+  <li class="toc-item level-3"><a href="#42-invoices" class="toc-link" title="4.2 Invoices">4.2 Invoices</a></li>
+  <li class="toc-item level-3"><a href="#43-ledgers-waivers" class="toc-link" title="4.3 Ledgers &amp;amp; Waivers">4.3 Ledgers &amp;amp; Waivers</a></li>
+  <li class="toc-item level-2"><a href="#module-5-examination" class="toc-link" title="Module 5: Examination">Module 5: Examination</a></li>
+  <li class="toc-item level-3"><a href="#51-examiners-marks-entry" class="toc-link" title="5.1 Examiners &amp;amp; Marks Entry">5.1 Examiners &amp;amp; Marks Entry</a></li>
+  <li class="toc-item level-3"><a href="#52-results-publications" class="toc-link" title="5.2 Results &amp;amp; Publications">5.2 Results &amp;amp; Publications</a></li>
+  <li class="toc-item level-2"><a href="#module-6-class-schedule" class="toc-link" title="Module 6: Class Schedule">Module 6: Class Schedule</a></li>
+  <li class="toc-item level-2"><a href="#module-7-reports" class="toc-link" title="Module 7: Reports">Module 7: Reports</a></li>
+  <li class="toc-item level-2"><a href="#module-8-student-portal" class="toc-link" title="Module 8: Student Portal">Module 8: Student Portal</a></li>
+  <li class="toc-item level-2"><a href="#module-9-api-integrations" class="toc-link" title="Module 9: API &amp;amp; Integrations">Module 9: API &amp;amp; Integrations</a></li>
+  <li class="toc-item level-2"><a href="#outstanding-questions-verification-dependencies" class="toc-link" title="Outstanding Questions &amp;amp; Verification Dependencies">Outstanding Questions &amp;amp; Verification Dependencies</a></li>
+</ul>
+
+
+      <div class="toc-actions">
+        <a href="#top" class="toc-action-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          Back to top
+        </a>
+        <a href="#" class="toc-action-link print-btn-action">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print this section
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Global Search Modal -->
+  <div class="search-modal-backdrop" id="search-modal-backdrop">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-modal-input" id="search-modal-input" placeholder="Search modules, roles, workflows, rules, FAQs..." autocomplete="off">
+        <button id="search-modal-close" style="background:none;border:none;cursor:pointer;color:var(--text-muted);padding:4px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="search-modal-results" id="search-modal-results"></div>
+      <div class="search-modal-footer">
+        <div>Navigate with <kbd>↑</kbd> <kbd>↓</kbd> and select with <kbd>Enter</kbd></div>
+        <div>Close with <kbd>Esc</kbd></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/search-index.js"></script>
+  <script src="assets/manual.js"></script>
+</body>
+</html>

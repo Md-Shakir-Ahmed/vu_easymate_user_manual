@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 — Cross-Module Workflows — EasyMate ERP Manual | Varendra University</title>
+  <meta name="description" content="Varendra University EasyMate ERP User Manual & Operational Reference: Student Lifecycle, Cross-Module Workflows, Roles & Technical Verification.">
+  <link rel="stylesheet" href="assets/manual.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e3a8a'><path d='M12 2L1 7l11 5 9-4.09V17h2V7L12 2z'/></svg>">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <a href="index.html" class="brand-wrapper">
+        <div class="brand-logo">VU</div>
+        <div class="brand-text">
+          <div class="brand-title">
+            EasyMate ERP
+            <span class="version-tag">v1.0</span>
+          </div>
+          <div class="brand-subtitle">Varendra University • Academic ERP Manual</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="header-actions">
+      <div class="search-trigger" role="button" tabindex="0" title="Search documentation (Ctrl+K)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <span>Search manual...</span>
+        <kbd>Ctrl+K</kbd>
+      </div>
+
+      <button class="header-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        Dark
+      </button>
+
+      <button class="header-btn print-btn-action" title="Print this manual or Export to PDF">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print / PDF
+      </button>
+    </div>
+  </header>
+
+  <!-- Docs Layout -->
+  <div class="docs-layout">
+
+    <!-- Left Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-search-box">
+        <input type="text" id="sidebar-filter-input" class="sidebar-search-input" placeholder="Quick filter menu...">
+      </div>
+      <nav class="sidebar-nav">
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Getting Started</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="index.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📌</span> Overview &amp; Scope</span>
+          <span class="nav-badge">Start Here</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Modules &amp; Specifications</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="01-functional-inventory.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📋</span> 01. Functional Inventory</span>
+          <span class="nav-badge">9 Modules</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="02-student-lifecycle.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">🔄</span> 02. Student Lifecycle</span>
+          <span class="nav-badge">8 Stages</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="03-role-based-guides.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">👥</span> 03. Role-Based Guides</span>
+          <span class="nav-badge">9 Roles</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="04-cross-module-workflows.html" class="sidebar-nav-link active">
+          <span class="nav-label"><span class="nav-icon">⚡</span> 04. Cross-Module Workflows</span>
+          <span class="nav-badge">8 Workflows</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Reference &amp; Audit</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="05-glossary-and-faq.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📖</span> 05. Glossary &amp; FAQ</span>
+          <span class="nav-badge">Reference</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="06-screenshots-checklist.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📸</span> 06. Screenshots Checklist</span>
+          <span class="nav-badge">40 Captured</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="verification-report.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">🛡️</span> 07. Verification Report</span>
+          <span class="nav-badge">Code Audit</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Complete Editions</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="user-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📑</span> Complete User Manual</span>
+          <span class="nav-badge">Master</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">All-in-One Edition</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="complete-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📚</span> Complete 8-Chapter Manual</span>
+          <span class="nav-badge">Merged</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sidebar-legend">
+    <div class="sidebar-legend-title">Verification Legend</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#10b981;"></span> <strong>[VC]</strong> Code Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> <strong>[CNV]</strong> Code Found / Not UI</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#ea580c;"></span> <strong>[PI]</strong> Partially Implemented</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#7c3aed;"></span> <strong>[VUI]</strong> Running UI Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#0284c7;"></span> <strong>[RDC]</strong> Requires DB / Policy</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span> <strong>[NF]</strong> Not Found / Excluded</div>
+  </div>
+</nav>
+
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="docs-main">
+      <article class="docs-article">
+        
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">EasyMate ERP</a>
+          <span class="separator">/</span>
+          <a href="index.html">User Manual</a>
+          <span class="separator">/</span>
+          <span class="current">04. Cross-Module Workflows</span>
+        </nav>
+
+        <div class="doc-header-banner">
+          <div class="doc-meta-row">
+            <span class="doc-meta-pill">🏛️ Varendra University</span>
+            <span class="doc-meta-pill">📅 Published: October 2026</span>
+            <span class="doc-meta-pill">🛡️ Live Docker System Verified</span>
+            <span class="doc-meta-pill">⚡ Laravel Academic SIS</span>
+          </div>
+        </div>
+
+        <h1 id="04-cross-module-workflows">04 — Cross-Module Workflows<a href="#04-cross-module-workflows" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h1>
+<h2 id="easymate-erp-inter-departmental-operations-and-system-interactions">EasyMate ERP — Inter-Departmental Operations and System Interactions<a href="#easymate-erp-inter-departmental-operations-and-system-interactions" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="callout callout-success">
+  <div class="callout-title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    Technical Verification Baseline
+  </div>
+  <p>This document details the end-to-end operational workflows that span multiple modules, departments, and user roles in EasyMate ERP. It demonstrates how data flows across module boundaries—from admission, academic setup, and class scheduling to automated registration, fee invoicing, marks entry, result publication, and graduation clearance.<br />
+<strong>Verification Status:</strong> All cross-module workflows, algorithmic formulas, and progression gates are verified in the source code. UI interactions and screenshots remain pending live capture.</p>
+</div>
+<hr />
+<h2 id="architectural-context-system-boundaries">Architectural Context &amp; System Boundaries<a href="#architectural-context-system-boundaries" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p>EasyMate ERP is the central academic management system for Varendra University. Its modules do not operate in isolation; each phase of a student's academic journey requires tightly orchestrated data handoffs between administrative, academic, accounts, and examination functions.</p>
+<div class="code-wrapper diagram-wrapper">
+  <div class="code-header">
+    <span class="code-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> ASCII Workflow & Architecture Diagram</span>
+    <button class="code-copy-btn" title="Copy to clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      Copy
+    </button>
+  </div>
+  <pre><code>┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                              SYSTEM SCOPE &amp; BOUNDARIES                                 │
+├─────────────────────────────────────────────────┬──────────────────────────────────────┤
+│               EASYMATE ERP                      │         EXTERNAL HRM SYSTEM          │
+│          (Documented in this Manual)            │          (Excluded from Scope)       │
+├─────────────────────────────────────────────────┼──────────────────────────────────────┤
+│  • Public Applicant Portal &amp; Board Data Sync   │  • Faculty &amp; Staff Recruitment       │
+│  • Admission Tests, Merit Lists &amp; Enrollment   │  • Employee Attendance Biometrics    │
+│  • Academic Hierarchy, Syllabuses &amp; Courses    │  • Employee Leave Application/Approval│
+│  • Class Schedule, Rooms, Slots &amp; Routines     │  • Payroll, Salary &amp; Compensation    │
+│  • Semester Registration (Auto &amp; Manual)       │  • Staff Performance Management      │
+│  • Tuition Invoicing, Waivers &amp; Fee Postings   │  • Employee Personal Service Books   │
+│  • Course Examiners, Marks &amp; Approvals         │                                      │
+│  • SGPA/CGPA Calculation &amp; Result Publication   │                                      │
+│  • Transcripts, Certificates &amp; Verifications   │                                      │
+└─────────────────────────────────────────────────┴──────────────────────────────────────┘
+</code></pre>
+</div>
+<div class="callout callout-scope">
+  <div class="callout-title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+    Mandatory Scope Boundary — HRM Separation Notice
+  </div>
+  <p><strong>Important Boundary Rule:</strong> EasyMate ERP maintains <code>User</code> records for faculty and staff solely for system authentication, role-based authorization, and course examiner assignments. All institutional HR operations (recruitment, biometric clock-in, leave approvals, payroll, and appraisals) are executed in external HRM software.</p>
+</div>
+<hr />
+<h2 id="workflow-matrix-cross-module-interactions">Workflow Matrix: Cross-Module Interactions<a href="#workflow-matrix-cross-module-interactions" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Workflow</th>
+<th>Primary Trigger</th>
+<th>Modules Involved</th>
+<th>Key Data Artifacts</th>
+<th>Handled By</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Admission to Enrollment</strong></td>
+<td>Intake session announcement</td>
+<td>Admission, Administration, Academic, Accounts</td>
+<td><code>Applicant</code>, <code>ApplicantBoard</code>, <code>AdmissionTestConfig</code>, <code>Application</code>, <code>Student</code></td>
+<td>Admission Officer, Accounts Officer</td>
+</tr>
+<tr>
+<td><strong>2. Program &amp; Syllabus Setup</strong></td>
+<td>Curriculum revision / new intake</td>
+<td>Administration, Academic</td>
+<td><code>Faculty</code>, <code>Department</code>, <code>Program</code>, <code>ProgramVersion</code>, <code>Syllabus</code>, <code>Course</code>, <code>MarkConfig</code></td>
+<td>Academic Office, Admin</td>
+</tr>
+<tr>
+<td><strong>3. Schedule &amp; Routine</strong></td>
+<td>Pre-semester planning</td>
+<td>Class Schedule, Academic, Exam</td>
+<td><code>Room</code>, <code>Slot</code>, <code>Offer</code>, <code>Examiner</code>, <code>Routine</code></td>
+<td>Department Head, Academic Office</td>
+</tr>
+<tr>
+<td><strong>4. Semester Registration &amp; Invoicing</strong></td>
+<td>Semester start / settings date</td>
+<td>Academic, Accounts, Administration</td>
+<td><code>Registration</code>, <code>AutoRegistrationLog</code>, <code>Invoice</code>, <code>InvoiceDetail</code>, <code>Waiver</code>, <code>Ledger</code></td>
+<td>Academic Office, Accounts Officer</td>
+</tr>
+<tr>
+<td><strong>5. Payments &amp; Financial Clearance</strong></td>
+<td>Student payment submission</td>
+<td>Accounts, Student Portal</td>
+<td><code>Invoice</code>, <code>Installment</code>, <code>Payment</code>, <code>Ledger</code>, <code>Approval</code></td>
+<td>Accounts Officer, Student</td>
+</tr>
+<tr>
+<td><strong>6. Teacher Marks Entry &amp; Verification</strong></td>
+<td>Midterm / Final exam schedule</td>
+<td>Exam, Class Schedule, Academic</td>
+<td><code>Mark</code>, <code>MarkConfig</code>, <code>Submission</code>, <code>CourseRegistrationSection</code></td>
+<td>Teacher (Examiner), Exam Staff</td>
+</tr>
+<tr>
+<td><strong>7. Result Approval &amp; Publication</strong></td>
+<td>Controller grade review</td>
+<td>Exam, Academic, Student Portal</td>
+<td><code>Approval</code>, <code>CourseResult</code>, <code>SemesterResult</code>, <code>Result</code></td>
+<td>Controller of Exams, System Admin</td>
+</tr>
+<tr>
+<td><strong>8. Progression &amp; Graduation</strong></td>
+<td>Result published / degree audit</td>
+<td>Academic, Accounts, Exam, Student Portal</td>
+<td><code>SemesterResult</code>, <code>Readmission</code>, <code>DocumentApplication</code>, <code>Certificate</code>, <code>Ledger</code></td>
+<td>Academic Office, Accounts, Student</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/07_02_examiners.png</span>
+  </div>
+  <a href="screenshots/07_02_examiners.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/07_02_examiners.png" alt="Figure 7.2: Course Examiner Assignments" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 7.2: Course Examiner Assignments:</strong> Course evaluation instructor mapping: continuous and final exam examiner appointments per section.</figcaption>
+</figure>
+
+<hr />
+<h2 id="workflow-1-admission-to-student-enrollment">Workflow 1: Admission to Student Enrollment<a href="#workflow-1-admission-to-student-enrollment" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="code-wrapper diagram-wrapper">
+  <div class="code-header">
+    <span class="code-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> ASCII Workflow & Architecture Diagram</span>
+    <button class="code-copy-btn" title="Copy to clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      Copy
+    </button>
+  </div>
+  <pre><code>┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Applicant       │────▶│  Board API /     │────▶│  Profile         │
+│  Registration    │     │  Scraper Sync    │     │  Completion (5)  │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+         │
+         ▼
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Application     │────▶│  Admit Card      │────▶│  Test &amp; Merit    │
+│  &amp; Fee Payment   │     │  Issuance        │     │  List Processing │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+                                                           │
+                                                           ▼
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Semester-1      │◀────│  Roll Number     │◀────│  Transfer to     │
+│  Registration    │     │  Assignment      │     │  Student Record  │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+</code></pre>
+</div>
+<h3 id="operational-steps">Operational Steps<a href="#operational-steps" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<h4 id="step-11-academic-calendar-admission-configuration">Step 1.1: Academic Calendar &amp; Admission Configuration<a href="#step-11-academic-calendar-admission-configuration" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li><strong>System Administrator</strong> navigates to <strong>Administration → Settings</strong>:</li>
+<li>Sets Setting ID 1 (<code>Current Exam Session</code> e.g., "Spring-2026").</li>
+<li>Sets Setting ID 9 (<code>Admission Start Date</code>) and Setting ID 10 (<code>Admission Last Date</code>).</li>
+<li><strong>Admission Officer</strong> navigates to <strong>Admission → Admission Test Configs → Create</strong> (<code>admissiontestconfigs.create</code>):</li>
+<li>Selects target <code>Program</code> and <code>Session</code>.</li>
+<li>Defines <code>Admission Test Date</code>, <code>Admission Test Time</code>, and <code>Venue</code>.</li>
+<li>Sets <code>Admit Card Start Date</code> and <code>Admit Card End Date</code>.</li>
+<li>Toggles <code>Form Online = 1</code> to enable application fee collection.</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/04_01_admissiontestconfigs.png</span>
+  </div>
+  <a href="screenshots/04_01_admissiontestconfigs.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/04_01_admissiontestconfigs.png" alt="Figure 4.1: Admission Test Configurations" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 4.1: Admission Test Configurations:</strong> Entrance exam configuration: session, dates, test venue, and admit card download schedules.</figcaption>
+</figure>
+
+<h4 id="step-12-applicant-registration-national-board-data-sync">Step 1.2: Applicant Registration &amp; National Board Data Sync<a href="#step-12-applicant-registration-national-board-data-sync" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Applicant visits root URL (<code>/</code>), which redirects to <code>front.applicant.home.index</code> (<code>/front/applicant/home</code>).</li>
+<li>Fills registration form with SSC and HSC Board, Roll Number, Registration Number, Passing Year, Mobile Number, and Password.</li>
+<li>System invokes <code>BoardData</code> service (Teletalk API) to fetch verified education records:</li>
+<li>If API fails, system activates fallback scraper <code>BoardDataScrap</code>.</li>
+<li>If both fail, applicant account is created with <code>board_data_manual_pending_verification = 1</code>.</li>
+<li>If successful, system auto-populates full student name, parents' names, date of birth, gender, and GPA into <code>ApplicantBoard</code> records.</li>
+<li>Applicant is authenticated under session guard <code>auth.applicant</code> and redirected to profile completion.</li>
+</ol>
+<h4 id="step-13-profile-completion-application-submission">Step 1.3: Profile Completion &amp; Application Submission<a href="#step-13-profile-completion-application-submission" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Applicant completes 5 profile sections: Personal Information (<code>pi</code>), Contact Information (<code>ci</code>), Education (<code>eb</code>), Guardian Information (<code>lg</code>), and Document Attachments (<code>at</code>).</li>
+<li>Applicant selects program(s) of interest and submits application (<code>front.applicant.applications.create</code>).</li>
+<li>An <code>Invoice</code> (Type 1: Form Sale / Application Fee) is automatically generated.</li>
+<li>Applicant pays via integrated gateway or bank counter.</li>
+</ol>
+<h4 id="step-14-admit-card-admission-test-administration">Step 1.4: Admit Card &amp; Admission Test Administration<a href="#step-14-admit-card-admission-test-administration" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Upon payment confirmation (<code>Invoice</code> status = <code>paid</code>), applicant downloads the <strong>Admit Card</strong> (<code>front.applicant.applications.admit</code>).</li>
+<li>After the admission test, Admission Officer records scores or creates merit lists in <strong>Admission → Merit Lists</strong> (<code>admissionmeritlists.index</code>).</li>
+</ol>
+<h4 id="step-15-enrollment-transfer-to-student-record">Step 1.5: Enrollment &amp; Transfer to Student Record<a href="#step-15-enrollment-transfer-to-student-record" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>In <strong>Admission → Applicants</strong> (<code>applicants.index</code>), Admission Officer filters qualified applicants with confirmed payments.</li>
+<li>Admission Officer clicks <strong>Transfer</strong> (<code>applicants.transfer</code>):</li>
+<li>System transforms <code>Applicant</code> record into a permanent <code>Student</code> record (<code>app/Student.php</code>).</li>
+<li>Copies demographic data, guardian details, verified board data, and address records.</li>
+<li>Sets student <code>active = 1</code> and records intake session.</li>
+<li>Academic Office navigates to <strong>Academic → Students → Edit</strong> (<code>students.edit</code>) and assigns the official University <strong>Roll Number</strong> (e.g., <code>261311001</code>).</li>
+<li>Student is now ready for Semester 1 course registration.</li>
+</ol>
+<hr />
+<h2 id="workflow-2-academic-program-syllabus-architecture">Workflow 2: Academic Program &amp; Syllabus Architecture<a href="#workflow-2-academic-program-syllabus-architecture" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="code-wrapper diagram-wrapper">
+  <div class="code-header">
+    <span class="code-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> ASCII Workflow & Architecture Diagram</span>
+    <button class="code-copy-btn" title="Copy to clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      Copy
+    </button>
+  </div>
+  <pre><code>┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Faculty &amp;       │────▶│  Program &amp;       │────▶│  Program Version │
+│  Department      │     │  Degree Level    │     │  (Installments,  │
+└──────────────────┘     └──────────────────┘     │   Years, Terms)  │
+                                                   └──────────────────┘
+                                                            │
+                                                            ▼
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Assessment      │◀────│  Course Setup    │◀────│  Syllabus        │
+│  Schema Config   │     │  (Theory/Lab/    │     │  Binding to      │
+│  (AssessmentRule)│     │   Credits/Hours) │     │  Intake Session  │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+</code></pre>
+</div>
+<h3 id="operational-steps_1">Operational Steps<a href="#operational-steps_1" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<h4 id="step-21-organizational-hierarchy-setup">Step 2.1: Organizational Hierarchy Setup<a href="#step-21-organizational-hierarchy-setup" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li><strong>Administrator</strong> defines university structure:</li>
+<li><strong>Administration → Faculties</strong> (<code>faculties.index</code>): Creates Faculties.</li>
+<li><strong>Administration → Departments</strong> (<code>departments.index</code>): Creates Departments linked to faculties.</li>
+<li><strong>Administration → Programs</strong> (<code>programs.index</code>): Creates academic programs tied to degree levels (<code>Undergraduate</code> or <code>Graduate</code>).</li>
+</ol>
+<h4 id="step-22-program-version-rules">Step 2.2: Program Version Rules<a href="#step-22-program-version-rules" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>In <strong>Administration → Programs → Versions → Create</strong> (<code>programs.versions.create</code> at <code>/programs/versions/create/{program_id}</code>):</li>
+<li><code>semesters_per_year</code>: 2 (Bi-semester: Spring/Fall) or 3 (Tri-semester: Spring/Summer/Fall).</li>
+<li><code>total_years</code>: Typically 4 years for undergraduate programs.</li>
+<li><code>payment_installments</code>: Defines installment splitting (2 or 3 installments per semester).</li>
+</ol>
+<h4 id="step-23-syllabus-construction-session-binding">Step 2.3: Syllabus Construction &amp; Session Binding<a href="#step-23-syllabus-construction-session-binding" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li><strong>Academic Office</strong> navigates to <strong>Academic → Syllabuses → Create</strong> (<code>syllabuses.create</code>):</li>
+<li>Binds syllabus to program and intake session (e.g., "Syllabus 2024" for students admitted from "Spring-2024" onwards).</li>
+<li>In <strong>Academic → Courses</strong> (<code>courses.index</code>), courses are registered with:</li>
+<li>Course Code, Title, Credit Hours, Contact Hours.</li>
+<li>Classification: <code>theory = 1</code> (Theory) or <code>theory = 0</code> (Sessional / Lab / Project).</li>
+<li>Courses are mapped to the syllabus semester-by-semester in <strong>Academic → Syllabuses → Add Courses</strong> (<code>syllabuses.addcourses</code>):</li>
+<li>Maps Semester Number (1 to 8 or 1 to 12).</li>
+<li>Configures elective groups (<code>group_id</code>).</li>
+</ol>
+<h4 id="step-24-assessment-rules-configuration-assessmentrulesindex">Step 2.4: Assessment Rules Configuration (<code>assessmentrules.index</code>)<a href="#step-24-assessment-rules-configuration-assessmentrulesindex" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>In <strong>Academic → Assessments → Assessment Rules</strong> (<code>assessmentrules.index</code>), assessment percentages are allocated by course type:</li>
+<li><strong>Theory Courses:</strong> Attendance (10%), Class Tests (20%), Midterm (30%), Final (40%).</li>
+<li><strong>Lab / Sessional Courses:</strong> Attendance (10%), Continuous Lab Performance (40%), Final Lab/Viva (50%).</li>
+</ol>
+<hr />
+<h2 id="workflow-3-class-schedule-routine-setup">Workflow 3: Class Schedule &amp; Routine Setup<a href="#workflow-3-class-schedule-routine-setup" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="code-wrapper diagram-wrapper">
+  <div class="code-header">
+    <span class="code-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> ASCII Workflow & Architecture Diagram</span>
+    <button class="code-copy-btn" title="Copy to clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      Copy
+    </button>
+  </div>
+  <pre><code>┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Physical        │────▶│  Time Slots      │────▶│  Course Offering │
+│  Rooms &amp; Labs    │     │  &amp; Week Days     │     │  &amp; Sections      │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+                                                            │
+                                                            ▼
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Published       │◀────│  Schedule        │◀────│  Teacher         │
+│  Class Routines  │     │  Preferences     │     │  Assignment      │
+│  (Portal View)   │     │  &amp; Collision Res.│     │  (Examiner Link) │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+</code></pre>
+</div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_03_student_routine.png</span>
+  </div>
+  <a href="screenshots/02_03_student_routine.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_03_student_routine.png" alt="Figure 2.3: Student Weekly Class Routine" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.3: Student Weekly Class Routine:</strong> Personal weekly course routine grid: course codes, faculty instructors, and room allocations.</figcaption>
+</figure>
+
+<h3 id="operational-steps_2">Operational Steps<a href="#operational-steps_2" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<h4 id="step-31-campus-infrastructure-grid-setup">Step 3.1: Campus Infrastructure &amp; Grid Setup<a href="#step-31-campus-infrastructure-grid-setup" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Staff navigates to <strong>Class Schedule → Rooms</strong> (<code>rooms.index</code>):</li>
+<li>Configures rooms with building, floor, room number, and seating capacity.</li>
+<li>In <strong>Class Schedule → Slots</strong> (<code>slots.index</code>):</li>
+<li>Configures standard lecture periods and weekly days (Sunday through Thursday).</li>
+</ol>
+<h4 id="step-32-course-offerings-teacher-assignment">Step 3.2: Course Offerings &amp; Teacher Assignment<a href="#step-32-course-offerings-teacher-assignment" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>In <strong>Class Schedule → Course Offer</strong> (<code>courseoffers.index</code>):</li>
+<li>Selects Exam Session and Program.</li>
+<li>Configures section splits (Section A, B, C) via <code>courseoffers.config-sections</code>.</li>
+<li>Assigns instructors to sections via <code>courseoffers.add-examiner</code>, which establishes examiner privileges in the Exam module.</li>
+<li>In <strong>Class Schedule → Schedule Merges</strong> (<code>courseoffers.schedule-merges</code>):</li>
+<li>Configures merged lecture sections for shared time slots.</li>
+</ol>
+<h4 id="step-33-routine-generation-live-sync">Step 3.3: Routine Generation &amp; Live Sync<a href="#step-33-routine-generation-live-sync" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>In <strong>Class Schedule → Schedule Create</strong> (<code>schedules.create</code>), assign room and slot combinations to course sections.</li>
+<li>The collision checker (<strong>Class Schedule → Conflicts</strong> at <code>schedule.conflicts</code>) flags any teacher or room double-bookings.</li>
+<li>Once verified, staff navigates to <strong>Class Schedule → Live Schedule</strong> (<code>schedules-live.index</code>) and syncs draft routines to the live schedule.</li>
+<li>Class schedules immediately populate:</li>
+<li><strong>Student Portal:</strong> Students see a personalized routine based on registered courses (<code>front.student.routine.index</code>).</li>
+<li><strong>Printable PDF:</strong> Downloadable for departmental notice boards (<code>schedules-live.pdf</code>).</li>
+</ol>
+<hr />
+<h2 id="workflow-4-semester-registration-financial-integration">Workflow 4: Semester Registration &amp; Financial Integration<a href="#workflow-4-semester-registration-financial-integration" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="code-wrapper diagram-wrapper">
+  <div class="code-header">
+    <span class="code-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> ASCII Workflow & Architecture Diagram</span>
+    <button class="code-copy-btn" title="Copy to clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      Copy
+    </button>
+  </div>
+  <pre><code>                         ┌─────────────────────────────┐
+                         │   Auto-Registration Trigger │
+                         │  (Batch by Program/Session) │
+                         └──────────────┬──────────────┘
+                                        │
+                                        ▼
+                         ┌─────────────────────────────┐
+                         │   Eligibility Verification  │
+                         │ • 7-Year study limit        │
+                         │ • Suspensions &amp; Disciplinary│
+                         │ • Financial clearance upto  │
+                         │ • Previous session existence│
+                         │ • Previous semester result  │
+                         └──────────────┬──────────────┘
+                                        │
+                 ┌──────────────────────┴──────────────────────┐
+                 │                                             │
+      [Promotion Criteria Met]                      [Promotion Criteria Failed]
+                 │                                             │
+                 ▼                                             ▼
+  ┌─────────────────────────────┐               ┌─────────────────────────────┐
+  │ 1. Increment semester_id    │               │ 1. Retain same semester_id  │
+  │ 2. Sync regular courses     │               │ 2. Log Readmission record   │
+  │ 3. Retain section_id        │               │ 3. Assign new section_id    │
+  └──────────────┬──────────────┘               └──────────────┬──────────────┘
+                 │                                             │
+                 └──────────────────────┬──────────────────────┘
+                                        │
+                                        ▼
+                         ┌─────────────────────────────┐
+                         │   Course Categorization     │
+                         │ • Regular syllabus courses  │
+                         │ • Retake courses (GP = 0)   │
+                         │ • Improvement (GP &lt;= 2.75)  │
+                         │ • Omit Exempted courses     │
+                         └──────────────┬──────────────┘
+                                        │
+                                        ▼
+                         ┌─────────────────────────────┐
+                         │   Tuition &amp; Fee Calculation │
+                         │ • Regular Tuition = Rate×Cr │
+                         │ • Retake = Rate×50%×Cr      │
+                         │ • Improvement = Rate×25%×Cr │
+                         │ • Fixed &amp; Lab fees          │
+                         │ • Non-collegiate fine check │
+                         └──────────────┬──────────────┘
+                                        │
+                                        ▼
+                         ┌─────────────────────────────┐
+                         │   Waiver Engine Evaluation  │
+                         │ • Auto-waiver from GPA/CGPA │
+                         │ • Manual approved category  │
+                         │ • Select MAX(Auto, Manual)  │
+                         │ • Discount applied to tuition│
+                         └──────────────┬──────────────┘
+                                        │
+                                        ▼
+                         ┌─────────────────────────────┐
+                         │   Financial Ledger &amp; Invoice│
+                         │ • Create Invoice (Type 2)   │
+                         │ • Post Debit to Ledger (D)  │
+                         │ • Generate Installments     │
+                         │   (Deadlines from Settings) │
+                         └─────────────────────────────┘
+</code></pre>
+</div>
+<h3 id="operational-steps_3">Operational Steps<a href="#operational-steps_3" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<h4 id="step-41-pre-registration-validation-gatekeeping">Step 4.1: Pre-Registration Validation &amp; Gatekeeping<a href="#step-41-pre-registration-validation-gatekeeping" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<p>Auto-registration (<code>app/Libs/AutoRegistration.php</code>) verifies:
+1. <strong>7-Year Degree Duration Limit:</strong> <code>$student-&gt;is7YearsPlus($exam_session)</code> bars registration if elapsed time &gt; 7 years.
+2. <strong>Disciplinary Suspension Check:</strong> <code>$student-&gt;isSuspendedTemporarily($exam_session)</code> blocks suspended students.
+3. <strong>Financial Clearance Barrier (<code>accountClearUpto</code>):</strong> Unpaid debit balances from previous sessions terminate registration with: <code>"Payment is not clear."</code>.
+4. <strong>Consecutive Session Requirement:</strong> Verifies student was registered in preceding session.
+5. <strong>Result Availability:</strong> Verifies prior semester examination results are officially published.</p>
+<h4 id="step-42-academic-progression-determination">Step 4.2: Academic Progression Determination<a href="#step-42-academic-progression-determination" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ul>
+<li><strong>Promoted (<code>resultCheck</code> returns TRUE):</strong></li>
+<li>Advances: <code>$student-&gt;semester_id += 1</code>.</li>
+<li>Instantiates <code>Registration</code> record; retains cohort section.</li>
+<li><strong>Not Promoted (<code>resultCheck</code> returns FALSE):</strong></li>
+<li>Retains same semester; creates <code>Readmission</code> record.</li>
+<li>Reassigns section and registers for failed courses.</li>
+</ul>
+<h4 id="step-43-course-identification-credit-classification">Step 4.3: Course Identification &amp; Credit Classification<a href="#step-43-course-identification-credit-classification" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ul>
+<li><strong>Regular Courses:</strong> Core and elective courses assigned to current semester in student syllabus.</li>
+<li><strong>Retake Courses (<code>retake</code>):</strong> Previously failed courses ($GP = 0$ or null). Billed at <strong>50% of the tuition rate per credit</strong>.</li>
+<li><strong>Improvement Courses (<code>improvement</code>):</strong> Passed theory courses where the student earned $GP \le 2.75$ ($B-$ or lower). Sessional/lab courses cannot be improved. Billed at <strong>25% of the tuition rate per credit</strong>.</li>
+<li><strong>Exempted Courses:</strong> Transferred courses (<code>exempted_courses</code> table) are skipped.</li>
+</ul>
+<h4 id="step-44-invoicing-fee-structure-generateinvoicephp">Step 4.4: Invoicing &amp; Fee Structure (<code>GenerateInvoice.php</code>)<a href="#step-44-invoicing-fee-structure-generateinvoicephp" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Fetches approved per-credit tuition rate for program and session from <code>FeeSetting</code> (Account Head 1).</li>
+<li>Computes Tuition:
+   $$\text{Regular Tuition} = \text{Rate} \times \text{Regular Credits}$$
+   $$\text{Retake Tuition} = \text{Rate} \times 0.50 \times \text{Retake Credits}$$
+   $$\text{Improvement Tuition} = \text{Rate} \times 0.25 \times \text{Improvement Credits}$$</li>
+<li>Appends mandatory fixed fees (Development, Exam, Lab, Library, Co-Curricular).</li>
+<li>Assesses non-collegiate penalty (Account Head 8) if attendance fell in the 50%–74% bracket.</li>
+</ol>
+<h4 id="step-45-scholarship-tuition-waiver-resolution">Step 4.5: Scholarship &amp; Tuition Waiver Resolution<a href="#step-45-scholarship-tuition-waiver-resolution" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<p><code>WaiverCalculator</code> resolves financial assistance:
+1. Compares auto-waiver against manual committee waiver and selects the higher benefit:
+   $$\text{Final Waiver \%} = \max(\text{Auto Waiver \%}, \text{Manual Waiver \%})$$
+2. Applies discount <strong>strictly to Regular Tuition Fee</strong>:
+   $$\text{Net Regular Tuition} = \text{Regular Tuition} \times \left(1 - \frac{\text{Waiver \%}}{100}\right)$$</p>
+<h4 id="step-46-ledger-posting-installments">Step 4.6: Ledger Posting &amp; Installments<a href="#step-46-ledger-posting-installments" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Creates an <code>Invoice</code> (Type 2: Semester Registration Invoice) with status <code>pending</code>.</li>
+<li>Posts a <strong>Debit entry (<code>type = 'D'</code>)</strong> in <code>Ledger</code>.</li>
+<li>Splits invoice into installments based on <code>ProgramVersion</code>:</li>
+<li>Installment 1: Due on <code>1st Installment Last Date</code> (Settings 4/6).</li>
+<li>Installment 2: Due on <code>2nd Installment Last Date</code> (Setting 5).</li>
+<li>Installment 3: Due on <code>3rd Installment Last Date</code> (Setting 14, if applicable).</li>
+</ol>
+<hr />
+<h2 id="workflow-5-payment-processing-financial-settlement">Workflow 5: Payment Processing &amp; Financial Settlement<a href="#workflow-5-payment-processing-financial-settlement" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="code-wrapper diagram-wrapper">
+  <div class="code-header">
+    <span class="code-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> ASCII Workflow & Architecture Diagram</span>
+    <button class="code-copy-btn" title="Copy to clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      Copy
+    </button>
+  </div>
+  <pre><code>┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Student Views   │────▶│  Payment via     │────▶│  Bank Scroll /   │
+│  Invoice/Slip    │     │  Bank or Counter │     │  Teller Receipt  │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+                                                           │
+                                                           ▼
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Real-Time       │◀────│  Ledger Credit   │◀────│  Accounts        │
+│  Financial Clear │     │  (Type C) &amp;      │     │  Posting &amp;       │
+│  (Exam Clearance)│     │  Invoice Status  │     │  Late Fine Calc  │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+</code></pre>
+</div>
+<h3 id="operational-steps_4">Operational Steps<a href="#operational-steps_4" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<h4 id="step-51-student-invoicing-payment-modes">Step 5.1: Student Invoicing &amp; Payment Modes<a href="#step-51-student-invoicing-payment-modes" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Student accesses <strong>Student Portal → Profile → Payments tab</strong> (<code>/front/student/profile?type=p</code>).</li>
+<li>Downloads 3-part Bank Deposit Slip from <code>/printinvoices/index/{id}</code>.</li>
+<li>Submits cash at partner banks or university cashiers.</li>
+</ol>
+<h4 id="step-52-late-fine-enforcement">Step 5.2: Late Fine Enforcement<a href="#step-52-late-fine-enforcement" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ul>
+<li>When an installment is paid past <code>last_payment_date</code>, system computes fines (50 BDT/day), excluding official holidays recorded in the <code>Holiday</code> table.</li>
+</ul>
+<h4 id="step-53-accounts-posting-reconciliation-invoicesposting">Step 5.3: Accounts Posting &amp; Reconciliation (<code>invoices.posting</code>)<a href="#step-53-accounts-posting-reconciliation-invoicesposting" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Accounts Officer opens <strong>Accounts → Invoices → Posting</strong> (<code>invoices.posting</code>).</li>
+<li>Enters payment parameters: Bank Branch, Date (<code>approved_on</code>), Transaction Reference, and Installment number.</li>
+<li><strong>Sequential Installment Enforcement (Verified in Code):</strong></li>
+<li>If Installment 1 is unpaid, system refuses posting for Installment 2:
+     <code>"1st Installment not paid yet!"</code></li>
+<li>Upon valid submission:</li>
+<li>Creates a <code>Payment</code> record with polymorphic <code>Approval</code>.</li>
+<li>Updates target <code>Installment</code> to <code>paid</code>.</li>
+<li>If total payments equal invoice amount, transitions <code>Invoice</code> status to <code>paid</code>.</li>
+<li>Posts a <strong>Credit entry (<code>type = 'C'</code>)</strong> to <code>Ledger</code>.</li>
+<li>Dispatches SMS/email notification to student if enabled (<code>TuitionFeePaid</code>).</li>
+</ol>
+<hr />
+<h2 id="workflow-6-teacher-operations-marks-management">Workflow 6: Teacher Operations &amp; Marks Management<a href="#workflow-6-teacher-operations-marks-management" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="code-wrapper diagram-wrapper">
+  <div class="code-header">
+    <span class="code-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> ASCII Workflow & Architecture Diagram</span>
+    <button class="code-copy-btn" title="Copy to clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      Copy
+    </button>
+  </div>
+  <pre><code>┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Teacher Login   │────▶│  Filter Session, │────▶│  Attendance      │
+│  &amp; Examiner Link │     │  Course &amp; Section│     │  Evaluation      │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+                                                           │
+                                                           ▼
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Marks Locked &amp;  │◀────│  Teacher Mark    │◀────│  Assessment      │
+│  Submission Log  │     │  Submission      │     │  Entry (CT, Mid, │
+│  Created         │     │  (Self-Lock)     │     │  Final, Status)  │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+</code></pre>
+</div>
+<h3 id="operational-steps_5">Operational Steps<a href="#operational-steps_5" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<h4 id="step-61-examiner-authorization">Step 6.1: Examiner Authorization<a href="#step-61-examiner-authorization" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ul>
+<li>Only instructors mapped as active examiners in <code>course_offerings</code> have write access to student marks for that specific course and section.</li>
+</ul>
+<h4 id="step-62-class-attendance-auditing">Step 6.2: Class Attendance Auditing<a href="#step-62-class-attendance-auditing" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<p>Under <strong>Reports → Registration → Non Collegiate Report</strong> (<code>report.registration.noncollegiate</code>), student attendance is evaluated:
+- <strong>Collegiate:</strong> Attendance $\ge 75\%$ (Undergraduate/Master) or $\ge 60\%$ (other programs). Eligible for final exam.
+- <strong>Non-Collegiate:</strong> Attendance $50\%$–$74\%$ (or $40\%$–$59\%$). Permitted to sit for final exam only after paying penalty fee.
+- <strong>Dis-Collegiate:</strong> Attendance $&lt; 50\%$ (or $&lt; 40\%$). Barred from semester final exam; course must be retaken.</p>
+<h4 id="step-63-assessment-entry-submission-locking">Step 6.3: Assessment Entry &amp; Submission Locking<a href="#step-63-assessment-entry-submission-locking" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Teacher navigates to <strong>Exam → Marks</strong> (<code>marks.index</code>) or <strong>Exam → Retake/Improvement Marks</strong> (<code>marks.retests</code>).</li>
+<li>Filters by Exam Session, Program, Semester, Course, and Section.</li>
+<li>Enters Attendance, CT, Midterm, and Final marks; sets status (<code>p</code>, <code>a</code>, <code>e</code>).</li>
+<li>Clicks <strong>Save</strong>: Commits marks to <code>marks</code> table.</li>
+<li>Clicks <strong>Submit</strong> (<code>marks.submit</code>): Creates a <code>Submission</code> record and freezes instructor editing.</li>
+</ol>
+<hr />
+<h2 id="workflow-7-result-approval-processing-publication">Workflow 7: Result Approval, Processing &amp; Publication<a href="#workflow-7-result-approval-processing-publication" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="code-wrapper diagram-wrapper">
+  <div class="code-header">
+    <span class="code-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> ASCII Workflow & Architecture Diagram</span>
+    <button class="code-copy-btn" title="Copy to clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      Copy
+    </button>
+  </div>
+  <pre><code>┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Controller of   │────▶│  Mark Approval   │────▶│  CourseResult    │
+│  Examinations    │     │  &amp; Grade Lock    │     │  Creation        │
+│  Audit           │     │  (Approval rec)  │     │  (GP, LG Stored) │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+                                                           │
+                                                           ▼
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Semester Result │◀────│  Validation Gate │◀────│  Batch SGPA      │
+│  Publication     │     │  (ALL Courses    │     │  Calculation &amp;   │
+│  (published = 1) │     │   Approved?)     │     │  Student Ranking │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+         │
+         ▼
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Student Portal  │────▶│  Tabulation      │────▶│  Graduating Term │
+│  Results Tab     │     │  Sheets (PDF)    │     │  Email Alerts    │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+</code></pre>
+</div>
+<h3 id="operational-steps_6">Operational Steps<a href="#operational-steps_6" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<h4 id="step-71-controller-audit-course-mark-approval">Step 7.1: Controller Audit &amp; Course Mark Approval<a href="#step-71-controller-audit-course-mark-approval" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Controller navigates to <strong>Exam → Marks → Approve</strong> (<code>marks.approve</code>).</li>
+<li>Filters by Session, Program, Semester, Course, and Section.</li>
+<li>Verifies marks distribution and clicks <strong>Approve</strong>:</li>
+<li>Registers an <code>Approval</code> record.</li>
+<li>For every student in that section, creates a permanent <code>CourseResult</code> record:<ul>
+<li>Aggregates component marks into a total mark out of 100.</li>
+<li>Resolves Letter Grade (LG) and Grade Point (GP) via <code>Grade::calculate()</code>.</li>
+<li>Absent or expelled in final results in <code>F</code> ($GP = 0.00$).</li>
+</ul>
+</li>
+</ol>
+<h4 id="step-72-batch-sgpa-compilation-ranking">Step 7.2: Batch SGPA Compilation &amp; Ranking<a href="#step-72-batch-sgpa-compilation-ranking" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Controller navigates to <strong>Exam → Results → Create</strong> (<code>results.create</code>).</li>
+<li>Selects Exam Session, Program, and Semester.</li>
+<li>System triggers calculation engine across all registered students:
+   $$\text{Points} = \sum (\text{Course Credits} \times \text{Course GP})$$
+   $$\text{Total Credits} = \sum \text{Registered Credits}$$
+   $$\text{SGPA} = \frac{\text{Points}}{\text{Total Credits}} \quad (\text{rounded to 2 decimal places})$$</li>
+<li>Instantiates <code>SemesterResult</code>:</li>
+<li>Stores SGPA, total marks, registered credits, and earned credits ($GP &gt; 0$).</li>
+<li>Orders cohort by <code>SGPA DESC</code>, followed by <code>Total Marks DESC</code>, assigning sequential integer ranks (<code>rank = 1, 2, 3...</code>).</li>
+</ol>
+<h4 id="step-73-all-course-verification-gate-publication">Step 7.3: All-Course Verification Gate &amp; Publication<a href="#step-73-all-course-verification-gate-publication" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>System validates that <strong>every single course offering and section</strong> in the semester has an approved submission:
+   <code>Submission::checkApproval(...) == true</code></li>
+<li>If even one section lacks approval, processing halts:
+   <code>"Result is not ready to be published!"</code></li>
+<li>If all sections are approved, Controller clicks <strong>Publish</strong>:</li>
+<li><code>Result</code> record is flagged <code>published = 1</code> and timestamped.</li>
+<li><strong>Immediate Visibility:</strong> Students view published grades on the <strong>Student Portal under Profile → Results tab (<code>/front/student/profile?type=r</code>)</strong>. Official Tabulation Sheets (<code>results.pdf</code>) are unlocked.</li>
+</ol>
+<h4 id="step-74-administrative-undo">Step 7.4: Administrative Undo<a href="#step-74-administrative-undo" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ul>
+<li>Only a <strong>System Administrator</strong> (Role ID 1) can navigate to <strong>Exam → Marks → Undo</strong> (<code>marks.undo</code>) to purge approval and submission records, reset <code>Result.published = 0</code>, and reopen marks entry.</li>
+</ul>
+<hr />
+<h2 id="workflow-8-academic-progression-degree-completion-graduation">Workflow 8: Academic Progression, Degree Completion &amp; Graduation<a href="#workflow-8-academic-progression-degree-completion-graduation" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="code-wrapper diagram-wrapper">
+  <div class="code-header">
+    <span class="code-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> ASCII Workflow & Architecture Diagram</span>
+    <button class="code-copy-btn" title="Copy to clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      Copy
+    </button>
+  </div>
+  <pre><code>┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Result          │────▶│  Progression     │────▶│  Subsequent      │
+│  Published       │     │  Evaluation      │     │  Session Reg.    │
+└──────────────────┘     │  (Pass / Drop)   │     │  (Retake/Imprv)  │
+                         └──────────────────┘     └──────────────────┘
+                                                           │
+                                                           ▼
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Degree Audit    │◀────│  Best Attempt    │◀────│  All Courses     │
+│  Verification    │     │  CGPA Engine     │     │  Passed &amp;        │
+│  (Total Credits) │     │  (Max GP Select) │     │  Required Sem.   │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+         │
+         ▼
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Document Appl.  │────▶│  Accounts &amp;      │────▶│  Certificate &amp;   │
+│  via Portal      │     │  Library Clear.  │     │  Transcript      │
+│  (Fee Paid)      │     │  (Clearance Gate)│     │  Issuance        │
+└──────────────────┘     └──────────────────┘     └──────────────────┘
+                                                           │
+                                                           ▼
+                                                  ┌──────────────────┐
+                                                  │  Public Token    │
+                                                  │  Verification    │
+                                                  │  URL Live        │
+                                                  └──────────────────┘
+</code></pre>
+</div>
+<h3 id="operational-steps_7">Operational Steps<a href="#operational-steps_7" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<h4 id="step-81-post-result-progression-retake-rules">Step 8.1: Post-Result Progression &amp; Retake Rules<a href="#step-81-post-result-progression-retake-rules" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Students with $GP \ge 1.00$ in all courses are cleared for regular promotion.</li>
+<li>Students with an <strong>F grade ($GP = 0$)</strong> in any course are flagged for <strong>Retake</strong> in the next available session.</li>
+<li>Students with <strong>$GP \le 2.75$ ($B-$ or below)</strong> in a theory course qualify for <strong>Improvement</strong>. Sessional/lab courses cannot be improved.</li>
+</ol>
+<h4 id="step-82-cumulative-grade-point-average-cgpa-calculation">Step 8.2: Cumulative Grade Point Average (CGPA) Calculation<a href="#step-82-cumulative-grade-point-average-cgpa-calculation" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<p>EasyMate ERP implements the university's <strong>Best Attempt Rule</strong> (<code>app/Student.php</code>):
+1. For retaken or improved courses:
+   $$\text{Final Course Result} = \max(GP_{\text{all attempts}})$$
+2. <strong>Current CGPA (<code>cgpa_current</code>):</strong> Computed dynamically across all completed distinct courses to date where $GP &gt; 0$:
+   $$\text{CGPA}<em _text_final="\text{final">{\text{current}} = \frac{\sum (\text{Credits} \times \text{Best GP})}{\sum \text{Credits of Completed Courses}}$$
+3. <strong>Final Graduating CGPA (<code>cgpa</code>):</strong> Calculated against total curriculum requirements:
+   $$\text{CGPA}</em>$$}} = \frac{\sum (\text{Credits} \times \text{Best GP})}{\text{Syllabus Required Credits} - \text{Exempted Credits}</p>
+<h4 id="step-83-degree-audit-student-completion">Step 8.3: Degree Audit &amp; Student Completion<a href="#step-83-degree-audit-student-completion" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Academic Office verifies:</li>
+<li>Student has completed all required semesters.</li>
+<li>Total earned credits equal or exceed syllabus requirements.</li>
+<li>Final CGPA meets minimum graduation threshold ($\ge 2.00$, subject to ordinance confirmation).</li>
+<li>Student has zero unresolved "F" grades.</li>
+<li>Academic Office marks student record as <strong>Completed</strong> (<code>completed = 1</code>).</li>
+</ol>
+<h4 id="step-84-academic-document-application-institutional-clearance">Step 8.4: Academic Document Application &amp; Institutional Clearance<a href="#step-84-academic-document-application-institutional-clearance" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<ol>
+<li>Student navigates to <strong>Student Portal → Apply for Documents</strong> (<code>front.student.documentapplications.index</code>) and selects requested documents.</li>
+<li>System generates miscellaneous document invoice; student pays fee.</li>
+<li>Multi-department clearance in <strong>Academic → Student Applications → Document Applications</strong> (<code>documentapplications.index</code>):</li>
+<li><strong>Accounts Clearance (<code>documentapplications.accounts_clearance</code>):</strong> Accounts Officer verifies that the student ledger balance is zero across all years (<code>ledgerBalance</code>).</li>
+<li><strong>Library Clearance (<code>documentapplications.library_clearance</code>):</strong> Library staff approves return of all materials.</li>
+<li>Staff prepares documents and marks status <strong>Ready</strong> (<code>documentapplications.ready</code>).</li>
+<li>When collected by the graduate, staff marks status <strong>Delivered</strong> (<code>documentapplications.deliver</code>).</li>
+</ol>
+<h4 id="step-85-public-digital-certificate-verification">Step 8.5: Public Digital Certificate Verification<a href="#step-85-public-digital-certificate-verification" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h4>
+<p>Employers and embassies verify graduate certificates at:
+<code>/front/services/studentverify/certificate/{token}</code></p>
+<hr />
+<h2 id="cross-module-failure-modes-remediation-matrix">Cross-Module Failure Modes &amp; Remediation Matrix<a href="#cross-module-failure-modes-remediation-matrix" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Failure Mode</th>
+<th>Module Affected</th>
+<th>Technical Root Cause in Code</th>
+<th>Authorized Role</th>
+<th>Remediation Procedure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Auto-registration fails with "Payment is not clear"</strong></td>
+<td>Academic / Accounts</td>
+<td>Student has unpaid debit entries from prior sessions (<code>accountClearUpto</code> check failed)</td>
+<td>Accounts Officer</td>
+<td>Verify pending bank payments, post missing installment payments in <strong>Accounts → Invoices → Posting</strong>, then retry auto-registration.</td>
+</tr>
+<tr>
+<td><strong>Auto-registration fails with "Syllabus not ready"</strong></td>
+<td>Academic</td>
+<td>No syllabus record bound to student intake session in <code>syllabuses</code> table</td>
+<td>Academic Office Staff</td>
+<td>Navigate to <strong>Academic → Syllabuses</strong>, create or bind a syllabus version to the student's intake session, map courses, and retry.</td>
+</tr>
+<tr>
+<td><strong>Auto-registration fails with "7 Years Plus"</strong></td>
+<td>Academic</td>
+<td>Student elapsed time exceeds 7-year degree limit (<code>$student-&gt;is7YearsPlus()</code>)</td>
+<td>Academic Office / Registrar</td>
+<td>If authorized by Academic Council, grant special tenure extension via Academic Office before processing manual registration.</td>
+</tr>
+<tr>
+<td><strong>Invoice generated without expected waiver</strong></td>
+<td>Accounts</td>
+<td><code>WaiverCalculator</code> failed threshold or manual waiver was unapproved</td>
+<td>Accounts Officer</td>
+<td>Create waiver in <strong>Accounts → Waivers</strong>, approve it, regenerate or adjust invoice in <strong>Accounts → Invoices</strong>.</td>
+</tr>
+<tr>
+<td><strong>Cannot pay 2nd installment ("1st Installment not paid yet")</strong></td>
+<td>Accounts</td>
+<td>Strict sequential payment validation in <code>InvoicesController</code></td>
+<td>Accounts Officer</td>
+<td>Post payment for 1st installment first. System blocks 2nd installment until 1st installment status is <code>paid</code>.</td>
+</tr>
+<tr>
+<td><strong>Teacher unable to enter marks for course</strong></td>
+<td>Exam / Class Schedule</td>
+<td>Teacher not mapped as examiner in <code>course_offerings</code> or section mismatch</td>
+<td>Academic Office / Schedule Coordinator</td>
+<td>Verify teacher assignment in <strong>Class Schedule → Course Offer</strong>. Ensure examiner record matches the user ID.</td>
+</tr>
+<tr>
+<td><strong>Result publish blocked: "Result is not ready to be published"</strong></td>
+<td>Exam</td>
+<td>One or more course sections have not completed Controller approval (<code>Submission::checkApproval</code>)</td>
+<td>Examination Controller</td>
+<td>Review all courses and sections in the semester. Ensure teachers submitted marks and Controller approved each section.</td>
+</tr>
+<tr>
+<td><strong>Student cannot download Final Transcript</strong></td>
+<td>Academic / Accounts</td>
+<td>Outstanding financial dues exist or student not flagged as completed (<code>completed = 0</code>)</td>
+<td>Accounts / Academic Office</td>
+<td>Ensure full ledger credit balance via accounts posting. For final transcript, verify all degree requirements and mark student as completed.</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_07_student_document_application.png</span>
+  </div>
+  <a href="screenshots/02_07_student_document_application.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_07_student_document_application.png" alt="Figure 2.7: Student Document Applications" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.7: Student Document Applications:</strong> Self-service document applications: Transcripts, Provisional Certificates, and status tracker.</figcaption>
+</figure>
+
+        <div class="chapter-nav-footer">
+  <a href="03-role-based-guides.html" class="chapter-nav-card prev">
+    <span class="chapter-nav-direction">← Previous Chapter</span>
+    <span class="chapter-nav-title">03 — Role-Based Guides</span>
+  </a>
+  <a href="05-glossary-and-faq.html" class="chapter-nav-card next">
+    <span class="chapter-nav-direction">Next Chapter →</span>
+    <span class="chapter-nav-title">05 — Glossary and FAQ</span>
+  </a>
+</div>
+
+
+      </article>
+    </main>
+
+    <!-- Right TOC Sidebar -->
+    <aside class="docs-toc">
+      <div class="toc-title">
+        <span>On This Page</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+      </div>
+      <ul class="toc-list">
+  <li class="toc-item level-2"><a href="#easymate-erp-inter-departmental-operations-and-system-interactions" class="toc-link" title="EasyMate ERP — Inter-Departmental Operations and System Interactions">EasyMate ERP — Inter-Departmental Operations and System Interactions</a></li>
+  <li class="toc-item level-2"><a href="#architectural-context-system-boundaries" class="toc-link" title="Architectural Context &amp;amp; System Boundaries">Architectural Context &amp;amp; System Boundaries</a></li>
+  <li class="toc-item level-2"><a href="#workflow-matrix-cross-module-interactions" class="toc-link" title="Workflow Matrix: Cross-Module Interactions">Workflow Matrix: Cross-Module Interactions</a></li>
+  <li class="toc-item level-2"><a href="#workflow-1-admission-to-student-enrollment" class="toc-link" title="Workflow 1: Admission to Student Enrollment">Workflow 1: Admission to Student Enrollment</a></li>
+  <li class="toc-item level-3"><a href="#operational-steps" class="toc-link" title="Operational Steps">Operational Steps</a></li>
+  <li class="toc-item level-2"><a href="#workflow-2-academic-program-syllabus-architecture" class="toc-link" title="Workflow 2: Academic Program &amp;amp; Syllabus Architecture">Workflow 2: Academic Program &amp;amp; Syllabus Architecture</a></li>
+  <li class="toc-item level-3"><a href="#operational-steps_1" class="toc-link" title="Operational Steps">Operational Steps</a></li>
+  <li class="toc-item level-2"><a href="#workflow-3-class-schedule-routine-setup" class="toc-link" title="Workflow 3: Class Schedule &amp;amp; Routine Setup">Workflow 3: Class Schedule &amp;amp; Routine Setup</a></li>
+  <li class="toc-item level-3"><a href="#operational-steps_2" class="toc-link" title="Operational Steps">Operational Steps</a></li>
+  <li class="toc-item level-2"><a href="#workflow-4-semester-registration-financial-integration" class="toc-link" title="Workflow 4: Semester Registration &amp;amp; Financial Integration">Workflow 4: Semester Registration &amp;amp; Financial Integration</a></li>
+  <li class="toc-item level-3"><a href="#operational-steps_3" class="toc-link" title="Operational Steps">Operational Steps</a></li>
+  <li class="toc-item level-2"><a href="#workflow-5-payment-processing-financial-settlement" class="toc-link" title="Workflow 5: Payment Processing &amp;amp; Financial Settlement">Workflow 5: Payment Processing &amp;amp; Financial Settlement</a></li>
+  <li class="toc-item level-3"><a href="#operational-steps_4" class="toc-link" title="Operational Steps">Operational Steps</a></li>
+  <li class="toc-item level-2"><a href="#workflow-6-teacher-operations-marks-management" class="toc-link" title="Workflow 6: Teacher Operations &amp;amp; Marks Management">Workflow 6: Teacher Operations &amp;amp; Marks Management</a></li>
+  <li class="toc-item level-3"><a href="#operational-steps_5" class="toc-link" title="Operational Steps">Operational Steps</a></li>
+  <li class="toc-item level-2"><a href="#workflow-7-result-approval-processing-publication" class="toc-link" title="Workflow 7: Result Approval, Processing &amp;amp; Publication">Workflow 7: Result Approval, Processing &amp;amp; Publication</a></li>
+  <li class="toc-item level-3"><a href="#operational-steps_6" class="toc-link" title="Operational Steps">Operational Steps</a></li>
+  <li class="toc-item level-2"><a href="#workflow-8-academic-progression-degree-completion-graduation" class="toc-link" title="Workflow 8: Academic Progression, Degree Completion &amp;amp; Graduation">Workflow 8: Academic Progression, Degree Completion &amp;amp; Graduation</a></li>
+  <li class="toc-item level-3"><a href="#operational-steps_7" class="toc-link" title="Operational Steps">Operational Steps</a></li>
+  <li class="toc-item level-2"><a href="#cross-module-failure-modes-remediation-matrix" class="toc-link" title="Cross-Module Failure Modes &amp;amp; Remediation Matrix">Cross-Module Failure Modes &amp;amp; Remediation Matrix</a></li>
+</ul>
+
+
+      <div class="toc-actions">
+        <a href="#top" class="toc-action-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          Back to top
+        </a>
+        <a href="#" class="toc-action-link print-btn-action">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print this section
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Global Search Modal -->
+  <div class="search-modal-backdrop" id="search-modal-backdrop">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-modal-input" id="search-modal-input" placeholder="Search modules, roles, workflows, rules, FAQs..." autocomplete="off">
+        <button id="search-modal-close" style="background:none;border:none;cursor:pointer;color:var(--text-muted);padding:4px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="search-modal-results" id="search-modal-results"></div>
+      <div class="search-modal-footer">
+        <div>Navigate with <kbd>↑</kbd> <kbd>↓</kbd> and select with <kbd>Enter</kbd></div>
+        <div>Close with <kbd>Esc</kbd></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/search-index.js"></script>
+  <script src="assets/manual.js"></script>
+</body>
+</html>

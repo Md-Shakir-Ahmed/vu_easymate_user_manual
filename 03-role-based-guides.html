@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03 — Role-Based Guides — EasyMate ERP Manual | Varendra University</title>
+  <meta name="description" content="Varendra University EasyMate ERP User Manual & Operational Reference: Student Lifecycle, Cross-Module Workflows, Roles & Technical Verification.">
+  <link rel="stylesheet" href="assets/manual.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e3a8a'><path d='M12 2L1 7l11 5 9-4.09V17h2V7L12 2z'/></svg>">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <a href="index.html" class="brand-wrapper">
+        <div class="brand-logo">VU</div>
+        <div class="brand-text">
+          <div class="brand-title">
+            EasyMate ERP
+            <span class="version-tag">v1.0</span>
+          </div>
+          <div class="brand-subtitle">Varendra University • Academic ERP Manual</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="header-actions">
+      <div class="search-trigger" role="button" tabindex="0" title="Search documentation (Ctrl+K)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <span>Search manual...</span>
+        <kbd>Ctrl+K</kbd>
+      </div>
+
+      <button class="header-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        Dark
+      </button>
+
+      <button class="header-btn print-btn-action" title="Print this manual or Export to PDF">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print / PDF
+      </button>
+    </div>
+  </header>
+
+  <!-- Docs Layout -->
+  <div class="docs-layout">
+
+    <!-- Left Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-search-box">
+        <input type="text" id="sidebar-filter-input" class="sidebar-search-input" placeholder="Quick filter menu...">
+      </div>
+      <nav class="sidebar-nav">
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Getting Started</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="index.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📌</span> Overview &amp; Scope</span>
+          <span class="nav-badge">Start Here</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Modules &amp; Specifications</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="01-functional-inventory.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📋</span> 01. Functional Inventory</span>
+          <span class="nav-badge">9 Modules</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="02-student-lifecycle.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">🔄</span> 02. Student Lifecycle</span>
+          <span class="nav-badge">8 Stages</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="03-role-based-guides.html" class="sidebar-nav-link active">
+          <span class="nav-label"><span class="nav-icon">👥</span> 03. Role-Based Guides</span>
+          <span class="nav-badge">9 Roles</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="04-cross-module-workflows.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">⚡</span> 04. Cross-Module Workflows</span>
+          <span class="nav-badge">8 Workflows</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Reference &amp; Audit</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="05-glossary-and-faq.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📖</span> 05. Glossary &amp; FAQ</span>
+          <span class="nav-badge">Reference</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="06-screenshots-checklist.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📸</span> 06. Screenshots Checklist</span>
+          <span class="nav-badge">40 Captured</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="verification-report.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">🛡️</span> 07. Verification Report</span>
+          <span class="nav-badge">Code Audit</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Complete Editions</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="user-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📑</span> Complete User Manual</span>
+          <span class="nav-badge">Master</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">All-in-One Edition</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="complete-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📚</span> Complete 8-Chapter Manual</span>
+          <span class="nav-badge">Merged</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sidebar-legend">
+    <div class="sidebar-legend-title">Verification Legend</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#10b981;"></span> <strong>[VC]</strong> Code Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> <strong>[CNV]</strong> Code Found / Not UI</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#ea580c;"></span> <strong>[PI]</strong> Partially Implemented</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#7c3aed;"></span> <strong>[VUI]</strong> Running UI Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#0284c7;"></span> <strong>[RDC]</strong> Requires DB / Policy</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span> <strong>[NF]</strong> Not Found / Excluded</div>
+  </div>
+</nav>
+
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="docs-main">
+      <article class="docs-article">
+        
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">EasyMate ERP</a>
+          <span class="separator">/</span>
+          <a href="index.html">User Manual</a>
+          <span class="separator">/</span>
+          <span class="current">03. Role-Based Guides</span>
+        </nav>
+
+        <div class="doc-header-banner">
+          <div class="doc-meta-row">
+            <span class="doc-meta-pill">🏛️ Varendra University</span>
+            <span class="doc-meta-pill">📅 Published: October 2026</span>
+            <span class="doc-meta-pill">🛡️ Live Docker System Verified</span>
+            <span class="doc-meta-pill">⚡ Laravel Academic SIS</span>
+          </div>
+        </div>
+
+        <h1 id="03-role-based-user-operating-manual">03 — Role-Based User Operating Manual<a href="#03-role-based-user-operating-manual" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h1>
+<h2 id="easymate-erp-">EasyMate ERP — সহজ ব্যবহার নির্দেশিকা ও ভূমিকা-ভিত্তিক গাইডলাইন<a href="#easymate-erp-" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="callout callout-info">
+  <div class="callout-title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+    Operational Note
+  </div>
+  <p><strong>ব্যবহারকারীর জন্য নির্দেশনা:</strong> এই ম্যানুয়ালটি এমনভাবে তৈরি করা হয়েছে যাতে কোনো টেকনিক্যাল জ্ঞান ছাড়াই বরেন্দ্র বিশ্ববিদ্যালয়ের শিক্ষক, কর্মকর্তা, হিসাবরক্ষক, শিক্ষার্থী এবং কর্মচারীরা খুব সহজে তাদের দৈনন্দিন কাজ সম্পাদন করতে পারেন। প্রতিটি সেকশনে আসল সিস্টেমের স্ক্রিনশট এবং ধাপে ধাপে কাজ করার নিয়ম যুক্ত করা হয়েছে।</p>
+</div>
+<hr />
+<h2 id="user-personas">ভূমিকা ও ব্যবহাকারী রোল তালিকা (User Personas)<a href="#user-personas" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>ক্রম</th>
+<th>ব্যবহারকারী রোল (Role)</th>
+<th>প্রধান দায়িত্বসমূহ</th>
+<th>প্রধান মেনু অ্যাক্সেস</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>সিস্টেম অ্যাডমিনিস্ট্রেটর (System Admin)</strong></td>
+<td>নতুন ইউজার তৈরি, রোল দেওয়া, সেশন ও ডেডলাইন সেটিংস</td>
+<td>Administration, Settings, Logs, Undo</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>শিক্ষক / অনুষদ সদস্য (Teacher / Examiner)</strong></td>
+<td>ক্লাস রুটিন দেখা, কন্টিনিউয়াস ও ফাইনাল মার্কস এন্ট্রি ও লক</td>
+<td>Exam → Marks, Class Schedule</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>বিভাগীয় প্রধান (Department Head)</strong></td>
+<td>ডিপার্টমেন্টের কোর্স অফার, রুটিন ও রেজাল্ট তদারকি</td>
+<td>Academic, Schedule, Exam (Dept Scope)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>পরীক্ষা নিয়ন্ত্রক (Exam Controller)</strong></td>
+<td>মার্কস অনুমোদন (Approve), সেমিস্টার রেজাল্ট প্রকাশ ও গ্যাজেট</td>
+<td>Exam → Marks Approve, Results, Tabulation</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>একাডেমিক শাখা / রেজিস্ট্রার (Academic &amp; Registrar)</strong></td>
+<td>শিক্ষার্থী তথ্য, অটো-রেজিস্ট্রেশন, ট্রান্সক্রিপ্ট ও সার্টিফিকেট</td>
+<td>Academic → Students, Registrations, Transcripts</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>ভর্তি শাখা (Admission Officer)</strong></td>
+<td>ভর্তি বিজ্ঞপ্তি, আবেদন যাচাই, বোর্ড ডাটা ভেরিফিকেশন ও এনরোলমেন্ট</td>
+<td>Admission → Test Configs, Applicants</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>হিসাব শাখা (Accounts Officer)</strong></td>
+<td>ফি নির্ধারণ, ইনভয়েস তৈরি, ব্যাংক পেমেন্ট পোস্টিং, ওয়েভার ও লেজার</td>
+<td>Accounts → Fee Settings, Invoices, Ledgers</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>ভর্তিচ্ছু শিক্ষার্থী (Applicant)</strong></td>
+<td>অনলাইন ফর্ম পূরণ, বোর্ড ডাটা যাচাই, ছবি ও কাগজপত্র আপলোড</td>
+<td>Public Portal (<code>/front/applicant/home</code>)</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>শিক্ষার্থী (Enrolled Student)</strong></td>
+<td>ক্লাস রুটিন দেখা, ফি ও কিস্তি পরিশোধ হিস্ট্রি, রেজাল্ট ও আবেদন</td>
+<td>Student Portal (<code>/front/student/login</code>)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="role-1-system-administrator">Role 1: সিস্টেম অ্যাডমিনিস্ট্রেটর (System Administrator)<a href="#role-1-system-administrator" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_1">কাজের পরিধি<a href="#_1" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li>কেন্দ্রীয় সিস্টেমের নিরাপত্তা ও ব্যবহারকারী ব্যবস্থাপনা।</li>
+<li>নতুন সেমিস্টারের সেশন নাম ও ফি প্রদানের ডেডলাইন কনফিগার করা।</li>
+<li>ভুলবশত অনুমোদিত মার্কস বা রেজাল্ট সংশোধনের জন্য ইমার্জেন্সি রিভার্সাল (Undo)।</li>
+</ul>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/03_01_admin_dashboard.png</span>
+  </div>
+  <a href="screenshots/03_01_admin_dashboard.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/03_01_admin_dashboard.png" alt="Central Administration Dashboard" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.1:</strong> সেন্ট্রাল অ্যাডমিন ড্যাশবোর্ড — বামপাশের নেভিগেশন মেনু থেকে সকল মডিউল পরিচালনা করা যায় এবং উপরে রোল সার্চ বার রয়েছে।</figcaption>
+</figure>
+
+<h3 id="user-account-creation">কার্যপদ্ধতি ১.১: নতুন ইউজার তৈরি ও রোল নির্ধারণ (User Account Creation)<a href="#user-account-creation" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>মেনু লোকেশন:</strong> বামপাশের মেনু থেকে <strong>Administration → Users</strong>-এ ক্লিক করুন।</li>
+<li><strong>নতুন যুক্ত করতে:</strong> উপরের ডানপাশে থাকা <strong>Create / Add User</strong> বাটনে ক্লিক করুন।</li>
+<li><strong>তথ্য পূরণ করুন:</strong></li>
+<li><strong>Name:</strong> ব্যবহারকারীর পূর্ণ নাম লিখুন।</li>
+<li><strong>Email:</strong> ব্যবহারকারীর অফিশিয়াল ইমেইল অ্যাড্রেস লিখুন (এটি লগইন ইউজারনেম হিসেবে ব্যবহৃত হবে)।</li>
+<li><strong>Department:</strong> ব্যবহারকারীর বিভাগ নির্বাচন করুন।</li>
+<li><strong>Faculties &amp; Departments (Scope):</strong> ব্যবহারকারী কোন কোন অনুষদ বা বিভাগের তথ্য দেখতে পারবেন তা সিলেক্ট করুন।</li>
+<li><strong>Roles:</strong> ব্যবহারকারীকে উপযুক্ত রোল (যেমন: Teacher, Accounts Officer, Admission Officer) প্রদান করুন।</li>
+<li><strong>সংরক্ষণ করুন:</strong> <strong>Save</strong> বাটনে ক্লিক করুন। সিস্টেম ব্যবহারকারীকে একটি ওয়ান-টাইম পাসওয়ার্ড ইমেইল করবে এবং প্রথম লগইনে পাসওয়ার্ড পরিবর্তন করতে বলবে।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/03_07_users.png</span>
+  </div>
+  <a href="screenshots/03_07_users.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/03_07_users.png" alt="Users Management Datatable" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.2:</strong> ইউজার ম্যানেজমেন্ট স্ক্রিন — সকল শিক্ষক ও কর্মকর্তার লগইন অ্যাকাউন্ট, নির্ধারিত রোল ও ডিপার্টমেন্ট পারমিশন তালিকা।</figcaption>
+</figure>
+
+<h3 id="semester-settings">কার্যপদ্ধতি ১.২: সেমিস্টার সেটিংস ও ফি জমার ডেডলাইন নির্ধারণ (Semester Settings)<a href="#semester-settings" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>মেনু লোকেশন:</strong> বামপাশের মেনু থেকে <strong>Administration → Settings</strong>-এ যান।</li>
+<li><strong>প্রয়োজনীয় ফিল্ড পরিবর্তন করুন:</strong></li>
+<li><strong>Setting ID 1 (Current Session):</strong> চলমান সেশনের নাম আপডেট করুন (যেমন: <code>Summer-2026</code>)।</li>
+<li><strong>Setting ID 2 &amp; 3 (Registration Window):</strong> কোর্স রেজিস্ট্রেশন শুরুর এবং শেষ তারিখ দিন।</li>
+<li><strong>Setting ID 4 &amp; 5 (Payment Deadlines):</strong> ১ম কিস্তি এবং ২য় কিস্তির ফি জমার শেষ তারিখ নির্ধারণ করুন।</li>
+<li><strong>Save Settings</strong> বাটনে চাপ দিয়ে তথ্য সংরক্ষণ করুন।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/03_10_settings.png</span>
+  </div>
+  <a href="screenshots/03_10_settings.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/03_10_settings.png" alt="System Global Settings" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.3:</strong> সিস্টেম সেটিংস স্ক্রিন — সেমিস্টার ফি এবং রেজিস্ট্রেশনের সময়সীমা এখান থেকেই নির্ধারণ করা হয়।</figcaption>
+</figure>
+
+<hr />
+<h2 id="role-2-teacher-faculty-member">Role 2: শিক্ষক ও পরীক্ষক (Teacher / Faculty Member)<a href="#role-2-teacher-faculty-member" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_2">কাজের পরিধি<a href="#_2" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li>নিজের কোর্সের জন্য বরাদ্দকৃত ক্লাস রুটিন দেখা।</li>
+<li>শিক্ষার্থীদের ক্লাসের উপস্থিতি (Attendance), ক্লাস টেস্ট (CT), মিডটার্ম ও ফাইনাল পরীক্ষার নম্বর এন্ট্রি করা।</li>
+<li>মার্কস এন্ট্রি শেষে লক/সাবমিট করা যাতে নম্বর অপরিবর্তিত থাকে।</li>
+</ul>
+<h3 id="marks-entry">কার্যপদ্ধতি ২.১: পরীক্ষার নম্বর এন্ট্রি করার নিয়ম (Marks Entry)<a href="#marks-entry" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>মেনু লোকেশন:</strong> বামপাশের মেনু থেকে <strong>Exam → Marks</strong>-এ ক্লিক করুন।</li>
+<li><strong>কোর্স নির্বাচন করুন:</strong> </li>
+<li><strong>Exam Session:</strong> যেমন: <code>Summer-2026</code></li>
+<li><strong>Program:</strong> যেমন: <code>B.Sc. in CSE</code> বা <code>BA (Hons) in English</code></li>
+<li><strong>Semester:</strong> সেমিস্টার নির্বাচন করুন</li>
+<li><strong>Course &amp; Section:</strong> নির্দিষ্ট কোর্স কোড এবং সেকশন (A, B বা C) বাছাই করুন।</li>
+<li><strong>Show</strong> বাটনে ক্লিক করলে ওই সেকশনের সকল ছাত্র-ছাত্রীর রোল ও নামের তালিকা চলে আসবে।</li>
+<li><strong>নম্বর বসান:</strong> প্রতিটি ছাত্রের পাশে থাকা কলামে প্রাপ্ত নম্বর বসান:</li>
+<li>Attendance (উপস্থিতি)</li>
+<li>Continuous Assessment / Class Test (CT)</li>
+<li>Midterm Exam (মিডটার্ম)</li>
+<li>Final Exam (ফাইনাল পরীক্ষা)</li>
+<li><strong>উপস্থিতির স্ট্যাটাস দিন:</strong></li>
+<li><code>p</code> (Present) — পরীক্ষায় উপস্থিত ছিল</li>
+<li><code>a</code> (Absent) — অনুপস্থিত (০ নম্বর পাবে)</li>
+<li><code>e</code> (Expelled) — বহিষ্কৃত</li>
+<li><strong>Save Draft:</strong> কাজ চলাকালীন যে কোনো সময় <strong>Save</strong> বাটন চেপে সংরক্ষণ করতে পারবেন। সিস্টেম স্বয়ংক্রিয়ভাবে মোট নম্বর ও লেটার গ্রেড (LG/GP) হিসাব করে দেখাবে।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/07_03_marks.png</span>
+  </div>
+  <a href="screenshots/07_03_marks.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/07_03_marks.png" alt="Marks Entry Sheet" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.4:</strong> মার্কস এন্ট্রি স্ক্রিন — শিক্ষক এখানে সেকশন সিলেক্ট করে উপস্থিতি, মিডটার্ম ও ফাইনাল পরীক্ষার নম্বর ইনপুট দেন।</figcaption>
+</figure>
+
+<h3 id="submit-freeze">কার্যপদ্ধতি ২.২: মার্কস সাবমিট ও লক করা (Submit &amp; Freeze)<a href="#submit-freeze" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li>সমস্ত নম্বর সঠিকভাবে দেওয়া শেষ হলে পেজের নিচে থাকা <strong>Submit Marks</strong> বাটনে চাপ দিন।</li>
+<li>কনফার্মেশন পপ-আপে নিশ্চিত করুন। </li>
+<li>⚠️ <strong>সতর্কতা:</strong> একবার সাবমিট করার পর শিক্ষক নিজে আর নম্বর পরিবর্তন করতে পারবেন না। ভুল হলে অ্যাডমিন বা পরীক্ষা নিয়ন্ত্রকের সাথে যোগাযোগ করতে হবে।</li>
+</ul>
+<hr />
+<h2 id="role-3-admission-officer">Role 3: ভর্তি শাখা (Admission Officer)<a href="#role-3-admission-officer" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_3">কাজের পরিধি<a href="#_3" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li>নতুন ভর্তির জন্য সেশন ও ভর্তি পরীক্ষার তারিখ কনফিগার করা।</li>
+<li>অনলাইনে আবেদনকারী প্রার্থীদের তালিকা দেখা এবং মোবাইল নম্বর দিয়ে সার্চ করা।</li>
+<li>জাতীয় শিক্ষা বোর্ডের ডাটা (SSC/HSC GPA ও তথ্য) ভেরিফিকেশন যাচাই করা।</li>
+<li>নির্বাচিত আবেদনকারীদের রোল প্রদান করে স্থায়ী ছাত্র হিসেবে সিস্টেমে তালিকাভুক্ত (Transfer) করা।</li>
+</ul>
+<h3 id="reviewing-applicants">কার্যপদ্ধতি ৩.১: ভর্তিচ্ছুদের আবেদনপত্র যাচাই (Reviewing Applicants)<a href="#reviewing-applicants" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>মেনু লোকেশন:</strong> বামপাশের মেনু থেকে <strong>Admission → Applicants</strong>-এ যান।</li>
+<li><strong>আবেদনকারী খুঁজুন:</strong> উপরের সার্চ বক্সে প্রার্থীর <strong>Mobile Number</strong> অথবা <strong>Tracking ID</strong> লিখে এন্টার চাপুন।</li>
+<li><strong>স্ট্যাটাস চেক করুন:</strong></li>
+<li><strong>Payment Status:</strong> আবেদন ফি পরিশোধ হয়েছে কি না (Paid/Pending)।</li>
+<li><strong>Board Verification:</strong> শিক্ষা বোর্ডের ডাটার সাথে মিলেছে কি না (Verified/Manual Review)।</li>
+<li>প্রার্থীর নামের পাশে থাকা <strong>Details / View</strong> আইকনে ক্লিক করলে তার ছবি, স্বাক্ষর, পিতা-মাতার নাম ও শিক্ষাগত যোগ্যতার বিস্তারিত দেখা যাবে।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/04_03_applicants.png</span>
+  </div>
+  <a href="screenshots/04_03_applicants.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/04_03_applicants.png" alt="Applicants Master Datatable" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.5:</strong> আবেদনকারীদের মাস্টার তালিকা — আবেদন ফি পেমেন্ট ও বোর্ড ভেরিফিকেশন স্ট্যাটাস সরাসরি এখান থেকে পর্যবেক্ষণ করা যায়।</figcaption>
+</figure>
+
+<h3 id="transfer-to-student">কার্যপদ্ধতি ৩.২: আবেদনকারীকে স্থায়ী ছাত্রে রূপান্তর (Transfer to Student)<a href="#transfer-to-student" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li>প্রার্থী ভর্তি ফি পরিশোধ করলে এবং সকল কাগজপত্র ঠিক থাকলে <strong>Admission → Transfer</strong> মেনুতে যান।</li>
+<li>প্রার্থীর ট্র্যাকিং নম্বর সিলেক্ট করুন।</li>
+<li>সিস্টেম স্বয়ংক্রিয়ভাবে তাকে <code>Student</code> মডিউলে নিয়ে যাবে এবং তাকে একটি স্থায়ী রোল নম্বর বরাদ্দের অপশন দেবে।</li>
+</ol>
+<hr />
+<h2 id="role-4-accounts-officer">Role 4: হিসাব শাখা (Accounts Officer)<a href="#role-4-accounts-officer" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_4">কাজের পরিধি<a href="#_4" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li>প্রতিটি প্রোগ্রামের জন্য ক্রেডিট ফি ও সেমিস্টার ফি নির্ধারণ করা।</li>
+<li>সেমিস্টার কোর্স অনুযায়ী স্বয়ংক্রিয় টিউশন ইনভয়েস তৈরি ও কিস্তি ভাগ করা।</li>
+<li>ব্যাংকে টাকা জমা হলে ভাউচার দেখে সিস্টেমে পেমেন্ট পোস্টিং দেওয়া।</li>
+<li>শিক্ষার্থীদের স্কলারশিপ ও ওয়েভার ডিসকাউন্ট সমন্বয় করা।</li>
+<li>স্টুডেন্ট লেজার দেখে যে কোনো শিক্ষার্থীর আর্থিক দেনা-পাওনা অডিট করা।</li>
+</ul>
+<h3 id="fee-settings">কার্যপদ্ধতি ৪.১: ফি সেটিংস কনফিগার করা (Fee Settings)<a href="#fee-settings" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>মেনু লোকেশন:</strong> বামপাশের মেনু থেকে <strong>Accounts → Fee Settings</strong>-এ যান।</li>
+<li>নির্দিষ্ট প্রোগ্রাম ও সেশন সিলেক্ট করুন।</li>
+<li>টিউশন ফি (প্রতি ক্রেডিটের হার), ল্যাব ফি ও অন্যান্য চার্জ ইনপুট দিয়ে সেভ করুন।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/06_01_feesettings.png</span>
+  </div>
+  <a href="screenshots/06_01_feesettings.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/06_01_feesettings.png" alt="Academic Fee Settings Master" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.6:</strong> ফি সেটিংস মাস্টার শিডিউল — প্রোগ্রাম ভিত্তিক ক্রেডিট ফি ও সেশনের চার্জ এখান থেকে নির্ধারিত হয়।</figcaption>
+</figure>
+
+<h3 id="invoices-payment-posting">কার্যপদ্ধতি ৪.২: শিক্ষার্থীর ইনভয়েস দেখা ও পেমেন্ট পোস্টিং (Invoices &amp; Payment Posting)<a href="#invoices-payment-posting" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>মেনু লোকেশন:</strong> বামপাশের মেনু থেকে <strong>Accounts → Invoices</strong>-এ যান।</li>
+<li>ইনভয়েস নম্বর অথবা শিক্ষার্থীর <strong>Roll Number</strong> দিয়ে সার্চ করুন।</li>
+<li>তালিকা থেকে শিক্ষার্থীর ইনভয়েস দেখতে পাবেন:</li>
+<li><strong>Gross Amount:</strong> মোট নির্ধারিত ফি।</li>
+<li><strong>Waiver:</strong> অনুমোদিত ছাড় বা স্কলারশিপের পরিমাণ।</li>
+<li><strong>Net Payable:</strong> প্রকৃত প্রদেয় টাকা।</li>
+<li><strong>Installments:</strong> কিস্তির বিবরণ (১ম কিস্তি ও ২য় কিস্তি)।</li>
+<li>ব্যাংকের জমার রসিদ পাওয়ার পর <strong>Post Payment</strong> বাটনে ক্লিক করুন, ব্যাংক ব্রাঞ্চ ও রসিদের ট্রানজ্যাকশন নম্বর দিয়ে সাবমিট করলেই টাকা পরিশোধিত হয়ে যাবে।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/06_03_invoices.png</span>
+  </div>
+  <a href="screenshots/06_03_invoices.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/06_03_invoices.png" alt="Invoices Master Datatable" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.7:</strong> ইনভয়েস মাস্টার ডাটাটেবিল — শিক্ষার্থীদের রেজিস্ট্রেশন ও বিবিধ ফি এর রসিদ এবং পেমেন্ট স্ট্যাটাস তালিকা।</figcaption>
+</figure>
+
+<h3 id="student-financial-ledger">কার্যপদ্ধতি ৪.৩: শিক্ষার্থীর অর্থনৈতিক খতিয়ান যাচাই (Student Financial Ledger)<a href="#student-financial-ledger" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>মেনু লোকেশন:</strong> বামপাশের মেনু থেকে <strong>Accounts → Ledgers</strong>-এ যান।</li>
+<li>শিক্ষার্থীর রোল নম্বর লিখুন।</li>
+<li>সিস্টেমে ওই শিক্ষার্থীর ভর্তির দিন থেকে আজ পর্যন্ত সকল ডেবিট (ফি ধার্য) এবং ক্রেডিট (টাকা জমা) ট্রানজ্যাকশন এবং বর্তমান বকেয়া (Balance) নিখুঁতভাবে চলে আসবে।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/06_10_ledgers.png</span>
+  </div>
+  <a href="screenshots/06_10_ledgers.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/06_10_ledgers.png" alt="Student Financial Accounting Ledger" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.8:</strong> স্টুডেন্ট ফিনান্সিয়াল লেজার — রোল দিয়ে সার্চ করে যে কোনো শিক্ষার্থীর সকল লেনদেন ও বকেয়া দেখা যায়।</figcaption>
+</figure>
+
+<hr />
+<h2 id="role-5-controller-of-examinations">Role 5: পরীক্ষা নিয়ন্ত্রক (Controller of Examinations)<a href="#role-5-controller-of-examinations" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_5">কাজের পরিধি<a href="#_5" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li>শিক্ষকদের সাবমিট করা কোর্সের নম্বর পরীক্ষা করা এবং অনুমোদন (Approve) দেওয়া।</li>
+<li>সেমিস্টারের শতভাগ কোর্সের নম্বর জমা হওয়ার পর চূড়ান্ত রেজাল্ট প্রক্রিয়াকরণ ও প্রকাশ করা।</li>
+<li>অফিশিয়াল ট্যাবুলেশন শিট, গেজেট ও গ্রেড শিট প্রিন্ট বা সংরক্ষণ করা।</li>
+</ul>
+<h3 id="marks-approval">কার্যপদ্ধতি ৫.১: কোর্সের নম্বর অনুমোদন (Marks Approval)<a href="#marks-approval" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>মেনু লোকেশন:</strong> <strong>Exam → Marks → Approve</strong>-এ যান।</li>
+<li>নির্দিষ্ট সেমিস্টার, প্রোগ্রাম ও কোর্স সেকশন সিলেক্ট করুন।</li>
+<li>পরীক্ষকের দেওয়া সর্বোচ্চ, সর্বনিম্ন ও গড় নম্বর পর্যবেক্ষণ করুন।</li>
+<li>সবকিছু সঠিক থাকলে <strong>Approve Marks</strong> বাটনে ক্লিক করুন। সাথে সাথে প্রতিটি ছাত্রের লেটার গ্রেড ও গ্রেড পয়েন্ট স্থায়ীভাবে সংরক্ষিত হয়ে যাবে।</li>
+</ol>
+<h3 id="result-publication">কার্যপদ্ধতি ৫.২: চূড়ান্ত সেমিস্টার রেজাল্ট প্রকাশ (Result Publication)<a href="#result-publication" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>মেনু লোকেশন:</strong> <strong>Exam → Results → Create</strong>-এ যান।</li>
+<li>প্রোগ্রাম ও সেমিস্টার নির্বাচন করুন।</li>
+<li>সিস্টেম স্বয়ংক্রিয়ভাবে যাচাই করবে যে ওই সেমিস্টারের সব কোর্সের নম্বর অনুমোদন হয়েছে কি না।</li>
+<li>সব নম্বর অনুমোদিত থাকলে সিস্টেম ব্যাচের সকল ছাত্রের <strong>SGPA</strong> এবং ব্যাচ র‍্যাংক (Rank) স্বয়ংক্রিয়ভাবে ক্যালকুলেট করবে।</li>
+<li><strong>Publish</strong> বাটনে চাপ দেওয়া মাত্রই ফলাফল প্রকাশিত হবে এবং শিক্ষার্থীরা তাদের নিজস্ব পোর্টালে রেজাল্ট দেখতে পারবে।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/07_09_results.png</span>
+  </div>
+  <a href="screenshots/07_09_results.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/07_09_results.png" alt="Result Publication Dashboard" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.9:</strong> রেজাল্ট পাবলিকেশন ড্যাশবোর্ড — সেমিস্টার রেজাল্ট প্রকাশ ও স্টুডেন্ট পোর্টালে দৃশ্যমান করার কন্ট্রোল প্যানেল।</figcaption>
+</figure>
+
+<hr />
+<h2 id="role-6-academic-registrar-staff">Role 6: অ্যাকাডেমিক ও রেজিস্ট্রার অফিস (Academic &amp; Registrar Staff)<a href="#role-6-academic-registrar-staff" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_6">কাজের পরিধি<a href="#_6" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li>শিক্ষার্থী ডিরেক্টরি বজায় রাখা এবং স্ট্যাটাস ট্র্যাক করা (নিয়মিত, স্থগিত বা বহিষ্কৃত)।</li>
+<li>সিলেবাস ও কোর্স ক্যাটালগ তৈরি করা।</li>
+<li>সেমিস্টার কোর্স রেজিস্ট্রেশন সম্পন্ন করা (Auto &amp; Manual Registration)।</li>
+<li>ট্রান্সক্রিপ্ট, প্রভিশনাল সার্টিফিকেট, টেস্টিমোনিয়াল ও মাইগ্রেশন সার্টিফিকেট ইস্যু করা।</li>
+</ul>
+<h3 id="student-directory">কার্যপদ্ধতি ৬.১: শিক্ষার্থী ডিরেক্টরি অনুসন্ধান (Student Directory)<a href="#student-directory" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>মেনু লোকেশন:</strong> <strong>Academic → Students</strong>-এ যান।</li>
+<li>সার্চ বারে রোল নম্বর, নাম বা ব্যাচ লিখে সার্চ করুন।</li>
+<li>প্রার্থীর নামের পাশে থাকা অপশন থেকে তার পূর্ণাঙ্গ তথ্য, অ্যাডভাইজর, সিলেবাস ও রেজিস্ট্রেশন দেখতে পারবেন।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/05_01_students.png</span>
+  </div>
+  <a href="screenshots/05_01_students.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/05_01_students.png" alt="Students Master Directory" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.10:</strong> স্টুডেন্টস মাস্টার ডিরেক্টরি — সকল সক্রিয় শিক্ষার্থীর তালিকা, ট্র্যাকিং আইডি, রোল, বিভাগ ও সেশনের রিয়েল ডাটা।</figcaption>
+</figure>
+
+<h3 id="transcripts-generation">কার্যপদ্ধতি ৬.২: ট্রান্সক্রিপ্ট ও সার্টিফিকেট তৈরি (Transcripts Generation)<a href="#transcripts-generation" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>মেনু লোকেশন:</strong> <strong>Academic → Transcripts</strong>-এ যান।</li>
+<li>শিক্ষার্থীর রোল নম্বর লিখুন।</li>
+<li>ট্রান্সক্রিপ্টের ধরন নির্বাচন করুন:</li>
+<li><strong>Partial Transcript:</strong> অধ্যয়নরত শিক্ষার্থীদের জন্য চলমান সেমিস্টার পর্যন্ত প্রাপ্ত ফলাফলের ট্রান্সক্রিপ্ট।</li>
+<li><strong>Final Transcript:</strong> ডিগ্রি সম্পন্নকারী গ্র্যাজুয়েটদের জন্য পূর্ণাঙ্গ ট্রান্সক্রিপ্ট।</li>
+<li><strong>Generate PDF</strong> বাটনে ক্লিক করলেই অফিশিয়াল সিকিউরিটি ফরম্যাটে ট্রান্সক্রিপ্ট ডাউনলোড হয়ে যাবে।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/05_14_transcripts.png</span>
+  </div>
+  <a href="screenshots/05_14_transcripts.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/05_14_transcripts.png" alt="Academic Transcripts Generator" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.11:</strong> ট্রান্সক্রিপ্ট জেনারেটর — শিক্ষার্থীর রোল দিয়ে আংশিক বা চূড়ান্ত একাডেমিক ট্রান্সক্রিপ্ট তৈরি ও প্রিন্ট করার ইন্টারফেস।</figcaption>
+</figure>
+
+<hr />
+<h2 id="role-7-student-portal-guide">Role 7: শিক্ষার্থী পোর্টাল নির্দেশিকা (Student Portal Guide)<a href="#role-7-student-portal-guide" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_7">কাজের পরিধি<a href="#_7" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li>নিজের রোল ও পাসওয়ার্ড দিয়ে নিজস্ব পোর্টালে লগইন করা।</li>
+<li>সাপ্তাহিক ক্লাস রুটিন ও রুম নম্বর দেখা।</li>
+<li>সেমিস্টার ফি, কিস্তির পরিমাণ ও পেমেন্ট হিস্ট্রি দেখা।</li>
+<li>প্রকাশিত সেমিস্টার পরীক্ষার রেজাল্ট ও গ্রেড দেখা।</li>
+<li>ট্রান্সক্রিপ্ট বা সনদের জন্য ঘরে বসেই আবেদন করা।</li>
+</ul>
+<h3 id="_8">কার্যপদ্ধতি ৭.১: স্টুডেন্ট পোর্টালে লগইন করার নিয়ম<a href="#_8" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li>ব্রাউজারে <code>http://localhost:8083/front/student/login</code> ঠিকানায় যান।</li>
+<li><strong>Student ID / Roll:</strong> আপনার পূর্ণ রোল নম্বর লিখুন (যেমন: <code>193011001</code>)।</li>
+<li><strong>Password:</strong> আপনার পাসওয়ার্ড লিখুন (ডিফল্ট পাসওয়ার্ড হিসেবে জন্ম নিবন্ধন নম্বর বা মোবাইল নম্বর থাকে)।</li>
+<li><strong>Login</strong> বাটনে ক্লিক করুন।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_01_student_login.png</span>
+  </div>
+  <a href="screenshots/02_01_student_login.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_01_student_login.png" alt="Student Authentication Portal" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.12:</strong> স্টুডেন্ট লগইন স্ক্রিন — রোল নম্বর ও পাসওয়ার্ড দিয়ে শিক্ষার্থী তার নিজস্ব অ্যাকাউন্টে প্রবেশ করে।</figcaption>
+</figure>
+
+<h3 id="student-profile">কার্যপদ্ধতি ৭.২: প্রোফাইল ও একাডেমিক তথ্য দেখা (Student Profile)<a href="#student-profile" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li>লগইন করার পর সরাসরি আপনার প্রোফাইল পেজ চলে আসবে।</li>
+<li>এখানে আপনার নাম, বর্তমান সেশন, ব্যাচ, সেমিস্টার, রক্তেল গ্রুপ এবং নির্ধারিত শিক্ষক বা অ্যাডভাইজরের নাম দেখতে পাবেন।</li>
+</ul>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_02_student_profile_info.png</span>
+  </div>
+  <a href="screenshots/02_02_student_profile_info.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_02_student_profile_info.png" alt="Student Academic Profile Dashboard" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.13:</strong> স্টুডেন্ট প্রোফাইল ড্যাশবোর্ড — ব্যক্তিগত ও পারিবারিক তথ্য, শিক্ষা ব্যাকগ্রাউন্ড এবং সেমিস্টার তথ্যের সামগ্রিক দৃশ্য।</figcaption>
+</figure>
+
+<h3 id="checking-results">কার্যপদ্ধতি ৭.৩: পরীক্ষার ফলাফল ও গ্রেড দেখা (Checking Results)<a href="#checking-results" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li>প্রোফাইলের মেনু থেকে <strong>Results</strong> ট্যাবে ক্লিক করুন।</li>
+<li>এখানে আপনার প্রতিটি সেমিস্টারে নেওয়া কোর্সের তালিকা, ক্রেডিট, লেটার গ্রেড (যেমন: <code>A+</code>, <code>A</code>, <code>A-</code>) এবং গ্রেড পয়েন্ট দেখা যাবে।</li>
+<li>ডানপাশে প্রতিটি সেমিস্টারের অর্জিত ক্রেডিট ও <strong>SGPA</strong> স্পষ্টভাবে প্রদর্শিত হবে।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_06_student_result_card.png</span>
+  </div>
+  <a href="screenshots/02_06_student_result_card.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_06_student_result_card.png" alt="Semester Result Card & Session SGPA" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.14:</strong> স্টুডেন্ট রেজাল্ট কার্ড — সেমিস্টার ভিত্তিক কোর্স রেজাল্ট, গ্রেড পয়েন্ট এবং সেমিস্টার SGPA এর বিস্তারিত হিসাব।</figcaption>
+</figure>
+
+<h3 id="payments-invoices">কার্যপদ্ধতি ৭.৪: ফি ও কিস্তির বিবরণ দেখা (Payments &amp; Invoices)<a href="#payments-invoices" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li>প্রোফাইলের <strong>Payments</strong> ট্যাবে ক্লিক করুন।</li>
+<li>আপনার সেমিস্টার ফি এর মোট টাকা, কত টাকা পরিশোধ হয়েছে এবং কত টাকা বকেয়া রয়েছে তা দেখতে পাবেন।</li>
+<li>কিস্তি অনুযায়ী ফি এর পরিমাণ (যেমন: ১ম কিস্তি ও ২য় কিস্তির ভাগ) পরিষ্কারভাবে দেখা যাবে।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_04_student_invoices.png</span>
+  </div>
+  <a href="screenshots/02_04_student_invoices.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_04_student_invoices.png" alt="Student Invoices & Payment Breakdown" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.15:</strong> স্টুডেন্ট পেমেন্ট ও ইনভয়েস হিস্ট্রি — প্রতিটি সেমিস্টারের ফি, কিস্তির পরিমাণ এবং বকেয়ার রিয়েল হিসেব।</figcaption>
+</figure>
+
+<h3 id="class-routine">কার্যপদ্ধতি ৭.৫: ক্লাস রুটিন দেখা (Class Routine)<a href="#class-routine" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li>বামপাশের মেনু থেকে <strong>Class Routine</strong> অপশনে ক্লিক করলে রবি থেকে বৃহস্পতিবার পর্যন্ত আপনার ক্লাসের সময়, কোর্সের নাম, শিক্ষকের নাম এবং নির্দিষ্ট রুম নম্বর গ্রিড আকারে চলে আসবে।</li>
+</ul>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_03_student_routine.png</span>
+  </div>
+  <a href="screenshots/02_03_student_routine.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_03_student_routine.png" alt="Student Weekly Class Routine" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.16:</strong> স্টুডেন্ট ক্লাস রুটিন — সপ্তাহে কোন দিন কোন রুমে কোন শিক্ষকের ক্লাস হবে তার স্পষ্ট টাইমটেবিল।</figcaption>
+</figure>
+
+<hr />
+<h2 id="role-8-public-applicant-guide">Role 8: নতুন আবেদনকারী নির্দেশিকা (Public Applicant Guide)<a href="#role-8-public-applicant-guide" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="_9">কাজের পরিধি<a href="#_9" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li>বরেন্দ্র বিশ্ববিদ্যালয়ে যেকোনো প্রোগ্রামে অনলাইনে ভর্তির আবেদন করা।</li>
+<li>এসএসসি ও এইচএসসি পরীক্ষার বোর্ড রোল দিয়ে স্বয়ংক্রিয় ডাটা যাচাই করা।</li>
+<li>প্রার্থীর ছবি, স্বাক্ষর ও অন্যান্য প্রয়োজনীয় কাগজপত্র আপলোড করা।</li>
+<li>ভর্তি পরীক্ষার প্রবেশপত্র (Admit Card) ডাউনলোড করা।</li>
+</ul>
+<h3 id="_10">কার্যপদ্ধতি ৮.১: অনলাইন রেজিস্ট্রেশন ও আবেদন ফর্ম পূরণ<a href="#_10" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li>ব্রাউজারে <code>http://localhost:8083/front/applicant/home</code> লিংকে প্রবেশ করুন।</li>
+<li><strong>New Applicant (Sign Up)</strong> ট্যাবে ক্লিক করুন।</li>
+<li>আপনার বোর্ড, এসএসসি ও এইচএসসি পরীক্ষার রোল, রেজিস্ট্রেশন নম্বর, মোবাইল নম্বর ও পাসওয়ার্ড দিয়ে সাইন-আপ করুন।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/01_01_applicant_portal_home.png</span>
+  </div>
+  <a href="screenshots/01_01_applicant_portal_home.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/01_01_applicant_portal_home.png" alt="Public Applicant Portal Home" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.17:</strong> পাবলিক অ্যাপ্লিকেন্ট পোর্টাল — নতুন আবেদনকারী এখান থেকে রেজিস্ট্রেশন করে ও নির্দেশিকা দেখতে পায়।</figcaption>
+</figure>
+
+<h3 id="_11">কার্যপদ্ধতি ৮.২: প্রোফাইল তথ্য ও ডকুমেন্ট আপলোড<a href="#_11" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li>আপনার মোবাইল নম্বর ও পাসওয়ার্ড দিয়ে লগইন করুন।</li>
+<li><strong>Personal Information, Contact Address, Guardian Information, Education</strong> সেকশনগুলো একে একে পূরণ করুন।</li>
+<li><strong>Attachments</strong> সেকশনে পাসপোর্ট সাইজের রঙিন ছবি এবং পরিষ্কার স্বাক্ষর স্ক্যান করে আপলোড করুন।</li>
+<li>১০০% প্রোফাইল সম্পন্ন হলে কাঙ্ক্ষিত প্রোগ্রামে আবেদন সাবমিট করুন।</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/01_03_applicant_profile.png</span>
+  </div>
+  <a href="screenshots/01_03_applicant_profile.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/01_03_applicant_profile.png" alt="Applicant Profile & Education Details" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 3.18:</strong> অ্যাপ্লিকেন্ট প্রোফাইল পেজ — ব্যক্তিগত তথ্য, বোর্ডের ফলাফল এবং প্রোফাইল প্রগ্রেস বার সরাসরি প্রদর্শিত হয়।</figcaption>
+</figure>
+
+<hr />
+<div class="callout callout-info">
+  <div class="callout-title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+    Operational Note
+  </div>
+  <p><strong>সতর্কতামূলক সারসংক্ষেপ (Summary Note):</strong> 
+EasyMate ERP সফটওয়্যারটি বিশ্ববিদ্যালয়ের সকল একাডেমিক ও স্টুডেন্ট কার্যক্রমকে নিখুঁতভাবে সমন্বিত করে। কোনো কাজে সমস্যা দেখা দিলে বা টেকনিক্যাল সহযোগিতার প্রয়োজন হলে ডিপার্টমেন্ট কো-অর্ডিনেটর অথবা আইটি শাখার সহায়তা নিন।</p>
+</div>
+
+        <div class="chapter-nav-footer">
+  <a href="02-student-lifecycle.html" class="chapter-nav-card prev">
+    <span class="chapter-nav-direction">← Previous Chapter</span>
+    <span class="chapter-nav-title">02 — Student Lifecycle</span>
+  </a>
+  <a href="04-cross-module-workflows.html" class="chapter-nav-card next">
+    <span class="chapter-nav-direction">Next Chapter →</span>
+    <span class="chapter-nav-title">04 — Cross-Module Workflows</span>
+  </a>
+</div>
+
+
+      </article>
+    </main>
+
+    <!-- Right TOC Sidebar -->
+    <aside class="docs-toc">
+      <div class="toc-title">
+        <span>On This Page</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+      </div>
+      <ul class="toc-list">
+  <li class="toc-item level-2"><a href="#easymate-erp-" class="toc-link" title="EasyMate ERP — সহজ ব্যবহার নির্দেশিকা ও ভূমিকা-ভিত্তিক গাইডলাইন">EasyMate ERP — সহজ ব্যবহার নির্দেশিকা ও ভূমিকা-ভিত্তিক গাইডলাইন</a></li>
+  <li class="toc-item level-2"><a href="#user-personas" class="toc-link" title="ভূমিকা ও ব্যবহাকারী রোল তালিকা (User Personas)">ভূমিকা ও ব্যবহাকারী রোল তালিকা (User Personas)</a></li>
+  <li class="toc-item level-2"><a href="#role-1-system-administrator" class="toc-link" title="Role 1: সিস্টেম অ্যাডমিনিস্ট্রেটর (System Administrator)">Role 1: সিস্টেম অ্যাডমিনিস্ট্রেটর (System Administrator)</a></li>
+  <li class="toc-item level-3"><a href="#_1" class="toc-link" title="কাজের পরিধি">কাজের পরিধি</a></li>
+  <li class="toc-item level-3"><a href="#user-account-creation" class="toc-link" title="কার্যপদ্ধতি ১.১: নতুন ইউজার তৈরি ও রোল নির্ধারণ (User Account Creation)">কার্যপদ্ধতি ১.১: নতুন ইউজার তৈরি ও রোল নির্ধারণ (User Account Creation)</a></li>
+  <li class="toc-item level-3"><a href="#semester-settings" class="toc-link" title="কার্যপদ্ধতি ১.২: সেমিস্টার সেটিংস ও ফি জমার ডেডলাইন নির্ধারণ (Semester Settings)">কার্যপদ্ধতি ১.২: সেমিস্টার সেটিংস ও ফি জমার ডেডলাইন নির্ধারণ (Semester Settings)</a></li>
+  <li class="toc-item level-2"><a href="#role-2-teacher-faculty-member" class="toc-link" title="Role 2: শিক্ষক ও পরীক্ষক (Teacher / Faculty Member)">Role 2: শিক্ষক ও পরীক্ষক (Teacher / Faculty Member)</a></li>
+  <li class="toc-item level-3"><a href="#_2" class="toc-link" title="কাজের পরিধি">কাজের পরিধি</a></li>
+  <li class="toc-item level-3"><a href="#marks-entry" class="toc-link" title="কার্যপদ্ধতি ২.১: পরীক্ষার নম্বর এন্ট্রি করার নিয়ম (Marks Entry)">কার্যপদ্ধতি ২.১: পরীক্ষার নম্বর এন্ট্রি করার নিয়ম (Marks Entry)</a></li>
+  <li class="toc-item level-3"><a href="#submit-freeze" class="toc-link" title="কার্যপদ্ধতি ২.২: মার্কস সাবমিট ও লক করা (Submit &amp;amp; Freeze)">কার্যপদ্ধতি ২.২: মার্কস সাবমিট ও লক করা (Submit &amp;amp; Freeze)</a></li>
+  <li class="toc-item level-2"><a href="#role-3-admission-officer" class="toc-link" title="Role 3: ভর্তি শাখা (Admission Officer)">Role 3: ভর্তি শাখা (Admission Officer)</a></li>
+  <li class="toc-item level-3"><a href="#_3" class="toc-link" title="কাজের পরিধি">কাজের পরিধি</a></li>
+  <li class="toc-item level-3"><a href="#reviewing-applicants" class="toc-link" title="কার্যপদ্ধতি ৩.১: ভর্তিচ্ছুদের আবেদনপত্র যাচাই (Reviewing Applicants)">কার্যপদ্ধতি ৩.১: ভর্তিচ্ছুদের আবেদনপত্র যাচাই (Reviewing Applicants)</a></li>
+  <li class="toc-item level-3"><a href="#transfer-to-student" class="toc-link" title="কার্যপদ্ধতি ৩.২: আবেদনকারীকে স্থায়ী ছাত্রে রূপান্তর (Transfer to Student)">কার্যপদ্ধতি ৩.২: আবেদনকারীকে স্থায়ী ছাত্রে রূপান্তর (Transfer to Student)</a></li>
+  <li class="toc-item level-2"><a href="#role-4-accounts-officer" class="toc-link" title="Role 4: হিসাব শাখা (Accounts Officer)">Role 4: হিসাব শাখা (Accounts Officer)</a></li>
+  <li class="toc-item level-3"><a href="#_4" class="toc-link" title="কাজের পরিধি">কাজের পরিধি</a></li>
+  <li class="toc-item level-3"><a href="#fee-settings" class="toc-link" title="কার্যপদ্ধতি ৪.১: ফি সেটিংস কনফিগার করা (Fee Settings)">কার্যপদ্ধতি ৪.১: ফি সেটিংস কনফিগার করা (Fee Settings)</a></li>
+  <li class="toc-item level-3"><a href="#invoices-payment-posting" class="toc-link" title="কার্যপদ্ধতি ৪.২: শিক্ষার্থীর ইনভয়েস দেখা ও পেমেন্ট পোস্টিং (Invoices &amp;amp; Payment Posting)">কার্যপদ্ধতি ৪.২: শিক্ষার্থীর ইনভয়েস দেখা ও পেমেন্ট পোস্টিং (Invoices &amp;amp; Payment Posting)</a></li>
+  <li class="toc-item level-3"><a href="#student-financial-ledger" class="toc-link" title="কার্যপদ্ধতি ৪.৩: শিক্ষার্থীর অর্থনৈতিক খতিয়ান যাচাই (Student Financial Ledger)">কার্যপদ্ধতি ৪.৩: শিক্ষার্থীর অর্থনৈতিক খতিয়ান যাচাই (Student Financial Ledger)</a></li>
+  <li class="toc-item level-2"><a href="#role-5-controller-of-examinations" class="toc-link" title="Role 5: পরীক্ষা নিয়ন্ত্রক (Controller of Examinations)">Role 5: পরীক্ষা নিয়ন্ত্রক (Controller of Examinations)</a></li>
+  <li class="toc-item level-3"><a href="#_5" class="toc-link" title="কাজের পরিধি">কাজের পরিধি</a></li>
+  <li class="toc-item level-3"><a href="#marks-approval" class="toc-link" title="কার্যপদ্ধতি ৫.১: কোর্সের নম্বর অনুমোদন (Marks Approval)">কার্যপদ্ধতি ৫.১: কোর্সের নম্বর অনুমোদন (Marks Approval)</a></li>
+  <li class="toc-item level-3"><a href="#result-publication" class="toc-link" title="কার্যপদ্ধতি ৫.২: চূড়ান্ত সেমিস্টার রেজাল্ট প্রকাশ (Result Publication)">কার্যপদ্ধতি ৫.২: চূড়ান্ত সেমিস্টার রেজাল্ট প্রকাশ (Result Publication)</a></li>
+  <li class="toc-item level-2"><a href="#role-6-academic-registrar-staff" class="toc-link" title="Role 6: অ্যাকাডেমিক ও রেজিস্ট্রার অফিস (Academic &amp;amp; Registrar Staff)">Role 6: অ্যাকাডেমিক ও রেজিস্ট্রার অফিস (Academic &amp;amp; Registrar Staff)</a></li>
+  <li class="toc-item level-3"><a href="#_6" class="toc-link" title="কাজের পরিধি">কাজের পরিধি</a></li>
+  <li class="toc-item level-3"><a href="#student-directory" class="toc-link" title="কার্যপদ্ধতি ৬.১: শিক্ষার্থী ডিরেক্টরি অনুসন্ধান (Student Directory)">কার্যপদ্ধতি ৬.১: শিক্ষার্থী ডিরেক্টরি অনুসন্ধান (Student Directory)</a></li>
+  <li class="toc-item level-3"><a href="#transcripts-generation" class="toc-link" title="কার্যপদ্ধতি ৬.২: ট্রান্সক্রিপ্ট ও সার্টিফিকেট তৈরি (Transcripts Generation)">কার্যপদ্ধতি ৬.২: ট্রান্সক্রিপ্ট ও সার্টিফিকেট তৈরি (Transcripts Generation)</a></li>
+  <li class="toc-item level-2"><a href="#role-7-student-portal-guide" class="toc-link" title="Role 7: শিক্ষার্থী পোর্টাল নির্দেশিকা (Student Portal Guide)">Role 7: শিক্ষার্থী পোর্টাল নির্দেশিকা (Student Portal Guide)</a></li>
+  <li class="toc-item level-3"><a href="#_7" class="toc-link" title="কাজের পরিধি">কাজের পরিধি</a></li>
+  <li class="toc-item level-3"><a href="#_8" class="toc-link" title="কার্যপদ্ধতি ৭.১: স্টুডেন্ট পোর্টালে লগইন করার নিয়ম">কার্যপদ্ধতি ৭.১: স্টুডেন্ট পোর্টালে লগইন করার নিয়ম</a></li>
+  <li class="toc-item level-3"><a href="#student-profile" class="toc-link" title="কার্যপদ্ধতি ৭.২: প্রোফাইল ও একাডেমিক তথ্য দেখা (Student Profile)">কার্যপদ্ধতি ৭.২: প্রোফাইল ও একাডেমিক তথ্য দেখা (Student Profile)</a></li>
+  <li class="toc-item level-3"><a href="#checking-results" class="toc-link" title="কার্যপদ্ধতি ৭.৩: পরীক্ষার ফলাফল ও গ্রেড দেখা (Checking Results)">কার্যপদ্ধতি ৭.৩: পরীক্ষার ফলাফল ও গ্রেড দেখা (Checking Results)</a></li>
+  <li class="toc-item level-3"><a href="#payments-invoices" class="toc-link" title="কার্যপদ্ধতি ৭.৪: ফি ও কিস্তির বিবরণ দেখা (Payments &amp;amp; Invoices)">কার্যপদ্ধতি ৭.৪: ফি ও কিস্তির বিবরণ দেখা (Payments &amp;amp; Invoices)</a></li>
+  <li class="toc-item level-3"><a href="#class-routine" class="toc-link" title="কার্যপদ্ধতি ৭.৫: ক্লাস রুটিন দেখা (Class Routine)">কার্যপদ্ধতি ৭.৫: ক্লাস রুটিন দেখা (Class Routine)</a></li>
+  <li class="toc-item level-2"><a href="#role-8-public-applicant-guide" class="toc-link" title="Role 8: নতুন আবেদনকারী নির্দেশিকা (Public Applicant Guide)">Role 8: নতুন আবেদনকারী নির্দেশিকা (Public Applicant Guide)</a></li>
+  <li class="toc-item level-3"><a href="#_9" class="toc-link" title="কাজের পরিধি">কাজের পরিধি</a></li>
+  <li class="toc-item level-3"><a href="#_10" class="toc-link" title="কার্যপদ্ধতি ৮.১: অনলাইন রেজিস্ট্রেশন ও আবেদন ফর্ম পূরণ">কার্যপদ্ধতি ৮.১: অনলাইন রেজিস্ট্রেশন ও আবেদন ফর্ম পূরণ</a></li>
+  <li class="toc-item level-3"><a href="#_11" class="toc-link" title="কার্যপদ্ধতি ৮.২: প্রোফাইল তথ্য ও ডকুমেন্ট আপলোড">কার্যপদ্ধতি ৮.২: প্রোফাইল তথ্য ও ডকুমেন্ট আপলোড</a></li>
+</ul>
+
+
+      <div class="toc-actions">
+        <a href="#top" class="toc-action-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          Back to top
+        </a>
+        <a href="#" class="toc-action-link print-btn-action">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print this section
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Global Search Modal -->
+  <div class="search-modal-backdrop" id="search-modal-backdrop">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-modal-input" id="search-modal-input" placeholder="Search modules, roles, workflows, rules, FAQs..." autocomplete="off">
+        <button id="search-modal-close" style="background:none;border:none;cursor:pointer;color:var(--text-muted);padding:4px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="search-modal-results" id="search-modal-results"></div>
+      <div class="search-modal-footer">
+        <div>Navigate with <kbd>↑</kbd> <kbd>↓</kbd> and select with <kbd>Enter</kbd></div>
+        <div>Close with <kbd>Esc</kbd></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/search-index.js"></script>
+  <script src="assets/manual.js"></script>
+</body>
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Verification Report — EasyMate ERP Manual | Varendra University</title>
+  <meta name="description" content="Varendra University EasyMate ERP User Manual & Operational Reference: Student Lifecycle, Cross-Module Workflows, Roles & Technical Verification.">
+  <link rel="stylesheet" href="assets/manual.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e3a8a'><path d='M12 2L1 7l11 5 9-4.09V17h2V7L12 2z'/></svg>">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <a href="index.html" class="brand-wrapper">
+        <div class="brand-logo">VU</div>
+        <div class="brand-text">
+          <div class="brand-title">
+            EasyMate ERP
+            <span class="version-tag">v1.0</span>
+          </div>
+          <div class="brand-subtitle">Varendra University • Academic ERP Manual</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="header-actions">
+      <div class="search-trigger" role="button" tabindex="0" title="Search documentation (Ctrl+K)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <span>Search manual...</span>
+        <kbd>Ctrl+K</kbd>
+      </div>
+
+      <button class="header-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        Dark
+      </button>
+
+      <button class="header-btn print-btn-action" title="Print this manual or Export to PDF">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print / PDF
+      </button>
+    </div>
+  </header>
+
+  <!-- Docs Layout -->
+  <div class="docs-layout">
+
+    <!-- Left Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-search-box">
+        <input type="text" id="sidebar-filter-input" class="sidebar-search-input" placeholder="Quick filter menu...">
+      </div>
+      <nav class="sidebar-nav">
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Getting Started</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="index.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📌</span> Overview &amp; Scope</span>
+          <span class="nav-badge">Start Here</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Modules &amp; Specifications</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="01-functional-inventory.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📋</span> 01. Functional Inventory</span>
+          <span class="nav-badge">9 Modules</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="02-student-lifecycle.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">🔄</span> 02. Student Lifecycle</span>
+          <span class="nav-badge">8 Stages</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="03-role-based-guides.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">👥</span> 03. Role-Based Guides</span>
+          <span class="nav-badge">9 Roles</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="04-cross-module-workflows.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">⚡</span> 04. Cross-Module Workflows</span>
+          <span class="nav-badge">8 Workflows</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Reference &amp; Audit</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="05-glossary-and-faq.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📖</span> 05. Glossary &amp; FAQ</span>
+          <span class="nav-badge">Reference</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="06-screenshots-checklist.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📸</span> 06. Screenshots Checklist</span>
+          <span class="nav-badge">40 Captured</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="verification-report.html" class="sidebar-nav-link active">
+          <span class="nav-label"><span class="nav-icon">🛡️</span> 07. Verification Report</span>
+          <span class="nav-badge">Code Audit</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Complete Editions</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="user-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📑</span> Complete User Manual</span>
+          <span class="nav-badge">Master</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">All-in-One Edition</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="complete-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📚</span> Complete 8-Chapter Manual</span>
+          <span class="nav-badge">Merged</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sidebar-legend">
+    <div class="sidebar-legend-title">Verification Legend</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#10b981;"></span> <strong>[VC]</strong> Code Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> <strong>[CNV]</strong> Code Found / Not UI</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#ea580c;"></span> <strong>[PI]</strong> Partially Implemented</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#7c3aed;"></span> <strong>[VUI]</strong> Running UI Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#0284c7;"></span> <strong>[RDC]</strong> Requires DB / Policy</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span> <strong>[NF]</strong> Not Found / Excluded</div>
+  </div>
+</nav>
+
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="docs-main">
+      <article class="docs-article">
+        
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">EasyMate ERP</a>
+          <span class="separator">/</span>
+          <a href="index.html">User Manual</a>
+          <span class="separator">/</span>
+          <span class="current">07. Verification Report</span>
+        </nav>
+
+        <div class="doc-header-banner">
+          <div class="doc-meta-row">
+            <span class="doc-meta-pill">🏛️ Varendra University</span>
+            <span class="doc-meta-pill">📅 Published: October 2026</span>
+            <span class="doc-meta-pill">🛡️ Live Docker System Verified</span>
+            <span class="doc-meta-pill">⚡ Laravel Academic SIS</span>
+          </div>
+        </div>
+
+        <h1 id="technical-verification-audit-report">Technical Verification &amp; Audit Report<a href="#technical-verification-audit-report" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h1>
+<h2 id="easymate-erp-codebase-analysis-scope-boundaries-operational-audit">EasyMate ERP — Codebase Analysis, Scope Boundaries &amp; Operational Audit<a href="#easymate-erp-codebase-analysis-scope-boundaries-operational-audit" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="callout callout-info">
+  <div class="callout-title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+    Operational Note
+  </div>
+  <p><strong>System:</strong> EasyMate ERP<br />
+<strong>Client:</strong> Varendra University<br />
+<strong>Audit Date:</strong> October 2026<br />
+<strong>Lead Auditor:</strong> Senior Business Analyst &amp; University ERP Functional Consultant<br />
+<strong>Target Audience:</strong> University Leadership, Registrar, Examination Controller, Director of ICT, and EasyMate System Administrators  </p>
+</div>
+<hr />
+<h2 id="1-executive-summary">1. Executive Summary<a href="#1-executive-summary" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p>This verification report presents a comprehensive technical and functional audit of the <strong>EasyMate ERP</strong> codebase implemented for Varendra University. The investigation evaluated routes, controllers, models, policies, database migrations, database seeders, console commands, and blade templates to establish a code-verified baseline of actual system capabilities, business logic constraints, and operational boundaries.</p>
+<h3 id="summary-statistics-verification-classification">Summary Statistics &amp; Verification Classification<a href="#summary-statistics-verification-classification" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p>In accordance with strict audit requirements, all audited capabilities are classified under the following rigorous verification statuses:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Verification Classification</th>
+<th>Item Count / Scope</th>
+<th>Details &amp; Evidentiary Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Verified in Source Code</strong></td>
+<td>162 discrete capabilities</td>
+<td>Confirmed in routes, controllers, models, and policy classes</td>
+</tr>
+<tr>
+<td><strong>Verified in Running UI</strong></td>
+<td>0 capabilities (0%)</td>
+<td>No runtime application server or active browser session was executed during this audit</td>
+</tr>
+<tr>
+<td><strong>Partially Implemented</strong></td>
+<td>16 capabilities</td>
+<td>Feature exists in code but has incomplete UI views, stubbed handlers, or partial business logic</td>
+</tr>
+<tr>
+<td><strong>Found in Code but Not UI-Verified</strong></td>
+<td>162 capabilities (100% of code features)</td>
+<td>Endpoints and views exist in source code, but runtime rendering, layout fidelity, and interactivity have not been visually verified</td>
+</tr>
+<tr>
+<td><strong>Requires Database or Policy Confirmation</strong></td>
+<td>6 critical operational areas</td>
+<td>Dynamic <code>grades</code> table boundaries, active role IDs beyond 1/7/11, payment gateway vendor configs, graduation CGPA thresholds, semester drop fee policies</td>
+</tr>
+<tr>
+<td><strong>Not Found in Codebase</strong></td>
+<td>Excluded domains &amp; non-existent routes</td>
+<td>Zero HRM routes; no standalone <code>/front/student/result</code> route (results rendered in Profile tab); no <code>applicants.verify-board</code> route</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="2-scope-boundaries-hrm-separation">2. Scope Boundaries &amp; HRM Separation<a href="#2-scope-boundaries-hrm-separation" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p>A primary mandate of this audit is to strictly enforce the boundary between EasyMate ERP and external institutional software.</p>
+<h3 id="verified-architectural-boundary-easymate-erp-vs-hrm">Verified Architectural Boundary: EasyMate ERP vs HRM<a href="#verified-architectural-boundary-easymate-erp-vs-hrm" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<div class="code-wrapper diagram-wrapper">
+  <div class="code-header">
+    <span class="code-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> ASCII Workflow & Architecture Diagram</span>
+    <button class="code-copy-btn" title="Copy to clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      Copy
+    </button>
+  </div>
+  <pre><code>┌────────────────────────────────────────────────────────┐
+│               VARENDRA UNIVERSITY IT ECOSYSTEM         │
+├────────────────────────────┬───────────────────────────┤
+│        EASYMATE ERP        │    EXTERNAL HRM SYSTEM    │
+│  (ACADEMIC &amp; STUDENT ERP)  │      (HUMAN RESOURCES)    │
+├────────────────────────────┼───────────────────────────┤
+│ • Student Admissions       │ • Faculty Recruitment     │
+│ • Academic Curricula       │ • Staff Onboarding        │
+│ • Student Registrations    │ • Employee Biometrics     │
+│ • Class Schedules          │ • Employee Attendance     │
+│ • Student Accounts &amp; Fees  │ • Staff Leave Management  │
+│ • Exam Marks &amp; Grades      │ • Payroll &amp; Compensation  │
+│ • Transcripts &amp; Degrees    │ • Performance Appraisals  │
+│ • Student Portal           │ • Service Books &amp; PF      │
+└────────────────────────────┴───────────────────────────┘
+</code></pre>
+</div>
+<h3 id="audit-findings-on-human-resource-management">Audit Findings on Human Resource Management<a href="#audit-findings-on-human-resource-management" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>Zero HRM Routes:</strong> A full audit of all 14 route files (<code>web.php</code>, <code>web_routes_*.php</code>, <code>api.php</code>) confirmed <strong>zero routes</strong> for employee payroll, salary disbursement, staff leave applications, employee biometric clock-in, recruitment, or HR onboarding.</li>
+<li><strong>Role of the <code>users</code> Table:</strong> The <code>User</code> model (<code>app/User.php</code>) in EasyMate ERP exists <strong>solely</strong> for ERP system authentication, role-based authorization, and course examiner assignments (<code>examiners</code> table). Staff members are mapped to <code>faculties</code> and <code>departments</code> purely to scope their administrative viewing privileges over academic student records.</li>
+<li><strong>Conclusion:</strong> All institutional HR operations are strictly outside EasyMate's scope and reside in independent HRM software. EasyMate documentation excludes HRM functionality to reflect the true operational boundary.</li>
+</ol>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/07_02_examiners.png</span>
+  </div>
+  <a href="screenshots/07_02_examiners.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/07_02_examiners.png" alt="Figure 7.2: Course Examiner Assignments" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 7.2: Course Examiner Assignments:</strong> Course evaluation instructor mapping: continuous and final exam examiner appointments per section.</figcaption>
+</figure>
+
+<hr />
+<h2 id="3-module-by-module-verification-matrix">3. Module-by-Module Verification Matrix<a href="#3-module-by-module-verification-matrix" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="31-administration-module-administrator-namespace">3.1 Administration Module (<code>Administrator</code> Namespace)<a href="#31-administration-module-administrator-namespace" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>Status:</strong> <strong>Verified in Source Code (UI-Unverified in Runtime)</strong></li>
+<li><strong>Code Reference:</strong> <code>routes/web_routes_administrator.php</code>, <code>app/Http/Controllers/Administrator/</code></li>
+<li><strong>Verified Capabilities:</strong></li>
+<li>Faculty, Department, and Program management (<code>FacultiesController</code>, <code>DepartmentsController</code>, <code>ProgramsController</code>).</li>
+<li>Program Versioning (<code>programs.versions.create</code>): Enforces <code>semesters_per_year</code> (Bi-semester vs Tri-semester), <code>payment_installments</code> (2 or 3 installments), and <code>total_years</code>.</li>
+<li>Waiver Categories (<code>WaiverCategoriesController</code>): Percentage-based scholarship definitions.</li>
+<li>User and Access Management (<code>UsersController</code>, <code>RolesController</code>): Role assignment, granular permissions, and automated temporary password generation with mandatory reset flag (<code>password_reset_required</code>).</li>
+<li>Setting Engine (<code>SettingsController</code>): Global settings with program-specific override support (<code>Setting::getValue($id, $program_id)</code>).</li>
+<li>Activity Logs (<code>LogsController</code>): Integration with Spatie Activitylog.</li>
+<li>MS Teams Users (<code>MscusersController</code>): Credential management for Microsoft Teams integration.</li>
+<li>Smart Cards &amp; Photo Capture (<code>SmartCardsController</code>, <code>PhotoCaptureController</code>): ID card tracking and MinIO photo uploads.</li>
+</ul>
+<h3 id="32-admission-module-admission-frontapplicant-namespaces">3.2 Admission Module (<code>Admission</code> &amp; <code>Front\Applicant</code> Namespaces)<a href="#32-admission-module-admission-frontapplicant-namespaces" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>Status:</strong> <strong>Verified in Source Code (UI-Unverified in Runtime)</strong></li>
+<li><strong>Code Reference:</strong> <code>routes/web_routes_admission.php</code>, <code>web_routes_front.php</code>, <code>app/Libs/BoardData.php</code></li>
+<li><strong>Verified Capabilities:</strong></li>
+<li>Automated Board Verification: Teletalk API integration (<code>BoardData.php</code>) with fallback web scraper (<code>BoardDataScrap.php</code>).</li>
+<li>Manual Verification Flag: Sets <code>board_data_manual_pending_verification = 1</code> if APIs fail; manual verification occurs within <code>applicants.show</code> / <code>applicants.manual-eligibility</code>. (Note: No standalone <code>applicants.verify-board</code> route exists).</li>
+<li>Multi-Step Applicant Profile: 5 distinct sections (<code>pi</code>, <code>ci</code>, <code>eb</code>, <code>lg</code>, <code>at</code>) with progress tracking.</li>
+<li>Admission Test Configuration (<code>AdmissionTestConfigsController</code>): Exam venue, date, time, and admit card download windows.</li>
+<li>Applicant-to-Student Transfer (<code>ApplicantsController@transfer</code>): Converts applicant records into permanent <code>Student</code> entities without data re-entry.</li>
+</ul>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/04_01_admissiontestconfigs.png</span>
+  </div>
+  <a href="screenshots/04_01_admissiontestconfigs.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/04_01_admissiontestconfigs.png" alt="Figure 4.1: Admission Test Configurations" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 4.1: Admission Test Configurations:</strong> Entrance exam configuration: session, dates, test venue, and admit card download schedules.</figcaption>
+</figure>
+
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/01_03_applicant_profile.png</span>
+  </div>
+  <a href="screenshots/01_03_applicant_profile.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/01_03_applicant_profile.png" alt="Figure 1.3: Applicant Profile &amp; Education Details" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 1.3: Applicant Profile &amp; Education Details:</strong> Applicant personal details, contact address, SSC/HSC board verification data, and guardian info.</figcaption>
+</figure>
+
+<h3 id="33-academic-module-academic-namespace">3.3 Academic Module (<code>Academic</code> Namespace)<a href="#33-academic-module-academic-namespace" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>Status:</strong> <strong>Verified in Source Code (UI-Unverified in Runtime)</strong></li>
+<li><strong>Code Reference:</strong> <code>routes/web_routes_academic.php</code>, <code>app/Libs/AutoRegistration.php</code></li>
+<li><strong>Verified Capabilities:</strong></li>
+<li>Student Directory (<code>StudentsController</code>): Roll assignment, status tracking, login profile creation.</li>
+<li>Course Exemptions (<code>ExemptedCoursesController</code>): Credit transfers from external institutions; credits count toward degree requirements but are excluded from CGPA point calculations.</li>
+<li>Syllabuses &amp; Courses (<code>SyllabusesController</code>, <code>CoursesController</code>): Theory vs Sessional/Lab classification, elective group tracks (<code>group_id</code>).</li>
+<li>Automated Batch Registration (<code>AutoRegistrationsController</code> &amp; <code>app/Libs/AutoRegistration.php</code>): Enforces 50% credits earned promotion rule, prerequisite checks, consecutive session checks, and 7-year limit.</li>
+<li>Student Status Tracking: Deactivated students (<code>disabledstudents</code>), suspensions (<code>suspendedstudents</code>), expulsions (<code>expelledstudents</code>), and migrations (<code>studentmigrations</code>).</li>
+<li>Document Application Clearances (<code>DocumentApplicationsController</code>): Multi-stage clearance gates (Application → Invoice Paid → Accounts Clearance → Library Clearance → Ready → Delivered).</li>
+<li>Official Documents: Partial Transcripts, Final Transcripts, Provisional Certificates, Testimonials, Migration Certificates, MOI Certificates.</li>
+</ul>
+<h3 id="34-accounts-module-accounts-namespace">3.4 Accounts Module (<code>Accounts</code> Namespace)<a href="#34-accounts-module-accounts-namespace" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>Status:</strong> <strong>Verified in Source Code (UI-Unverified in Runtime)</strong></li>
+<li><strong>Code Reference:</strong> <code>routes/web_routes_accounts.php</code>, <code>app/Libs/GenerateInvoice.php</code>, <code>app/Invoice.php</code>, <code>app/Ledger.php</code></li>
+<li><strong>Verified Capabilities:</strong></li>
+<li>Dynamic Fee Engine (<code>FeeSettingsController</code>): Fee rates by Account Head, Program, and Session.</li>
+<li>Tuition Invoicing (<code>GenerateInvoice.php</code>): Automatic computation of regular tuition, retake tuition (50% rate), and improvement tuition (25% rate).</li>
+<li>Waiver Engine (<code>WaiverCalculator.php</code>): Evaluates auto-waiver vs manual waiver, awarding the higher percentage strictly against regular tuition.</li>
+<li>Sequential Payment Enforcement (<code>InvoicesController@posting_store</code>): Strictly enforces that Installment 1 must be paid before Installment 2 can be accepted.</li>
+<li>Double-Entry Student Ledger (<code>Ledger.php</code>): Debit (<code>type = 'D'</code>) and Credit (<code>type = 'C'</code>) records with running balance resolution.</li>
+<li>Late Fee Engine (<code>Invoice.php</code>): Computes overdue fines while excluding official holidays recorded in the <code>Holiday</code> table.</li>
+</ul>
+<h3 id="35-examination-module-exam-namespace">3.5 Examination Module (<code>Exam</code> Namespace)<a href="#35-examination-module-exam-namespace" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>Status:</strong> <strong>Verified in Source Code (UI-Unverified in Runtime; Requires DB Grade Scale Confirmation)</strong></li>
+<li><strong>Code Reference:</strong> <code>routes/web_routes_exam.php</code>, <code>app/Http/Controllers/Exam/</code>, <code>app/Mark.php</code>, <code>app/Grade.php</code></li>
+<li><strong>Verified Capabilities:</strong></li>
+<li>Assessment Weight Configurations (<code>assessments</code>, <code>assessmentrules</code> in Academic module): Attendance, CT, Midterm, Final percentage allocations.</li>
+<li>Examiner Access Control: Faculty members can only enter marks for courses where assigned as examiners in <code>course_offerings</code>.</li>
+<li>Attendance Status Flags (<code>marks</code> table): <code>p</code> (Present), <code>a</code> (Absent), <code>e</code> (Expelled).</li>
+<li>Teacher Mark Submission Lock (<code>SubmissionsController</code>): Freezes interface upon submission.</li>
+<li>Controller Approval Gate (<code>ApprovalsController</code>): Commits <code>CourseResult</code> records with Letter Grades and Grade Points.</li>
+<li>Batch SGPA &amp; Rank Compilation (<code>ResultsController.php</code>): Credit-weighted SGPA calculation and cohort ranking.</li>
+<li>All-Course Approval Barrier: Publishing is locked unless 100% of course sections are approved (<code>Submission::checkApproval</code>).</li>
+<li>Administrative Reversal (<code>MarksController@undo</code>): Admin-only undo facility to reopen submissions.</li>
+<li><strong>Grading Scale Note:</strong> <code>Grade::calculate()</code> dynamically queries <code>Grade::all()</code> from the <code>grades</code> table. While <code>GradesTableSeeder.php</code> seeds a standard 10-tier scale, the live scale is dynamic and requires active database confirmation.</li>
+</ul>
+<h3 id="36-schedule-module-schedule-namespace">3.6 Schedule Module (<code>Schedule</code> Namespace)<a href="#36-schedule-module-schedule-namespace" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>Status:</strong> <strong>Verified in Source Code (UI-Unverified in Runtime)</strong></li>
+<li><strong>Code Reference:</strong> <code>routes/web_routes_schedule.php</code>, <code>app/Http/Controllers/Schedule/</code></li>
+<li><strong>Verified Capabilities:</strong></li>
+<li>Infrastructure Management: Rooms and seating capacities (<code>RoomsController</code>), time slots (<code>SlotsController</code>).</li>
+<li>Course Offerings: Section splits and examiner mappings (<code>CourseOffersController</code>).</li>
+<li>Routine Builder &amp; Live Routines: Draft routines (<code>schedules</code>) synced to live routines (<code>schedules-live</code>).</li>
+<li>Conflict Detection (<code>schedule.conflicts</code>): Checks teacher double-booking and room occupancy conflicts.</li>
+<li>Room Booking: Event-based room reservations (<code>RoomBookingController</code>).</li>
+</ul>
+<h3 id="37-reports-module-report-namespace">3.7 Reports Module (<code>Report</code> Namespace)<a href="#37-reports-module-report-namespace" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>Status:</strong> <strong>Verified in Source Code (UI-Unverified in Runtime)</strong></li>
+<li><strong>Code Reference:</strong> <code>routes/web_routes_report.php</code>, <code>app/Http/Controllers/Report/</code></li>
+<li><strong>Verified Capabilities:</strong></li>
+<li>Registration Reports: Enrollment summaries, dropouts, individual registrations, non-collegiate lists.</li>
+<li>Accounts Reports: Receivables, bank-wise collections, pending payments, summaries.</li>
+<li>Student Reports: Enrollment, completed students, studying students, blood donors, batch summaries, district distributions.</li>
+<li>Admission Reports: Forms sold, multi-program applicants, historical analytics.</li>
+<li>Examination &amp; UGC Reports: Result gazettes, CGPA distributions, teacher assessment reports, and annual UGC compliance statistics.</li>
+</ul>
+<h3 id="38-portals-public-services-front-namespace">3.8 Portals &amp; Public Services (<code>Front</code> Namespace)<a href="#38-portals-public-services-front-namespace" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>Status:</strong> <strong>Verified in Source Code (UI-Unverified in Runtime)</strong></li>
+<li><strong>Code Reference:</strong> <code>routes/web_routes_front.php</code>, <code>app/Http/Controllers/Front/</code></li>
+<li><strong>Verified Capabilities:</strong></li>
+<li>Public Applicant Portal: Registration, board data sync, application checkout, admit card download.</li>
+<li>Student Portal: Separate authentication (<code>front.student.auth.login</code>), personal routine, invoices, online registration, teacher assessments, document applications.</li>
+<li>Student Results View: Rendered within the Student Profile under the Results tab (<code>/front/student/profile?type=r</code>), not a standalone result route.</li>
+<li>Public Certificate Verification: Token-based verification at <code>/front/services/studentverify/certificate/{token}</code>.</li>
+</ul>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_05_student_registration.png</span>
+  </div>
+  <a href="screenshots/02_05_student_registration.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_05_student_registration.png" alt="Figure 2.5: Online Semester Registration" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.5: Online Semester Registration:</strong> Online semester course enrollment interface: regular courses, retakes, and improvements.</figcaption>
+</figure>
+
+<hr />
+<h2 id="4-security-access-control-authorization-audit">4. Security, Access Control &amp; Authorization Audit<a href="#4-security-access-control-authorization-audit" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<h3 id="41-authentication-architecture">4.1 Authentication Architecture<a href="#41-authentication-architecture" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<p>EasyMate ERP utilizes three distinct authentication mechanisms:
+1. <strong>Administrative / Faculty Guard (<code>web</code>):</strong> Standard session authentication. Mandatory initial password change enforced via <code>password_reset_required</code>.
+2. <strong>Student Portal Guard (<code>auth.student</code>):</strong> Authenticates students via University Roll Number and password.
+3. <strong>Public Applicant Guard (<code>auth.applicant</code>):</strong> Session-based authentication keyed to the applicant's mobile number.</p>
+<h3 id="42-role-based-access-control-rbac-hardcoded-role-ids">4.2 Role-Based Access Control (RBAC) &amp; Hardcoded Role IDs<a href="#42-role-based-access-control-rbac-hardcoded-role-ids" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li><strong>Role ID 1 (Admin):</strong> Validated via <code>$user-&gt;isAdmin()</code>. Grants unrestricted system-wide overrides and undo operations.</li>
+<li><strong>Role ID 7 (Department Head):</strong> Validated via <code>$user-&gt;isHead()</code>. Grants departmental oversight access.</li>
+<li><strong>Role ID 11 (Examination Controller):</strong> Validated via <code>$user-&gt;isController()</code>. Grants marks approval and result publication authority.</li>
+<li><strong>Teacher Role:</strong> Checked by role name <code>"Teacher"</code> in <code>examinerOptions()</code>.</li>
+<li><strong>Other Roles:</strong> Permission-based roles (Admission Officer, Accounts Officer, Academic Staff) are configured in the <code>roles</code> and <code>permissions</code> tables. Exact role IDs for these roles depend on runtime database configuration.</li>
+</ul>
+<h3 id="43-data-scoping-by-faculty-and-department">4.3 Data Scoping by Faculty and Department<a href="#43-data-scoping-by-faculty-and-department" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ul>
+<li>Non-admin users are scoped to their assigned <code>faculties</code> and <code>departments</code>.</li>
+<li>Controllers automatically filter program dropdowns and student lists:
+  <code>$programs = Program::whereIn('department_id', auth()-&gt;user()-&gt;departmentIds())-&gt;get();</code></li>
+<li>Staff cannot view or alter student records outside their authorized academic scope.</li>
+</ul>
+<hr />
+<h2 id="5-data-integrity-business-logic-safeguards">5. Data Integrity &amp; Business Logic Safeguards<a href="#5-data-integrity-business-logic-safeguards" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p>The audit verified the following business logic safeguards in the source code:</p>
+<ol>
+<li><strong>The 7-Year Degree Duration Limit (<code>app/Libs/AutoRegistration.php</code>):</strong>
+   Students exceeding 7 calendar years from intake are barred from automated registration (<code>$student-&gt;is7YearsPlus($exam_session)</code>).</li>
+<li><strong>Financial Clearance Barrier (<code>accountClearUpto</code>):</strong>
+   Students with outstanding debit balances from prior sessions cannot complete registration or download exam admit cards.</li>
+<li><strong>Consecutive Session Continuity:</strong>
+   Auto-registration checks that continuing students were registered in the immediate preceding session.</li>
+<li><strong>Sequential Installment Enforcement (<code>InvoicesController@posting_store</code>):</strong>
+   Installment 2 cannot be posted if Installment 1 remains unpaid.</li>
+<li><strong>Teacher Marks Locking (<code>Submission</code>):</strong>
+   Submitting marks locks the interface, preventing post-submission modifications before Controller review.</li>
+<li><strong>All-Course Approval Gate for Results (<code>Submission::checkApproval</code>):</strong>
+   Semester result publication is blocked if even one section has not been approved by the Controller.</li>
+<li><strong>Best Attempt CGPA Selection (<code>app/Student.php</code>):</strong>
+   The CGPA engine selects the highest grade point across all attempts for repeated/improved courses.</li>
+</ol>
+<hr />
+<h2 id="6-identified-operational-nuances-system-limitations">6. Identified Operational Nuances &amp; System Limitations<a href="#6-identified-operational-nuances-system-limitations" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Observation / Area</th>
+<th>Nature of Finding</th>
+<th>Operational Risk</th>
+<th>Verification &amp; Mitigation Guidance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Screenshot Verification Status</strong></td>
+<td><strong>0 of 90 screenshots captured</strong></td>
+<td>Visual layouts, form styling, and responsiveness cannot be confirmed without visual evidence.</td>
+<td>Mark all 90 screens as "Pending Capture". Screen inventory represents endpoint/route mapping, not visual verification.</td>
+</tr>
+<tr>
+<td><strong>Grading Scale Authority</strong></td>
+<td><strong>Database-driven (<code>Grade::all()</code>)</strong></td>
+<td>Seed table reflects standard 10-tier scale, but live database records could differ.</td>
+<td>Do not treat seeded UGC table as authoritative without verifying active database <code>grades</code> records and University Academic Ordinance.</td>
+</tr>
+<tr>
+<td><strong>Student Result View Route</strong></td>
+<td><strong>Embedded in Profile tab</strong></td>
+<td>Documentation claiming a standalone <code>/front/student/result</code> route is factually incorrect.</td>
+<td>Direct students to <strong>Profile → Results tab</strong> (<code>/front/student/profile?type=r</code>).</td>
+</tr>
+<tr>
+<td><strong>Hardcoded Role IDs (1, 7, 11)</strong></td>
+<td><strong>Source-code dependency</strong></td>
+<td>Re-seeding or renumbering roles could break <code>isAdmin()</code>, <code>isHead()</code>, or <code>isController()</code> checks.</td>
+<td>Ensure migrations and seeders preserve role IDs 1 (Admin), 7 (Head), and 11 (Controller).</td>
+</tr>
+<tr>
+<td><strong>Board API Outages</strong></td>
+<td><strong>External dependency</strong></td>
+<td>Teletalk API downtime causes registration delays.</td>
+<td>Train Admission Officers on manual verification via physical certificates.</td>
+</tr>
+<tr>
+<td><strong>Holiday Calendar Dependency</strong></td>
+<td><strong>Database dependency</strong></td>
+<td>Late fine calculations rely on <code>Holiday</code> table. Missing holiday entries will cause inaccurate fines.</td>
+<td>Ensure Accounts staff populates university holidays before each payment deadline.</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="7-audit-sign-off-verification-limitations-statement">7. Audit Sign-off &amp; Verification Limitations Statement<a href="#7-audit-sign-off-verification-limitations-statement" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p>This report documents the verification of the EasyMate ERP codebase through static source code analysis, route inspection, database migration and seeder auditing, and view template inspection.</p>
+<h3 id="key-verification-disclaimers">Key Verification Disclaimers:<a href="#key-verification-disclaimers" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h3>
+<ol>
+<li><strong>Source Code Baseline:</strong> All documented modules, routes, and business logic described herein are <strong>verified in the source code</strong>.</li>
+<li><strong>Runtime &amp; Visual Verification Pending:</strong> Because no active web application server or live database instance was executed during this audit, <strong>zero runtime UI screens or screenshots are verified</strong>. Visual verification remains pending until captured in a live environment.</li>
+<li><strong>Database &amp; Policy Dependencies:</strong> Dynamic parameters—including active grade boundaries, specific fee rates, role assignments beyond Admin/Head/Controller, and official degree completion policies—require confirmation from live database records and Varendra University's approved Academic Ordinance (e.g., <em>11th Academic Ordinance</em>).</li>
+</ol>
+<p><strong>Report Compiled by:</strong><br />
+ERP Technical Audit &amp; Quality Assurance Team<br />
+October 2026</p>
+
+        <div class="chapter-nav-footer">
+  <a href="06-screenshots-checklist.html" class="chapter-nav-card prev">
+    <span class="chapter-nav-direction">← Previous Chapter</span>
+    <span class="chapter-nav-title">06 — Screenshots Checklist</span>
+  </a>
+  <a href="user-manual.html" class="chapter-nav-card next">
+    <span class="chapter-nav-direction">Next Chapter →</span>
+    <span class="chapter-nav-title">Comprehensive User Manual</span>
+  </a>
+</div>
+
+
+      </article>
+    </main>
+
+    <!-- Right TOC Sidebar -->
+    <aside class="docs-toc">
+      <div class="toc-title">
+        <span>On This Page</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+      </div>
+      <ul class="toc-list">
+  <li class="toc-item level-2"><a href="#easymate-erp-codebase-analysis-scope-boundaries-operational-audit" class="toc-link" title="EasyMate ERP — Codebase Analysis, Scope Boundaries &amp;amp; Operational Audit">EasyMate ERP — Codebase Analysis, Scope Boundaries &amp;amp; Operational Audit</a></li>
+  <li class="toc-item level-2"><a href="#1-executive-summary" class="toc-link" title="1. Executive Summary">1. Executive Summary</a></li>
+  <li class="toc-item level-3"><a href="#summary-statistics-verification-classification" class="toc-link" title="Summary Statistics &amp;amp; Verification Classification">Summary Statistics &amp;amp; Verification Classification</a></li>
+  <li class="toc-item level-2"><a href="#2-scope-boundaries-hrm-separation" class="toc-link" title="2. Scope Boundaries &amp;amp; HRM Separation">2. Scope Boundaries &amp;amp; HRM Separation</a></li>
+  <li class="toc-item level-3"><a href="#verified-architectural-boundary-easymate-erp-vs-hrm" class="toc-link" title="Verified Architectural Boundary: EasyMate ERP vs HRM">Verified Architectural Boundary: EasyMate ERP vs HRM</a></li>
+  <li class="toc-item level-3"><a href="#audit-findings-on-human-resource-management" class="toc-link" title="Audit Findings on Human Resource Management">Audit Findings on Human Resource Management</a></li>
+  <li class="toc-item level-2"><a href="#3-module-by-module-verification-matrix" class="toc-link" title="3. Module-by-Module Verification Matrix">3. Module-by-Module Verification Matrix</a></li>
+  <li class="toc-item level-3"><a href="#31-administration-module-administrator-namespace" class="toc-link" title="3.1 Administration Module (Administrator Namespace)">3.1 Administration Module (Administrator Namespace)</a></li>
+  <li class="toc-item level-3"><a href="#32-admission-module-admission-frontapplicant-namespaces" class="toc-link" title="3.2 Admission Module (Admission &amp;amp; Front\Applicant Namespaces)">3.2 Admission Module (Admission &amp;amp; Front\Applicant Namespaces)</a></li>
+  <li class="toc-item level-3"><a href="#33-academic-module-academic-namespace" class="toc-link" title="3.3 Academic Module (Academic Namespace)">3.3 Academic Module (Academic Namespace)</a></li>
+  <li class="toc-item level-3"><a href="#34-accounts-module-accounts-namespace" class="toc-link" title="3.4 Accounts Module (Accounts Namespace)">3.4 Accounts Module (Accounts Namespace)</a></li>
+  <li class="toc-item level-3"><a href="#35-examination-module-exam-namespace" class="toc-link" title="3.5 Examination Module (Exam Namespace)">3.5 Examination Module (Exam Namespace)</a></li>
+  <li class="toc-item level-3"><a href="#36-schedule-module-schedule-namespace" class="toc-link" title="3.6 Schedule Module (Schedule Namespace)">3.6 Schedule Module (Schedule Namespace)</a></li>
+  <li class="toc-item level-3"><a href="#37-reports-module-report-namespace" class="toc-link" title="3.7 Reports Module (Report Namespace)">3.7 Reports Module (Report Namespace)</a></li>
+  <li class="toc-item level-3"><a href="#38-portals-public-services-front-namespace" class="toc-link" title="3.8 Portals &amp;amp; Public Services (Front Namespace)">3.8 Portals &amp;amp; Public Services (Front Namespace)</a></li>
+  <li class="toc-item level-2"><a href="#4-security-access-control-authorization-audit" class="toc-link" title="4. Security, Access Control &amp;amp; Authorization Audit">4. Security, Access Control &amp;amp; Authorization Audit</a></li>
+  <li class="toc-item level-3"><a href="#41-authentication-architecture" class="toc-link" title="4.1 Authentication Architecture">4.1 Authentication Architecture</a></li>
+  <li class="toc-item level-3"><a href="#42-role-based-access-control-rbac-hardcoded-role-ids" class="toc-link" title="4.2 Role-Based Access Control (RBAC) &amp;amp; Hardcoded Role IDs">4.2 Role-Based Access Control (RBAC) &amp;amp; Hardcoded Role IDs</a></li>
+  <li class="toc-item level-3"><a href="#43-data-scoping-by-faculty-and-department" class="toc-link" title="4.3 Data Scoping by Faculty and Department">4.3 Data Scoping by Faculty and Department</a></li>
+  <li class="toc-item level-2"><a href="#5-data-integrity-business-logic-safeguards" class="toc-link" title="5. Data Integrity &amp;amp; Business Logic Safeguards">5. Data Integrity &amp;amp; Business Logic Safeguards</a></li>
+  <li class="toc-item level-2"><a href="#6-identified-operational-nuances-system-limitations" class="toc-link" title="6. Identified Operational Nuances &amp;amp; System Limitations">6. Identified Operational Nuances &amp;amp; System Limitations</a></li>
+  <li class="toc-item level-2"><a href="#7-audit-sign-off-verification-limitations-statement" class="toc-link" title="7. Audit Sign-off &amp;amp; Verification Limitations Statement">7. Audit Sign-off &amp;amp; Verification Limitations Statement</a></li>
+  <li class="toc-item level-3"><a href="#key-verification-disclaimers" class="toc-link" title="Key Verification Disclaimers:">Key Verification Disclaimers:</a></li>
+</ul>
+
+
+      <div class="toc-actions">
+        <a href="#top" class="toc-action-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          Back to top
+        </a>
+        <a href="#" class="toc-action-link print-btn-action">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print this section
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Global Search Modal -->
+  <div class="search-modal-backdrop" id="search-modal-backdrop">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-modal-input" id="search-modal-input" placeholder="Search modules, roles, workflows, rules, FAQs..." autocomplete="off">
+        <button id="search-modal-close" style="background:none;border:none;cursor:pointer;color:var(--text-muted);padding:4px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="search-modal-results" id="search-modal-results"></div>
+      <div class="search-modal-footer">
+        <div>Navigate with <kbd>↑</kbd> <kbd>↓</kbd> and select with <kbd>Enter</kbd></div>
+        <div>Close with <kbd>Esc</kbd></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/search-index.js"></script>
+  <script src="assets/manual.js"></script>
+</body>
+</html>

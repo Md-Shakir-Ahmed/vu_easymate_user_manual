@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Overview &amp; Scope — EasyMate ERP Manual | Varendra University</title>
+  <meta name="description" content="Varendra University EasyMate ERP User Manual & Operational Reference: Student Lifecycle, Cross-Module Workflows, Roles & Technical Verification.">
+  <link rel="stylesheet" href="assets/manual.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e3a8a'><path d='M12 2L1 7l11 5 9-4.09V17h2V7L12 2z'/></svg>">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <a href="index.html" class="brand-wrapper">
+        <div class="brand-logo">VU</div>
+        <div class="brand-text">
+          <div class="brand-title">
+            EasyMate ERP
+            <span class="version-tag">v1.0</span>
+          </div>
+          <div class="brand-subtitle">Varendra University • Academic ERP Manual</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="header-actions">
+      <div class="search-trigger" role="button" tabindex="0" title="Search documentation (Ctrl+K)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <span>Search manual...</span>
+        <kbd>Ctrl+K</kbd>
+      </div>
+
+      <button class="header-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        Dark
+      </button>
+
+      <button class="header-btn print-btn-action" title="Print this manual or Export to PDF">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print / PDF
+      </button>
+    </div>
+  </header>
+
+  <!-- Docs Layout -->
+  <div class="docs-layout">
+
+    <!-- Left Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-search-box">
+        <input type="text" id="sidebar-filter-input" class="sidebar-search-input" placeholder="Quick filter menu...">
+      </div>
+      <nav class="sidebar-nav">
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Getting Started</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="index.html" class="sidebar-nav-link active">
+          <span class="nav-label"><span class="nav-icon">📌</span> Overview &amp; Scope</span>
+          <span class="nav-badge">Start Here</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Modules &amp; Specifications</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="01-functional-inventory.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📋</span> 01. Functional Inventory</span>
+          <span class="nav-badge">9 Modules</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="02-student-lifecycle.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">🔄</span> 02. Student Lifecycle</span>
+          <span class="nav-badge">8 Stages</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="03-role-based-guides.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">👥</span> 03. Role-Based Guides</span>
+          <span class="nav-badge">9 Roles</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="04-cross-module-workflows.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">⚡</span> 04. Cross-Module Workflows</span>
+          <span class="nav-badge">8 Workflows</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Reference &amp; Audit</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="05-glossary-and-faq.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📖</span> 05. Glossary &amp; FAQ</span>
+          <span class="nav-badge">Reference</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="06-screenshots-checklist.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📸</span> 06. Screenshots Checklist</span>
+          <span class="nav-badge">40 Captured</span>
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="verification-report.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">🛡️</span> 07. Verification Report</span>
+          <span class="nav-badge">Code Audit</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">Complete Editions</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="user-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📑</span> Complete User Manual</span>
+          <span class="nav-badge">Master</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-nav-group">
+    <div class="sidebar-group-title">All-in-One Edition</div>
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="complete-manual.html" class="sidebar-nav-link">
+          <span class="nav-label"><span class="nav-icon">📚</span> Complete 8-Chapter Manual</span>
+          <span class="nav-badge">Merged</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sidebar-legend">
+    <div class="sidebar-legend-title">Verification Legend</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#10b981;"></span> <strong>[VC]</strong> Code Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> <strong>[CNV]</strong> Code Found / Not UI</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#ea580c;"></span> <strong>[PI]</strong> Partially Implemented</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#7c3aed;"></span> <strong>[VUI]</strong> Running UI Verified</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#0284c7;"></span> <strong>[RDC]</strong> Requires DB / Policy</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span> <strong>[NF]</strong> Not Found / Excluded</div>
+  </div>
+</nav>
+
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="docs-main">
+      <article class="docs-article">
+        
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">EasyMate ERP</a>
+          <span class="separator">/</span>
+          <a href="index.html">User Manual</a>
+          <span class="separator">/</span>
+          <span class="current">Overview &amp; Scope</span>
+        </nav>
+
+        <div class="doc-header-banner">
+          <div class="doc-meta-row">
+            <span class="doc-meta-pill">🏛️ Varendra University</span>
+            <span class="doc-meta-pill">📅 Published: October 2026</span>
+            <span class="doc-meta-pill">🛡️ Live Docker System Verified</span>
+            <span class="doc-meta-pill">⚡ Laravel Academic SIS</span>
+          </div>
+        </div>
+
+        <h1 id="easymate-erp-user-manual">EasyMate ERP — User Manual<a href="#easymate-erp-user-manual" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h1>
+<h2 id="varendra-university">Varendra University<a href="#varendra-university" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p><strong>Version:</strong> 1.0<br />
+<strong>Last Updated:</strong> October 2026<br />
+<strong>System:</strong> EasyMate ERP (Laravel-based Academic ERP)</p>
+<hr />
+<h2 id="about-this-manual">About This Manual<a href="#about-this-manual" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p>This manual documents the operational use of <strong>EasyMate ERP</strong> as implemented at Varendra University. It covers the student lifecycle — from admission application through graduation — and provides instructions across user roles based on rigorous codebase verification.</p>
+<div class="callout callout-scope">
+  <div class="callout-title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+    Mandatory Scope Boundary — HRM Separation Notice
+  </div>
+  <p><strong>Scope Boundary:</strong> This manual covers functionality implemented within EasyMate ERP. All human resource management operations (employee recruitment, onboarding, biometric attendance, staff leave, payroll disbursement, performance appraisals, and service books) are managed through a <strong>separate HRM system</strong> and are strictly outside EasyMate's scope.</p>
+</div>
+<hr />
+<h2 id="how-to-navigate-this-manual">How to Navigate This Manual<a href="#how-to-navigate-this-manual" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Document</th>
+<th>Contents</th>
+<th>Verification Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="01-functional-inventory.html">01 — Functional Inventory</a></td>
+<td>Catalog of modules, submodules, and discrete capabilities</td>
+<td>Source code routes, controllers, models</td>
+</tr>
+<tr>
+<td><a href="02-student-lifecycle.html">02 — Student Lifecycle</a></td>
+<td>End-to-end journey from admission application to graduation</td>
+<td>Cross-module business logic tracing</td>
+</tr>
+<tr>
+<td><a href="03-role-based-guides.html">03 — Role-Based Guides</a></td>
+<td>Instructions organized by user role with verified menu paths</td>
+<td>Blade layouts and role policies</td>
+</tr>
+<tr>
+<td><a href="04-cross-module-workflows.html">04 — Cross-Module Workflows</a></td>
+<td>Multi-department data handoffs (Admission, Accounts, Academic, Exam)</td>
+<td>Service classes and helper libraries</td>
+</tr>
+<tr>
+<td><a href="05-glossary-and-faq.html">05 — Glossary and FAQ</a></td>
+<td>Terminology, grading models, billing rules, and operational FAQ</td>
+<td>Code formulas, seeders, and FAQ audits</td>
+</tr>
+<tr>
+<td><a href="06-screenshots-checklist.html">06 — Screenshots Checklist</a></td>
+<td>90-screen inventory and visual capture tracking checklist</td>
+<td>Route/view mapping (0/90 screenshots captured)</td>
+</tr>
+<tr>
+<td><a href="verification-report.html">Verification Report</a></td>
+<td>Full technical audit findings, verification status, and limitations</td>
+<td>Code, migration, and seeder analysis</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="intended-audience">Intended Audience<a href="#intended-audience" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<ul>
+<li><strong>Applicants</strong> — Prospective students applying for academic programs</li>
+<li><strong>Students</strong> — Enrolled students accessing academic records, routines, fees, and evaluations</li>
+<li><strong>Teachers / Faculty Members</strong> — Instructors entering continuous and exam marks and viewing schedules</li>
+<li><strong>Department Heads</strong> — Academic heads overseeing departmental programs and student progress</li>
+<li><strong>Admission Officers</strong> — Staff managing applicants, board verifications, tests, and enrollment transfers</li>
+<li><strong>Academic Office / Registrar Staff</strong> — Staff handling syllabuses, registrations, status updates, and transcripts</li>
+<li><strong>Accounts Officers</strong> — Staff managing fee schedules, invoices, payments, waivers, and ledgers</li>
+<li><strong>Examination Controller &amp; Staff</strong> — Officials overseeing marks approval, result compilation, and gazettes</li>
+<li><strong>System Administrators</strong> — Administrators managing system settings, users, and roles</li>
+</ul>
+<hr />
+<h2 id="system-overview">System Overview<a href="#system-overview" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p>EasyMate ERP comprises nine major modules:</p>
+<ol>
+<li><strong>Administration</strong> — Faculties, Departments, Programs, Program Versions, Waiver Categories, Users, Roles, Settings, Activity Logs, Smart Cards, MS Teams Users, Photo Capture</li>
+<li><strong>Admission</strong> — Admission Test Configs, Applicants datatable, Board verification flags, Merit Lists, Applicant-to-Student Transfer</li>
+<li><strong>Academic</strong> — Students directory, Syllabuses, Course catalog, Registrations, Auto-Registration engine, Deactivated/Suspended/Expelled records, Transcripts, Certificates, Document Applications</li>
+<li><strong>Accounts</strong> — Fee Settings, Invoicing engine (Tuition, Retake, Improvement), Payment posting, Waivers &amp; Scholarships, Poor-Merit approvals, Student Ledgers</li>
+<li><strong>Examination</strong> — Examiners, Marks entry, Submission locking, Controller approvals, Semester Result publication, Official Tabulation sheets</li>
+<li><strong>Class Schedule</strong> — Campus Rooms, Time Slots, Course Offerings, Routine builder, Conflicts detection, Live Schedules sync, Room Bookings</li>
+<li><strong>Reports</strong> — Registration, Accounts, Student demographics, Admission analytics, Waivers, Examination results, and UGC annual compliance exports</li>
+<li><strong>Student Portal</strong> — Roll-based student authentication, Profile, Class routine, Invoices, Online registration, Teacher assessment, Course feedback</li>
+<li><strong>Applicant Portal</strong> — Public applicant registration, Education board data API sync, multi-step profile, application submission, admit card download</li>
+</ol>
+<hr />
+<h2 id="verification-legend-audit-classifications">Verification Legend &amp; Audit Classifications<a href="#verification-legend-audit-classifications" class="heading-anchor" aria-hidden="true" title="Direct link to this section">#</a></h2>
+<p>Every feature, screen, and workflow in this documentation suite is evaluated against the following classification criteria:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Classification</th>
+<th>Meaning &amp; Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Verified in source code</strong></td>
+<td>Logic, route, controller, model, and blade view confirmed directly in codebase</td>
+</tr>
+<tr>
+<td><strong>Verified in the running UI</strong></td>
+<td>Visually confirmed and interactively tested in an active running application instance <em>(0 screens currently verified; pending live capture)</em></td>
+</tr>
+<tr>
+<td><strong>Partially implemented</strong></td>
+<td>Feature exists in code but contains stubs, partial logic, or incomplete interface elements</td>
+</tr>
+<tr>
+<td><strong>Found in code but not UI-verified</strong></td>
+<td>Endpoints and templates exist in source code, but runtime layout, styling, and client-side behavior have not been visually verified</td>
+</tr>
+<tr>
+<td><strong>Requires database or university policy confirmation</strong></td>
+<td>Behavior depends on dynamic runtime database rows (e.g., active <code>grades</code> table, specific role IDs beyond 1/7/11, fee heads) or university academic ordinances</td>
+</tr>
+<tr>
+<td><strong>Not found</strong></td>
+<td>Claimed feature or route does not exist in the codebase</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_05_student_registration.png</span>
+  </div>
+  <a href="screenshots/02_05_student_registration.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_05_student_registration.png" alt="Figure 2.5: Online Semester Registration" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.5: Online Semester Registration:</strong> Online semester course enrollment interface: regular courses, retakes, and improvements.</figcaption>
+</figure>
+
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_03_student_routine.png</span>
+  </div>
+  <a href="screenshots/02_03_student_routine.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_03_student_routine.png" alt="Figure 2.3: Student Weekly Class Routine" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.3: Student Weekly Class Routine:</strong> Personal weekly course routine grid: course codes, faculty instructors, and room allocations.</figcaption>
+</figure>
+
+<figure class="screenshot-figure">
+  <div class="screenshot-header">
+    <span class="screenshot-tag">Live System Capture</span>
+    <span class="screenshot-filename">screenshots/02_01_student_login.png</span>
+  </div>
+  <a href="screenshots/02_01_student_login.png" target="_blank" class="screenshot-img-link" title="Click to view full size">
+    <img src="screenshots/02_01_student_login.png" alt="Figure 2.1: Student Authentication Portal" class="screenshot-img" loading="lazy">
+  </a>
+  <figcaption><strong>Figure 2.1: Student Authentication Portal:</strong> Roll number based student authentication screen with password reset support.</figcaption>
+</figure>
+
+        <div class="chapter-nav-footer">
+  <div></div>
+  <a href="01-functional-inventory.html" class="chapter-nav-card next">
+    <span class="chapter-nav-direction">Next Chapter →</span>
+    <span class="chapter-nav-title">01 — Functional Inventory</span>
+  </a>
+</div>
+
+
+      </article>
+    </main>
+
+    <!-- Right TOC Sidebar -->
+    <aside class="docs-toc">
+      <div class="toc-title">
+        <span>On This Page</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+      </div>
+      <ul class="toc-list">
+  <li class="toc-item level-2"><a href="#varendra-university" class="toc-link" title="Varendra University">Varendra University</a></li>
+  <li class="toc-item level-2"><a href="#about-this-manual" class="toc-link" title="About This Manual">About This Manual</a></li>
+  <li class="toc-item level-2"><a href="#how-to-navigate-this-manual" class="toc-link" title="How to Navigate This Manual">How to Navigate This Manual</a></li>
+  <li class="toc-item level-2"><a href="#intended-audience" class="toc-link" title="Intended Audience">Intended Audience</a></li>
+  <li class="toc-item level-2"><a href="#system-overview" class="toc-link" title="System Overview">System Overview</a></li>
+  <li class="toc-item level-2"><a href="#verification-legend-audit-classifications" class="toc-link" title="Verification Legend &amp;amp; Audit Classifications">Verification Legend &amp;amp; Audit Classifications</a></li>
+</ul>
+
+
+      <div class="toc-actions">
+        <a href="#top" class="toc-action-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          Back to top
+        </a>
+        <a href="#" class="toc-action-link print-btn-action">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print this section
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Global Search Modal -->
+  <div class="search-modal-backdrop" id="search-modal-backdrop">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-modal-input" id="search-modal-input" placeholder="Search modules, roles, workflows, rules, FAQs..." autocomplete="off">
+        <button id="search-modal-close" style="background:none;border:none;cursor:pointer;color:var(--text-muted);padding:4px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="search-modal-results" id="search-modal-results"></div>
+      <div class="search-modal-footer">
+        <div>Navigate with <kbd>↑</kbd> <kbd>↓</kbd> and select with <kbd>Enter</kbd></div>
+        <div>Close with <kbd>Esc</kbd></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/search-index.js"></script>
+  <script src="assets/manual.js"></script>
+</body>
+</html>
